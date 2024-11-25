@@ -73,6 +73,8 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="textField1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                   <Component id="totalKos" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="tfTotalKos" min="-2" max="-2" attributes="0"/>
@@ -88,6 +90,7 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="totalKos" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="tfTotalKos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="textField1" min="-2" max="-2" attributes="0"/>
@@ -128,6 +131,11 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfTotalKosActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel11">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jLabel11"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
