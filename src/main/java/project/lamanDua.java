@@ -6,12 +6,27 @@ package project;
 
 
 public class lamanDua extends javax.swing.JFrame {
-
+    private lamanTigaPak a;
+    private lamanTigaTek b;
+    private lamanTigaOto c;
+    private lamanTigaMak d;
+    private lamanTigaKos e;
+    private lamanTigaSpo f;
+    private lamanTigaPer g;
+    private lamanTigaPera h;
     /**
      * Creates new form lamanDua
      */
     public lamanDua() {
         initComponents();
+        a = new lamanTigaPak();
+        b = new lamanTigaTek();
+        c = new lamanTigaOto();
+        d = new lamanTigaMak();
+        e = new lamanTigaKos();
+        f = new lamanTigaSpo();
+        g = new lamanTigaPer();
+        h = new lamanTigaPera();
     }
 
     /**
@@ -59,7 +74,7 @@ public class lamanDua extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(nama)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -86,6 +101,11 @@ public class lamanDua extends javax.swing.JFrame {
         });
 
         kosmetik.setText("Kosmetik");
+        kosmetik.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kosmetikActionPerformed(evt);
+            }
+        });
 
         teknologi.setText("Teknologi");
         teknologi.addActionListener(new java.awt.event.ActionListener() {
@@ -102,8 +122,18 @@ public class lamanDua extends javax.swing.JFrame {
         });
 
         otomotif.setText("Otomotif");
+        otomotif.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                otomotifActionPerformed(evt);
+            }
+        });
 
         furniture.setText("Perabotan");
+        furniture.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                furnitureActionPerformed(evt);
+            }
+        });
 
         bahanMakanan.setText("Bahan Makanan");
         bahanMakanan.addActionListener(new java.awt.event.ActionListener() {
@@ -113,8 +143,18 @@ public class lamanDua extends javax.swing.JFrame {
         });
 
         tukang.setText("Peralatan Tukang");
+        tukang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tukangActionPerformed(evt);
+            }
+        });
 
         buttonlam2.setText("Submit");
+        buttonlam2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonlam2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -191,19 +231,192 @@ public class lamanDua extends javax.swing.JFrame {
 
     private void pakaianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pakaianActionPerformed
         // TODO add your handling code here:
+        if(pakaian.isSelected()){
+            teknologi.setEnabled(false);
+            otomotif.setEnabled(false);
+            bahanMakanan.setEnabled(false);
+            kosmetik.setEnabled(false);
+            sport.setEnabled(false);
+            furniture.setEnabled(false);
+            tukang.setEnabled(false);
+        }else{
+            teknologi.setEnabled(true);
+            otomotif.setEnabled(true);
+            bahanMakanan.setEnabled(true);
+            kosmetik.setEnabled(true);
+            sport.setEnabled(true);
+            furniture.setEnabled(true);
+            tukang.setEnabled(true);
+        }
     }//GEN-LAST:event_pakaianActionPerformed
 
     private void teknologiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teknologiActionPerformed
         // TODO add your handling code here:
+        if(teknologi.isSelected()){
+            pakaian.setEnabled(false);
+            otomotif.setEnabled(false);
+            bahanMakanan.setEnabled(false);
+            kosmetik.setEnabled(false);
+            sport.setEnabled(false);
+            furniture.setEnabled(false);
+            tukang.setEnabled(false);
+        }else{
+            pakaian.setEnabled(true);
+            otomotif.setEnabled(true);
+            bahanMakanan.setEnabled(true);
+            kosmetik.setEnabled(true);
+            sport.setEnabled(true);
+            furniture.setEnabled(true);
+            tukang.setEnabled(true);
+        }
     }//GEN-LAST:event_teknologiActionPerformed
 
     private void sportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sportActionPerformed
         // TODO add your handling code here:
+        if(sport.isSelected()){
+            pakaian.setEnabled(false);
+            teknologi.setEnabled(false);
+            otomotif.setEnabled(false);
+            bahanMakanan.setEnabled(false);
+            kosmetik.setEnabled(false);
+            furniture.setEnabled(false);
+            tukang.setEnabled(false);
+        }else{
+            pakaian.setEnabled(true);
+            teknologi.setEnabled(true);
+            otomotif.setEnabled(true);
+            bahanMakanan.setEnabled(true);
+            kosmetik.setEnabled(true);
+            furniture.setEnabled(true);
+            tukang.setEnabled(true);
+        }
     }//GEN-LAST:event_sportActionPerformed
 
     private void bahanMakananActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bahanMakananActionPerformed
         // TODO add your handling code here:
+        if(bahanMakanan.isSelected()){
+            pakaian.setEnabled(false);
+            teknologi.setEnabled(false);
+            otomotif.setEnabled(false);
+            kosmetik.setEnabled(false);
+            sport.setEnabled(false);
+            furniture.setEnabled(false);
+            tukang.setEnabled(false);
+        }else{
+            pakaian.setEnabled(true);
+            teknologi.setEnabled(true);
+            otomotif.setEnabled(true);
+            kosmetik.setEnabled(true);
+            sport.setEnabled(true);
+            furniture.setEnabled(true);
+            tukang.setEnabled(true);
+        }
     }//GEN-LAST:event_bahanMakananActionPerformed
+
+    private void buttonlam2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonlam2ActionPerformed
+        // TODO add your handling code here:
+        if(pakaian.isSelected()){
+            a.setVisible(true);
+        }else if(teknologi.isSelected()){
+            b.setVisible(true);
+        }else if(otomotif.isSelected()){
+            c.setVisible(true);
+        }else if (bahanMakanan.isSelected()){
+            d.setVisible(true);
+        }else if (kosmetik.isSelected()){
+            e.setVisible(true);
+        }else if(sport.isSelected()){
+            f.setVisible(true);
+        }else if(furniture.isSelected()){
+            g.setVisible(true);
+        }else if(tukang.isSelected()){
+            h.setVisible(true);
+        }
+    }//GEN-LAST:event_buttonlam2ActionPerformed
+
+    private void otomotifActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_otomotifActionPerformed
+        // TODO add your handling code here:
+        if(otomotif.isSelected()){
+            pakaian.setEnabled(false);
+            teknologi.setEnabled(false);
+            bahanMakanan.setEnabled(false);
+            kosmetik.setEnabled(false);
+            sport.setEnabled(false);
+            furniture.setEnabled(false);
+            tukang.setEnabled(false);
+        }else{
+            pakaian.setEnabled(true);
+            teknologi.setEnabled(true);
+            bahanMakanan.setEnabled(true);
+            kosmetik.setEnabled(true);
+            sport.setEnabled(true);
+            furniture.setEnabled(true);
+            tukang.setEnabled(true);
+        }
+    }//GEN-LAST:event_otomotifActionPerformed
+
+    private void kosmetikActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kosmetikActionPerformed
+        // TODO add your handling code here:
+        if(kosmetik.isSelected()){
+            pakaian.setEnabled(false);
+            teknologi.setEnabled(false);
+            otomotif.setEnabled(false);
+            bahanMakanan.setEnabled(false);
+            sport.setEnabled(false);
+            furniture.setEnabled(false);
+            tukang.setEnabled(false);
+        }else{
+            pakaian.setEnabled(true);
+            teknologi.setEnabled(true);
+            otomotif.setEnabled(true);
+            bahanMakanan.setEnabled(true);
+            sport.setEnabled(true);
+            furniture.setEnabled(true);
+            tukang.setEnabled(true);
+        }
+    }//GEN-LAST:event_kosmetikActionPerformed
+
+    private void furnitureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_furnitureActionPerformed
+        // TODO add your handling code here:
+        if(furniture.isSelected()){
+            pakaian.setEnabled(false);
+            teknologi.setEnabled(false);
+            otomotif.setEnabled(false);
+            bahanMakanan.setEnabled(false);
+            kosmetik.setEnabled(false);
+            sport.setEnabled(false);
+            tukang.setEnabled(false);
+        }else{
+            pakaian.setEnabled(true);
+            teknologi.setEnabled(true);
+            otomotif.setEnabled(true);
+            bahanMakanan.setEnabled(true);
+            kosmetik.setEnabled(true);
+            sport.setEnabled(true);
+            tukang.setEnabled(true);
+        }
+    }//GEN-LAST:event_furnitureActionPerformed
+
+    private void tukangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tukangActionPerformed
+        // TODO add your handling code here:
+         if(tukang.isSelected()){
+            pakaian.setEnabled(false);
+            teknologi.setEnabled(false);
+            otomotif.setEnabled(false);
+            bahanMakanan.setEnabled(false);
+            kosmetik.setEnabled(false);
+            sport.setEnabled(false);
+            furniture.setEnabled(false);
+        }else{
+            pakaian.setEnabled(true);
+            teknologi.setEnabled(true);
+            otomotif.setEnabled(true);
+            bahanMakanan.setEnabled(true);
+            kosmetik.setEnabled(true);
+            sport.setEnabled(true);
+            furniture.setEnabled(true);
+        }
+    }//GEN-LAST:event_tukangActionPerformed
 
     /**
      * @param args the command line arguments

@@ -66,7 +66,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="nama" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -193,6 +193,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Kosmetik"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kosmetikActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="teknologi">
           <Properties>
@@ -214,11 +217,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Otomotif"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="otomotifActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="furniture">
           <Properties>
             <Property name="text" type="java.lang.String" value="Perabotan"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="furnitureActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="bahanMakanan">
           <Properties>
@@ -232,11 +241,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Peralatan Tukang"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tukangActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="buttonlam2">
           <Properties>
             <Property name="text" type="java.lang.String" value="Submit"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonlam2ActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
