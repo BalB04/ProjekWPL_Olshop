@@ -112,35 +112,22 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="sport" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="imgSpo" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="imgKos" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
-                              <Component id="kosmetik" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="imgMak" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
-                              <Component id="bahanMakanan" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="103" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="furniture" min="-2" max="-2" attributes="0"/>
-                              <Component id="tukang" min="-2" max="-2" attributes="0"/>
-                              <Component id="imgPera" min="-2" pref="300" max="-2" attributes="0"/>
-                              <Component id="imgPer" min="-2" pref="300" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="imgKos" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                      <Component id="kosmetik" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="imgMak" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                      <Component id="bahanMakanan" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="sport" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="imgSpo" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
                   </Group>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="508" max="-2" attributes="0"/>
-                  <Component id="buttonlam2" min="-2" pref="222" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="103" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="furniture" min="-2" max="-2" attributes="0"/>
+                      <Component id="tukang" min="-2" max="-2" attributes="0"/>
+                      <Component id="imgPera" min="-2" pref="300" max="-2" attributes="0"/>
+                      <Component id="imgPer" min="-2" pref="300" max="-2" attributes="0"/>
+                      <Component id="buttonlam2" min="-2" pref="222" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -193,14 +180,20 @@
                       <Component id="otomotif" min="-2" max="-2" attributes="0"/>
                       <Component id="sport" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="imgOto" min="-2" pref="210" max="-2" attributes="0"/>
-                      <Component id="imgSpo" min="-2" pref="210" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="imgOto" min="-2" pref="210" max="-2" attributes="0"/>
+                              <Component id="imgSpo" min="-2" pref="210" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="buttonlam2" min="-2" pref="38" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                  <Component id="buttonlam2" min="-2" pref="38" max="-2" attributes="0"/>
-                  <EmptySpace pref="19" max="32767" attributes="0"/>
+                  <EmptySpace pref="97" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -288,68 +281,36 @@
         </Component>
         <Component class="javax.swing.JLabel" name="imgPak">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\BalbalPC\Documents\NetBeansProjects\ProjekWPL_Olshop\Image\pakaian.jpeg"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="imgPak"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="imgTek">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\BalbalPC\Documents\NetBeansProjects\ProjekWPL_Olshop\Image\tekno.jpeg"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="imgTek"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="imgOto">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\BalbalPC\Documents\NetBeansProjects\ProjekWPL_Olshop\Image\otomotif.jpeg"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="imgOto"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="imgKos">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\BalbalPC\Documents\NetBeansProjects\ProjekWPL_Olshop\Image\Kosmetik.jpeg"/>
-            </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[300, 210]"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="imgMak">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\BalbalPC\Documents\NetBeansProjects\ProjekWPL_Olshop\Image\makanan.jpeg"/>
-            </Property>
-          </Properties>
           <AccessibilityProperties>
             <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="imgMak"/>
           </AccessibilityProperties>
         </Component>
         <Component class="javax.swing.JLabel" name="imgSpo">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\BalbalPC\Documents\NetBeansProjects\ProjekWPL_Olshop\Image\olahraga.jpeg"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="imgPera">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\BalbalPC\Documents\NetBeansProjects\ProjekWPL_Olshop\Image\perabotan.jpeg"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="imgPer">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\BalbalPC\Documents\NetBeansProjects\ProjekWPL_Olshop\Image\peralatan.jpeg"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>

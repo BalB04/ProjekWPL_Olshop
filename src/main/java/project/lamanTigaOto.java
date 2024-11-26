@@ -88,6 +88,11 @@ public class lamanTigaOto extends javax.swing.JFrame {
         });
 
         tfTotalOto.setEditable(false);
+        tfTotalOto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfTotalOtoActionPerformed(evt);
+            }
+        });
 
         nama.setText("jLabel2");
 
@@ -675,6 +680,10 @@ public class lamanTigaOto extends javax.swing.JFrame {
             kuningBec.setEnabled(true);
         }
     }//GEN-LAST:event_biruBecActionPerformed
+
+    private void tfTotalOtoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfTotalOtoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfTotalOtoActionPerformed
 
     /**
      * @param args the command line arguments

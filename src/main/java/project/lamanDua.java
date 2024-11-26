@@ -152,25 +152,13 @@ public class lamanDua extends javax.swing.JFrame {
             }
         });
 
-        imgPak.setIcon(new javax.swing.ImageIcon("C:\\Users\\BalbalPC\\Documents\\NetBeansProjects\\ProjekWPL_Olshop\\Image\\pakaian.jpeg")); // NOI18N
         imgPak.setText("imgPak");
 
-        imgTek.setIcon(new javax.swing.ImageIcon("C:\\Users\\BalbalPC\\Documents\\NetBeansProjects\\ProjekWPL_Olshop\\Image\\tekno.jpeg")); // NOI18N
         imgTek.setText("imgTek");
 
-        imgOto.setIcon(new javax.swing.ImageIcon("C:\\Users\\BalbalPC\\Documents\\NetBeansProjects\\ProjekWPL_Olshop\\Image\\otomotif.jpeg")); // NOI18N
         imgOto.setText("imgOto");
 
-        imgKos.setIcon(new javax.swing.ImageIcon("C:\\Users\\BalbalPC\\Documents\\NetBeansProjects\\ProjekWPL_Olshop\\Image\\Kosmetik.jpeg")); // NOI18N
         imgKos.setPreferredSize(new java.awt.Dimension(300, 210));
-
-        imgMak.setIcon(new javax.swing.ImageIcon("C:\\Users\\BalbalPC\\Documents\\NetBeansProjects\\ProjekWPL_Olshop\\Image\\makanan.jpeg")); // NOI18N
-
-        imgSpo.setIcon(new javax.swing.ImageIcon("C:\\Users\\BalbalPC\\Documents\\NetBeansProjects\\ProjekWPL_Olshop\\Image\\olahraga.jpeg")); // NOI18N
-
-        imgPera.setIcon(new javax.swing.ImageIcon("C:\\Users\\BalbalPC\\Documents\\NetBeansProjects\\ProjekWPL_Olshop\\Image\\perabotan.jpeg")); // NOI18N
-
-        imgPer.setIcon(new javax.swing.ImageIcon("C:\\Users\\BalbalPC\\Documents\\NetBeansProjects\\ProjekWPL_Olshop\\Image\\peralatan.jpeg")); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -190,28 +178,20 @@ public class lamanDua extends javax.swing.JFrame {
                     .addComponent(imgOto, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(sport)
-                            .addComponent(imgSpo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(imgKos, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(kosmetik)
-                            .addComponent(imgMak, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(bahanMakanan))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(furniture)
-                            .addComponent(tukang)
-                            .addComponent(imgPera, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(imgPer, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(101, 101, 101))))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(508, 508, 508)
-                .addComponent(buttonlam2, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(imgKos, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kosmetik)
+                    .addComponent(imgMak, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bahanMakanan)
+                    .addComponent(sport)
+                    .addComponent(imgSpo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(furniture)
+                    .addComponent(tukang)
+                    .addComponent(imgPera, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imgPer, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonlam2, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(101, 101, 101))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -251,13 +231,16 @@ public class lamanDua extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(otomotif)
                     .addComponent(sport))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(imgOto, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(imgSpo, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addComponent(buttonlam2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imgOto, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(imgSpo, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(buttonlam2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
 
         imgMak.getAccessibleContext().setAccessibleName("imgMak");
@@ -475,6 +458,7 @@ public class lamanDua extends javax.swing.JFrame {
             f.setVisible(true);
         }else if(furniture.isSelected()){
             g.setVisible(true);
+            g.nama(nama.getText());
         }else if(tukang.isSelected()){
             h.setVisible(true);
         }
