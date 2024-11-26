@@ -71,11 +71,11 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="textField1" min="-2" max="-2" attributes="0"/>
+                  <Component id="nama" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="totalOto" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="tfTotalOto" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="tfTotalOto" min="-2" pref="92" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -89,9 +89,9 @@
                           <Component id="totalOto" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="tfTotalOto" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="textField1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nama" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="14" max="32767" attributes="0"/>
@@ -108,22 +108,22 @@
             <Property name="text" type="java.lang.String" value="Hai, Selamat Datang"/>
           </Properties>
         </Component>
-        <Component class="java.awt.TextField" name="textField1">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="textField1"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField1ActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JButton" name="totalOto">
           <Properties>
             <Property name="text" type="java.lang.String" value="Total harga"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="totalOtoActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="tfTotalOto">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="nama">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jLabel2"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -146,19 +146,23 @@
                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" attributes="0">
-                                  <Component id="merahMob" min="-2" pref="87" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="hijauMob" min="-2" pref="87" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="kuningMob" min="-2" pref="87" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="merahMob" min="-2" pref="87" max="-2" attributes="0"/>
+                              <Component id="jumMobMer" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jumlahMob" min="-2" max="-2" attributes="0"/>
+                              <Component id="hijauMob" min="-2" pref="87" max="-2" attributes="0"/>
+                              <Component id="jumMobHij" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="kuningMob" min="-2" pref="87" max="-2" attributes="0"/>
+                              <Component id="jumMobKun" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jumMobBir" min="-2" max="-2" attributes="0"/>
                               <Component id="biruMob" min="-2" pref="87" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -187,8 +191,10 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="deskMb" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jumlahMob" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumMobBir" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumMobKun" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumMobHij" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumMobMer" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="13" max="32767" attributes="0"/>
               </Group>
@@ -213,33 +219,40 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="hijau"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hijauMobActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="merahMob">
           <Properties>
             <Property name="text" type="java.lang.String" value="merah"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="merahMobActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="kuningMob">
           <Properties>
             <Property name="text" type="java.lang.String" value="kuning"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kuningMobActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="biruMob">
           <Properties>
             <Property name="text" type="java.lang.String" value="biru"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="biruMobActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel19">
           <Properties>
             <Property name="text" type="java.lang.String" value="varian"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSpinner" name="jumlahMob">
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel3">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Jumlah"/>
-          </Properties>
+        <Component class="javax.swing.JSpinner" name="jumMobBir">
         </Component>
         <Component class="javax.swing.JTextField" name="hargaMob">
           <Properties>
@@ -249,6 +262,12 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hargaMobActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="jumMobKun">
+        </Component>
+        <Component class="javax.swing.JSpinner" name="jumMobHij">
+        </Component>
+        <Component class="javax.swing.JSpinner" name="jumMobMer">
         </Component>
       </SubComponents>
     </Container>
@@ -270,23 +289,27 @@
                       <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel30" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="merahBec" min="-2" pref="87" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="hijauBec" min="-2" pref="87" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="kuningBec" min="-2" pref="87" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="merahBec" min="-2" pref="87" max="-2" attributes="0"/>
+                              <Component id="jumBecMer" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jumlahBec" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="hijauBec" min="-2" pref="87" max="-2" attributes="0"/>
+                              <Component id="jumBecHij" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="kuningBec" min="-2" pref="87" max="-2" attributes="0"/>
+                              <Component id="jumBecKun" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jumBecBir" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="biruBec" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="hargBec" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="hargaBec" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="23" max="32767" attributes="0"/>
               </Group>
@@ -298,7 +321,7 @@
                   <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="hargBec" min="-2" max="-2" attributes="0"/>
+                  <Component id="hargaBec" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -311,8 +334,10 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="deskBec" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jumlahBec" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumBecBir" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumBecKun" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumBecHij" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumBecMer" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="13" max="32767" attributes="0"/>
               </Group>
@@ -337,42 +362,55 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="hijau"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hijauBecActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="merahBec">
           <Properties>
             <Property name="text" type="java.lang.String" value="merah"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="merahBecActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="kuningBec">
           <Properties>
             <Property name="text" type="java.lang.String" value="kuning"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kuningBecActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="biruBec">
           <Properties>
             <Property name="text" type="java.lang.String" value="biru"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="biruBecActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel30">
           <Properties>
             <Property name="text" type="java.lang.String" value="varian"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSpinner" name="jumlahBec">
+        <Component class="javax.swing.JSpinner" name="jumBecBir">
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel5">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Jumlah"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JTextField" name="hargBec">
+        <Component class="javax.swing.JTextField" name="hargaBec">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="text" type="java.lang.String" value="Rp. 1.005.000"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hargBecActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hargaBecActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="jumBecKun">
+        </Component>
+        <Component class="javax.swing.JSpinner" name="jumBecHij">
+        </Component>
+        <Component class="javax.swing.JSpinner" name="jumBecMer">
         </Component>
       </SubComponents>
     </Container>
@@ -394,19 +432,23 @@
                       <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel31" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jLabel10" alignment="1" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="merahMot" min="-2" pref="87" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="hijauMot" min="-2" pref="87" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="kuningMot" min="-2" pref="87" max="-2" attributes="0"/>
-                              </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="merahMot" min="-2" pref="87" max="-2" attributes="0"/>
+                              <Component id="jumMotMer" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jumlahMot" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="hijauMot" min="-2" pref="87" max="-2" attributes="0"/>
+                              <Component id="jumMotHij" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="kuningMot" min="-2" pref="87" max="-2" attributes="0"/>
+                              <Component id="jumMotKun" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jumMotBir" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="biruMot" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -435,8 +477,10 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="deskMot" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jumlahMot" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumMotBir" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumMotKun" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumMotHij" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jumMotMer" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="13" max="32767" attributes="0"/>
               </Group>
@@ -461,33 +505,40 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="hijau"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hijauMotActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="merahMot">
           <Properties>
             <Property name="text" type="java.lang.String" value="merah"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="merahMotActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="kuningMot">
           <Properties>
             <Property name="text" type="java.lang.String" value="kuning"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kuningMotActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="biruMot">
           <Properties>
             <Property name="text" type="java.lang.String" value="biru"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="biruMotActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel31">
           <Properties>
             <Property name="text" type="java.lang.String" value="varian"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSpinner" name="jumlahMot">
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel10">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Jumlah"/>
-          </Properties>
+        <Component class="javax.swing.JSpinner" name="jumMotBir">
         </Component>
         <Component class="javax.swing.JTextField" name="hargaMot">
           <Properties>
@@ -497,6 +548,12 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hargaMotActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JSpinner" name="jumMotKun">
+        </Component>
+        <Component class="javax.swing.JSpinner" name="jumMotHij">
+        </Component>
+        <Component class="javax.swing.JSpinner" name="jumMotMer">
         </Component>
       </SubComponents>
     </Container>

@@ -30,7 +30,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         totalGul = new javax.swing.JButton();
         tfTotalMak = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        nama = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         deskSos = new javax.swing.JButton();
@@ -94,7 +94,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("jLabel2");
+        nama.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -104,7 +104,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
+                .addComponent(nama)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(totalGul)
                 .addGap(18, 18, 18)
@@ -121,7 +121,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
                         .addComponent(tfTotalMak, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel1)
-                        .addComponent(jLabel2)))
+                        .addComponent(nama)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -742,7 +742,6 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private javax.swing.JRadioButton hijauSos;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel6;
@@ -770,9 +769,12 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private javax.swing.JRadioButton merahGul;
     private javax.swing.JRadioButton merahKTel;
     private javax.swing.JRadioButton merahSos;
+    private javax.swing.JLabel nama;
     private javax.swing.JTextField tfTotalMak;
     private javax.swing.JButton totalGul;
     // End of variables declaration//GEN-END:variables
-
+    void nama(String nama1){
+        nama.setText(nama1);
+    }
 
 }

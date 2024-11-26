@@ -321,8 +321,10 @@ public class lamanDua extends javax.swing.JFrame {
             b.setVisible(true);
         }else if(otomotif.isSelected()){
             c.setVisible(true);
+            c.nama(nama.getText());
         }else if (bahanMakanan.isSelected()){
             d.setVisible(true);
+            d.nama(nama.getText());
         }else if (kosmetik.isSelected()){
             e.setVisible(true);
             e.nama(nama.getText());
