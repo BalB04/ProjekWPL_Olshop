@@ -510,6 +510,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
         int total = totMerahSos + totHijauSos + totKuningSos + totBiruSos + totMerahTel + totHijauTel + totKuningTel + totBiruTel + totMerahGul + totHijauGul + totKuningGul + totBiruGul;
         
         tfTotalMak.setText(Integer.toString(total));
+        
     }//GEN-LAST:event_totalGulActionPerformed
 
     private void merahGulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahGulActionPerformed
@@ -772,4 +773,6 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private javax.swing.JTextField tfTotalMak;
     private javax.swing.JButton totalGul;
     // End of variables declaration//GEN-END:variables
+
+
 }
