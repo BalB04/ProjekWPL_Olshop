@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package workshoppemrogramanlanjutpc.projectolshop;
+package project;
 
 /**
  *
  * @author BalbalPC
  */
-public class lamanTigaTek extends javax.swing.JFrame {
+public class lamanTigaPer extends javax.swing.JFrame {
 
     /**
      * Creates new form lamanTiga
      */
-    public lamanTigaTek() {
+    public lamanTigaPer() {
         initComponents();
     }
 
@@ -29,44 +29,44 @@ public class lamanTigaTek extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         textField1 = new java.awt.TextField();
-        totalTek = new javax.swing.JButton();
-        tfTotalTek = new javax.swing.JTextField();
+        totalPer = new javax.swing.JButton();
+        tfTotalPer = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        deskLap = new javax.swing.JButton();
-        hijauLap = new javax.swing.JRadioButton();
-        merahLap = new javax.swing.JRadioButton();
-        kuningLap = new javax.swing.JRadioButton();
-        biruLap = new javax.swing.JRadioButton();
+        deskDril = new javax.swing.JButton();
+        hijauDril = new javax.swing.JRadioButton();
+        merahDril = new javax.swing.JRadioButton();
+        kuningDril = new javax.swing.JRadioButton();
+        biruDril = new javax.swing.JRadioButton();
         jLabel19 = new javax.swing.JLabel();
-        jumlahLap = new javax.swing.JSpinner();
+        jumlahDril = new javax.swing.JSpinner();
         jLabel3 = new javax.swing.JLabel();
-        hargaLap = new javax.swing.JTextField();
+        hargaDril = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        deskHan = new javax.swing.JButton();
-        hijauHan = new javax.swing.JRadioButton();
-        merahHan = new javax.swing.JRadioButton();
-        kuningHan = new javax.swing.JRadioButton();
-        biruHan = new javax.swing.JRadioButton();
+        deskObe = new javax.swing.JButton();
+        hijauObe = new javax.swing.JRadioButton();
+        merahObe = new javax.swing.JRadioButton();
+        kuningObe = new javax.swing.JRadioButton();
+        biruObe = new javax.swing.JRadioButton();
         jLabel30 = new javax.swing.JLabel();
-        jumlahHan = new javax.swing.JSpinner();
+        jumlahObe = new javax.swing.JSpinner();
         jLabel5 = new javax.swing.JLabel();
-        hargHan = new javax.swing.JTextField();
+        hargaObe = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        deskKomp = new javax.swing.JButton();
-        hijauKomp = new javax.swing.JRadioButton();
-        merahKomp = new javax.swing.JRadioButton();
-        kuningKomp = new javax.swing.JRadioButton();
-        biruKomp = new javax.swing.JRadioButton();
+        deskTool = new javax.swing.JButton();
+        hijauTool = new javax.swing.JRadioButton();
+        merahTool = new javax.swing.JRadioButton();
+        kuningTool = new javax.swing.JRadioButton();
+        biruTool = new javax.swing.JRadioButton();
         jLabel31 = new javax.swing.JLabel();
-        jumlahKomp = new javax.swing.JSpinner();
+        jumlahTool = new javax.swing.JSpinner();
         jLabel10 = new javax.swing.JLabel();
-        hargaKomp = new javax.swing.JTextField();
+        hargaTool = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -84,9 +84,9 @@ public class lamanTigaTek extends javax.swing.JFrame {
             }
         });
 
-        totalTek.setText("total harga");
+        totalPer.setText("total harga");
 
-        tfTotalTek.setEditable(false);
+        tfTotalPer.setEditable(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -98,9 +98,9 @@ public class lamanTigaTek extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(totalTek)
+                .addComponent(totalPer)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(tfTotalTek, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tfTotalPer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29))
         );
         jPanel1Layout.setVerticalGroup(
@@ -109,8 +109,8 @@ public class lamanTigaTek extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(totalTek)
-                        .addComponent(tfTotalTek, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(totalPer)
+                        .addComponent(tfTotalPer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel1)))
@@ -120,37 +120,37 @@ public class lamanTigaTek extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setBackground(new java.awt.Color(0, 51, 51));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/workshoppemrogramanlanjutpc/projectolshop/Screenshot 2024-11-24 111820.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/Screenshot 2024-11-24 111820.png"))); // NOI18N
         jLabel2.setText("jLabel2");
         jLabel2.setMaximumSize(new java.awt.Dimension(128, 128));
         jLabel2.setMinimumSize(new java.awt.Dimension(128, 128));
 
-        jLabel6.setText("Laptop");
+        jLabel6.setText("Drill Cordless");
 
-        deskLap.setText("Lihat deskripsi");
-        deskLap.addActionListener(new java.awt.event.ActionListener() {
+        deskDril.setText("Lihat deskripsi");
+        deskDril.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deskLapActionPerformed(evt);
+                deskDrilActionPerformed(evt);
             }
         });
 
-        hijauLap.setText("hijau");
+        hijauDril.setText("hijau");
 
-        merahLap.setText("merah");
+        merahDril.setText("merah");
 
-        kuningLap.setText("kuning");
+        kuningDril.setText("kuning");
 
-        biruLap.setText("biru");
+        biruDril.setText("biru");
 
         jLabel19.setText("varian");
 
         jLabel3.setText("Jumlah");
 
-        hargaLap.setEditable(false);
-        hargaLap.setText("Rp. 7.000.000");
-        hargaLap.addActionListener(new java.awt.event.ActionListener() {
+        hargaDril.setEditable(false);
+        hargaDril.setText("Rp. 740.000");
+        hargaDril.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hargaLapActionPerformed(evt);
+                hargaDrilActionPerformed(evt);
             }
         });
 
@@ -161,7 +161,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(deskLap, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
+                    .addComponent(deskDril, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -171,16 +171,16 @@ public class lamanTigaTek extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel3)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(merahLap, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(merahDril, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(hijauLap, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(hijauDril, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(kuningLap, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(kuningDril, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jumlahLap, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(biruLap, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(hargaLap, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jumlahDril, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(biruDril, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(hargaDril, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -192,19 +192,19 @@ public class lamanTigaTek extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(hargaLap, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(hargaDril, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(21, 21, 21)
                         .addComponent(jLabel19)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(merahLap, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hijauLap, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(kuningLap, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(biruLap, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(merahDril, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hijauDril, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kuningDril, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(biruDril, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(deskLap, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jumlahLap, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(deskDril, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumlahDril, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
@@ -212,37 +212,37 @@ public class lamanTigaTek extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel4.setBackground(new java.awt.Color(0, 51, 51));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/workshoppemrogramanlanjutpc/projectolshop/Screenshot 2024-11-24 111820.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/Screenshot 2024-11-24 111820.png"))); // NOI18N
         jLabel4.setText("jLabel2");
         jLabel4.setMaximumSize(new java.awt.Dimension(128, 128));
         jLabel4.setMinimumSize(new java.awt.Dimension(128, 128));
 
-        jLabel7.setText("handphone");
+        jLabel7.setText("Obeng +/-");
 
-        deskHan.setText("Lihat deskripsi");
-        deskHan.addActionListener(new java.awt.event.ActionListener() {
+        deskObe.setText("Lihat deskripsi");
+        deskObe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deskHanActionPerformed(evt);
+                deskObeActionPerformed(evt);
             }
         });
 
-        hijauHan.setText("hijau");
+        hijauObe.setText("hijau");
 
-        merahHan.setText("merah");
+        merahObe.setText("merah");
 
-        kuningHan.setText("kuning");
+        kuningObe.setText("kuning");
 
-        biruHan.setText("biru");
+        biruObe.setText("biru");
 
         jLabel30.setText("varian");
 
         jLabel5.setText("Jumlah");
 
-        hargHan.setEditable(false);
-        hargHan.setText("Rp. 1.005.000");
-        hargHan.addActionListener(new java.awt.event.ActionListener() {
+        hargaObe.setEditable(false);
+        hargaObe.setText("Rp. 35.000");
+        hargaObe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hargHanActionPerformed(evt);
+                hargaObeActionPerformed(evt);
             }
         });
 
@@ -253,7 +253,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(deskHan, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
+                    .addComponent(deskObe, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -263,16 +263,16 @@ public class lamanTigaTek extends javax.swing.JFrame {
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel5)
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(merahHan, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(merahObe, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(hijauHan, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(hijauObe, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(kuningHan, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(kuningObe, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jumlahHan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(biruHan, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(hargHan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jumlahObe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(biruObe, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(hargaObe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -284,19 +284,19 @@ public class lamanTigaTek extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(hargHan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(hargaObe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(21, 21, 21)
                         .addComponent(jLabel30)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(merahHan, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hijauHan, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(kuningHan, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(biruHan, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(merahObe, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hijauObe, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kuningObe, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(biruObe, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(deskHan, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jumlahHan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(deskObe, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumlahObe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
@@ -304,37 +304,37 @@ public class lamanTigaTek extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel8.setBackground(new java.awt.Color(0, 51, 51));
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/workshoppemrogramanlanjutpc/projectolshop/Screenshot 2024-11-24 111820.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/Screenshot 2024-11-24 111820.png"))); // NOI18N
         jLabel8.setText("jLabel2");
         jLabel8.setMaximumSize(new java.awt.Dimension(128, 128));
         jLabel8.setMinimumSize(new java.awt.Dimension(128, 128));
 
-        jLabel9.setText("Komputer");
+        jLabel9.setText("Toolbox");
 
-        deskKomp.setText("Lihat deskripsi");
-        deskKomp.addActionListener(new java.awt.event.ActionListener() {
+        deskTool.setText("Lihat deskripsi");
+        deskTool.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deskKompActionPerformed(evt);
+                deskToolActionPerformed(evt);
             }
         });
 
-        hijauKomp.setText("hijau");
+        hijauTool.setText("hijau");
 
-        merahKomp.setText("merah");
+        merahTool.setText("merah");
 
-        kuningKomp.setText("kuning");
+        kuningTool.setText("kuning");
 
-        biruKomp.setText("biru");
+        biruTool.setText("biru");
 
         jLabel31.setText("varian");
 
         jLabel10.setText("Jumlah");
 
-        hargaKomp.setEditable(false);
-        hargaKomp.setText("Rp. 16.500.000");
-        hargaKomp.addActionListener(new java.awt.event.ActionListener() {
+        hargaTool.setEditable(false);
+        hargaTool.setText("Rp. 170.000");
+        hargaTool.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hargaKompActionPerformed(evt);
+                hargaToolActionPerformed(evt);
             }
         });
 
@@ -345,7 +345,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(deskKomp, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
+                    .addComponent(deskTool, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -355,16 +355,16 @@ public class lamanTigaTek extends javax.swing.JFrame {
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel10)
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(merahKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(merahTool, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(hijauKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(hijauTool, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(kuningKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(kuningTool, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jumlahKomp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(biruKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(hargaKomp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jumlahTool, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(biruTool, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(hargaTool, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
@@ -376,19 +376,19 @@ public class lamanTigaTek extends javax.swing.JFrame {
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(hargaKomp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(hargaTool, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(21, 21, 21)
                         .addComponent(jLabel31)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(merahKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hijauKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(kuningKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(biruKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(merahTool, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hijauTool, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kuningTool, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(biruTool, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(deskKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jumlahKomp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(deskTool, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumlahTool, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
@@ -404,7 +404,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -422,33 +422,33 @@ public class lamanTigaTek extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void deskLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskLapActionPerformed
+    private void deskDrilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskDrilActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_deskLapActionPerformed
+    }//GEN-LAST:event_deskDrilActionPerformed
 
     private void textField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_textField1ActionPerformed
 
-    private void hargaLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaLapActionPerformed
+    private void hargaDrilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaDrilActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hargaLapActionPerformed
+    }//GEN-LAST:event_hargaDrilActionPerformed
 
-    private void deskHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskHanActionPerformed
+    private void deskObeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskObeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_deskHanActionPerformed
+    }//GEN-LAST:event_deskObeActionPerformed
 
-    private void hargHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargHanActionPerformed
+    private void hargaObeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaObeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hargHanActionPerformed
+    }//GEN-LAST:event_hargaObeActionPerformed
 
-    private void deskKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskKompActionPerformed
+    private void deskToolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskToolActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_deskKompActionPerformed
+    }//GEN-LAST:event_deskToolActionPerformed
 
-    private void hargaKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaKompActionPerformed
+    private void hargaToolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaToolActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hargaKompActionPerformed
+    }//GEN-LAST:event_hargaToolActionPerformed
 
     /**
      * @param args the command line arguments
@@ -467,14 +467,18 @@ public class lamanTigaTek extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(lamanTigaTek.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lamanTigaPer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(lamanTigaTek.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lamanTigaPer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(lamanTigaTek.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lamanTigaPer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(lamanTigaTek.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lamanTigaPer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -483,24 +487,24 @@ public class lamanTigaTek extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new lamanTigaTek().setVisible(true);
+                new lamanTigaPer().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JRadioButton biruHan;
-    private javax.swing.JRadioButton biruKomp;
-    private javax.swing.JRadioButton biruLap;
-    private javax.swing.JButton deskHan;
-    private javax.swing.JButton deskKomp;
-    private javax.swing.JButton deskLap;
-    private javax.swing.JTextField hargHan;
-    private javax.swing.JTextField hargaKomp;
-    private javax.swing.JTextField hargaLap;
-    private javax.swing.JRadioButton hijauHan;
-    private javax.swing.JRadioButton hijauKomp;
-    private javax.swing.JRadioButton hijauLap;
+    private javax.swing.JRadioButton biruDril;
+    private javax.swing.JRadioButton biruObe;
+    private javax.swing.JRadioButton biruTool;
+    private javax.swing.JButton deskDril;
+    private javax.swing.JButton deskObe;
+    private javax.swing.JButton deskTool;
+    private javax.swing.JTextField hargaDril;
+    private javax.swing.JTextField hargaObe;
+    private javax.swing.JTextField hargaTool;
+    private javax.swing.JRadioButton hijauDril;
+    private javax.swing.JRadioButton hijauObe;
+    private javax.swing.JRadioButton hijauTool;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel19;
@@ -518,17 +522,17 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JSpinner jumlahHan;
-    private javax.swing.JSpinner jumlahKomp;
-    private javax.swing.JSpinner jumlahLap;
-    private javax.swing.JRadioButton kuningHan;
-    private javax.swing.JRadioButton kuningKomp;
-    private javax.swing.JRadioButton kuningLap;
-    private javax.swing.JRadioButton merahHan;
-    private javax.swing.JRadioButton merahKomp;
-    private javax.swing.JRadioButton merahLap;
+    private javax.swing.JSpinner jumlahDril;
+    private javax.swing.JSpinner jumlahObe;
+    private javax.swing.JSpinner jumlahTool;
+    private javax.swing.JRadioButton kuningDril;
+    private javax.swing.JRadioButton kuningObe;
+    private javax.swing.JRadioButton kuningTool;
+    private javax.swing.JRadioButton merahDril;
+    private javax.swing.JRadioButton merahObe;
+    private javax.swing.JRadioButton merahTool;
     private java.awt.TextField textField1;
-    private javax.swing.JTextField tfTotalTek;
-    private javax.swing.JButton totalTek;
+    private javax.swing.JTextField tfTotalPer;
+    private javax.swing.JButton totalPer;
     // End of variables declaration//GEN-END:variables
 }

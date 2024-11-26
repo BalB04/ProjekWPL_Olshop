@@ -32,7 +32,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
                   <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <Component id="desk" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="30" max="32767" attributes="0"/>
           </Group>
@@ -43,7 +43,7 @@
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <Component id="desk" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -72,12 +72,10 @@
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="textField1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
-                  <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="totalKos" min="-2" max="-2" attributes="0"/>
+                  <Component id="totalPera" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="tfTotalKos" min="-2" max="-2" attributes="0"/>
+                  <Component id="tfTotalPera" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -88,9 +86,8 @@
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="totalKos" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="tfTotalKos" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="totalPera" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tfTotalPera" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="textField1" min="-2" max="-2" attributes="0"/>
@@ -119,27 +116,19 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField1ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="totalKos">
+        <Component class="javax.swing.JButton" name="totalPera">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Total harga"/>
+            <Property name="text" type="java.lang.String" value="total harga"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="tfTotalKos">
+        <Component class="javax.swing.JTextField" name="tfTotalPera">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfTotalKosActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel11">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel11"/>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="jPanel2">
+    <Container class="javax.swing.JPanel" name="desk">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -152,7 +141,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="deskLip" pref="128" max="32767" attributes="0"/>
+                      <Component id="deskKur" pref="128" max="32767" attributes="0"/>
                       <Component id="jLabel2" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -163,20 +152,20 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
-                                  <Component id="merahLip" min="-2" pref="87" max="-2" attributes="0"/>
+                                  <Component id="merahKur" min="-2" pref="87" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="hijauLip" min="-2" pref="87" max="-2" attributes="0"/>
+                                  <Component id="hijauKur" min="-2" pref="87" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="kuningLip" min="-2" pref="87" max="-2" attributes="0"/>
+                                  <Component id="kuningKur" min="-2" pref="87" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jumlahLip" min="-2" max="-2" attributes="0"/>
-                              <Component id="biruLip" min="-2" pref="87" max="-2" attributes="0"/>
+                              <Component id="jumlahKur" min="-2" max="-2" attributes="0"/>
+                              <Component id="biruKur" min="-2" pref="87" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="hargaLip" min="-2" max="-2" attributes="0"/>
+                      <Component id="hargaKur" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="23" max="32767" attributes="0"/>
               </Group>
@@ -191,22 +180,22 @@
                       <Group type="102" attributes="0">
                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="hargaLip" min="-2" max="-2" attributes="0"/>
+                          <Component id="hargaKur" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                           <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="merahLip" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="hijauLip" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="kuningLip" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="biruLip" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="merahKur" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="hijauKur" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="kuningKur" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="biruKur" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="deskLip" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jumlahLip" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="deskKur" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="jumlahKur" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="13" max="32767" attributes="0"/>
@@ -221,7 +210,7 @@
               <Color blue="33" green="33" red="0" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/workshoppemrogramanlanjutpc/projectolshop/Screenshot 2024-11-24 111820.png"/>
+              <Image iconType="3" name="/project/Screenshot 2024-11-24 111820.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel2"/>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -234,33 +223,33 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Lipstik"/>
+            <Property name="text" type="java.lang.String" value="Kursi"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="deskLip">
+        <Component class="javax.swing.JButton" name="deskKur">
           <Properties>
             <Property name="text" type="java.lang.String" value="Lihat deskripsi"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deskLipActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deskKurActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="hijauLip">
+        <Component class="javax.swing.JRadioButton" name="hijauKur">
           <Properties>
             <Property name="text" type="java.lang.String" value="hijau"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="merahLip">
+        <Component class="javax.swing.JRadioButton" name="merahKur">
           <Properties>
             <Property name="text" type="java.lang.String" value="merah"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="kuningLip">
+        <Component class="javax.swing.JRadioButton" name="kuningKur">
           <Properties>
             <Property name="text" type="java.lang.String" value="kuning"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="biruLip">
+        <Component class="javax.swing.JRadioButton" name="biruKur">
           <Properties>
             <Property name="text" type="java.lang.String" value="biru"/>
           </Properties>
@@ -270,20 +259,20 @@
             <Property name="text" type="java.lang.String" value="varian"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSpinner" name="jumlahLip">
+        <Component class="javax.swing.JSpinner" name="jumlahKur">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
             <Property name="text" type="java.lang.String" value="Jumlah"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="hargaLip">
+        <Component class="javax.swing.JTextField" name="hargaKur">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
-            <Property name="text" type="java.lang.String" value="Rp. 90.000"/>
+            <Property name="text" type="java.lang.String" value="Rp. 120.000"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hargaLipActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hargaKurActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -301,7 +290,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="deskPen" alignment="0" pref="128" max="32767" attributes="0"/>
+                      <Component id="deskLem" alignment="0" pref="128" max="32767" attributes="0"/>
                       <Component id="jLabel4" alignment="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -312,20 +301,20 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="merahPen" min="-2" pref="87" max="-2" attributes="0"/>
+                                  <Component id="merahLem" min="-2" pref="87" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="hijauPen" min="-2" pref="87" max="-2" attributes="0"/>
+                                  <Component id="hijauLem" min="-2" pref="87" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="kuningPen" min="-2" pref="87" max="-2" attributes="0"/>
+                                  <Component id="kuningLem" min="-2" pref="87" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jumlahPen" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="biruPen" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                              <Component id="jumlahLem" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="biruLem" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="hargaPen" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="hargaLem" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="23" max="32767" attributes="0"/>
               </Group>
@@ -340,22 +329,22 @@
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="hargaPen" min="-2" max="-2" attributes="0"/>
+                          <Component id="hargaLem" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                           <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="merahPen" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="hijauPen" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="kuningPen" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="biruPen" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="merahLem" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="hijauLem" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="kuningLem" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="biruLem" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="deskPen" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jumlahPen" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="deskLem" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="jumlahLem" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="13" max="32767" attributes="0"/>
@@ -370,7 +359,7 @@
               <Color blue="33" green="33" red="0" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/workshoppemrogramanlanjutpc/projectolshop/Screenshot 2024-11-24 111820.png"/>
+              <Image iconType="3" name="/project/Screenshot 2024-11-24 111820.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel2"/>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -383,33 +372,33 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Pensil Alis"/>
+            <Property name="text" type="java.lang.String" value="Lemari"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="deskPen">
+        <Component class="javax.swing.JButton" name="deskLem">
           <Properties>
             <Property name="text" type="java.lang.String" value="Lihat deskripsi"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deskPenActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deskLemActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="hijauPen">
+        <Component class="javax.swing.JRadioButton" name="hijauLem">
           <Properties>
             <Property name="text" type="java.lang.String" value="hijau"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="merahPen">
+        <Component class="javax.swing.JRadioButton" name="merahLem">
           <Properties>
             <Property name="text" type="java.lang.String" value="merah"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="kuningPen">
+        <Component class="javax.swing.JRadioButton" name="kuningLem">
           <Properties>
             <Property name="text" type="java.lang.String" value="kuning"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="biruPen">
+        <Component class="javax.swing.JRadioButton" name="biruLem">
           <Properties>
             <Property name="text" type="java.lang.String" value="biru"/>
           </Properties>
@@ -419,20 +408,20 @@
             <Property name="text" type="java.lang.String" value="varian"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSpinner" name="jumlahPen">
+        <Component class="javax.swing.JSpinner" name="jumlahLem">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="text" type="java.lang.String" value="Jumlah"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="hargaPen">
+        <Component class="javax.swing.JTextField" name="hargaLem">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
-            <Property name="text" type="java.lang.String" value="Rp. 90.000"/>
+            <Property name="text" type="java.lang.String" value="Rp. 1.005.000"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hargaPenActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hargaLemActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -450,7 +439,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="deskBed" alignment="0" pref="128" max="32767" attributes="0"/>
+                      <Component id="deskMej" alignment="0" pref="128" max="32767" attributes="0"/>
                       <Component id="jLabel8" alignment="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -461,20 +450,20 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jLabel10" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="merahBed" min="-2" pref="87" max="-2" attributes="0"/>
+                                  <Component id="merahMej" min="-2" pref="87" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="hijauBed" min="-2" pref="87" max="-2" attributes="0"/>
+                                  <Component id="hijauMej" min="-2" pref="87" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="kuningBed" min="-2" pref="87" max="-2" attributes="0"/>
+                                  <Component id="kuningMej" min="-2" pref="87" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jumlahBed" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="biruBed" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                              <Component id="jumlahMej" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="biruMej" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="hargaBed" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="hargaMej" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="23" max="32767" attributes="0"/>
               </Group>
@@ -489,22 +478,22 @@
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="hargaBed" min="-2" max="-2" attributes="0"/>
+                          <Component id="hargaMej" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                           <Component id="jLabel31" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="merahBed" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="hijauBed" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="kuningBed" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="biruBed" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="merahMej" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="hijauMej" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="kuningMej" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="biruMej" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="deskBed" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="jumlahBed" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="deskMej" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="jumlahMej" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="13" max="32767" attributes="0"/>
@@ -519,7 +508,7 @@
               <Color blue="33" green="33" red="0" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/workshoppemrogramanlanjutpc/projectolshop/Screenshot 2024-11-24 111820.png"/>
+              <Image iconType="3" name="/project/Screenshot 2024-11-24 111820.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel2"/>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -532,33 +521,33 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Bedak wajah"/>
+            <Property name="text" type="java.lang.String" value="Meja"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="deskBed">
+        <Component class="javax.swing.JButton" name="deskMej">
           <Properties>
             <Property name="text" type="java.lang.String" value="Lihat deskripsi"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deskBedActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deskMejActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="hijauBed">
+        <Component class="javax.swing.JRadioButton" name="hijauMej">
           <Properties>
             <Property name="text" type="java.lang.String" value="hijau"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="merahBed">
+        <Component class="javax.swing.JRadioButton" name="merahMej">
           <Properties>
             <Property name="text" type="java.lang.String" value="merah"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="kuningBed">
+        <Component class="javax.swing.JRadioButton" name="kuningMej">
           <Properties>
             <Property name="text" type="java.lang.String" value="kuning"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="biruBed">
+        <Component class="javax.swing.JRadioButton" name="biruMej">
           <Properties>
             <Property name="text" type="java.lang.String" value="biru"/>
           </Properties>
@@ -568,20 +557,20 @@
             <Property name="text" type="java.lang.String" value="varian"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JSpinner" name="jumlahBed">
+        <Component class="javax.swing.JSpinner" name="jumlahMej">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
             <Property name="text" type="java.lang.String" value="Jumlah"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="hargaBed">
+        <Component class="javax.swing.JTextField" name="hargaMej">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
-            <Property name="text" type="java.lang.String" value="Rp. 100.000"/>
+            <Property name="text" type="java.lang.String" value="Rp. 300.000"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hargaBedActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hargaMejActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

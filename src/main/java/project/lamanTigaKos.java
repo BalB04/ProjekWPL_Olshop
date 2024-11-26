@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package workshoppemrogramanlanjutpc.projectolshop;
+package project;
 
 /**
  *
@@ -131,7 +131,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setBackground(new java.awt.Color(0, 51, 51));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/workshoppemrogramanlanjutpc/projectolshop/Screenshot 2024-11-24 111820.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/Screenshot 2024-11-24 111820.png"))); // NOI18N
         jLabel2.setText("jLabel2");
         jLabel2.setMaximumSize(new java.awt.Dimension(128, 128));
         jLabel2.setMinimumSize(new java.awt.Dimension(128, 128));
@@ -223,7 +223,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel4.setBackground(new java.awt.Color(0, 51, 51));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/workshoppemrogramanlanjutpc/projectolshop/Screenshot 2024-11-24 111820.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/Screenshot 2024-11-24 111820.png"))); // NOI18N
         jLabel4.setText("jLabel2");
         jLabel4.setMaximumSize(new java.awt.Dimension(128, 128));
         jLabel4.setMinimumSize(new java.awt.Dimension(128, 128));
@@ -315,7 +315,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel8.setBackground(new java.awt.Color(0, 51, 51));
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/workshoppemrogramanlanjutpc/projectolshop/Screenshot 2024-11-24 111820.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/Screenshot 2024-11-24 111820.png"))); // NOI18N
         jLabel8.setText("jLabel2");
         jLabel8.setMaximumSize(new java.awt.Dimension(128, 128));
         jLabel8.setMinimumSize(new java.awt.Dimension(128, 128));

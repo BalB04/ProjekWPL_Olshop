@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package workshoppemrogramanlanjutpc.projectolshop;
+package project;
 
 /**
  *
  * @author BalbalPC
  */
-public class lamanTigaMak extends javax.swing.JFrame {
+public class lamanTigaSpo extends javax.swing.JFrame {
 
     /**
      * Creates new form lamanTiga
      */
-    public lamanTigaMak() {
+    public lamanTigaSpo() {
         initComponents();
     }
 
@@ -29,44 +29,44 @@ public class lamanTigaMak extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         textField1 = new java.awt.TextField();
-        totalGul = new javax.swing.JButton();
-        tfTotalGul = new javax.swing.JTextField();
+        totalSpo = new javax.swing.JButton();
+        tfTotalSpo = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        deskSos = new javax.swing.JButton();
-        hijauSos = new javax.swing.JRadioButton();
-        merahSos = new javax.swing.JRadioButton();
-        kuningSos = new javax.swing.JRadioButton();
-        biruSos = new javax.swing.JRadioButton();
+        deskBar = new javax.swing.JButton();
+        hijauBar = new javax.swing.JRadioButton();
+        merahBar = new javax.swing.JRadioButton();
+        kuningBar = new javax.swing.JRadioButton();
+        biruBar = new javax.swing.JRadioButton();
         jLabel19 = new javax.swing.JLabel();
-        jumlahSos = new javax.swing.JSpinner();
+        jumlahBar = new javax.swing.JSpinner();
         jLabel3 = new javax.swing.JLabel();
-        hargaSos = new javax.swing.JTextField();
+        hargaBar = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        deskGul = new javax.swing.JButton();
-        hijauGul = new javax.swing.JRadioButton();
-        merahGul = new javax.swing.JRadioButton();
-        kuningGul = new javax.swing.JRadioButton();
-        biruGul = new javax.swing.JRadioButton();
+        deskSep = new javax.swing.JButton();
+        hijauSep = new javax.swing.JRadioButton();
+        merahSep = new javax.swing.JRadioButton();
+        kuningSep = new javax.swing.JRadioButton();
+        biruSep = new javax.swing.JRadioButton();
         jLabel30 = new javax.swing.JLabel();
-        jumlahGul = new javax.swing.JSpinner();
+        jumlahSep = new javax.swing.JSpinner();
         jLabel5 = new javax.swing.JLabel();
-        hargGul = new javax.swing.JTextField();
+        hargaSep = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        deskTel = new javax.swing.JButton();
-        hijauKTel = new javax.swing.JRadioButton();
-        merahKTel = new javax.swing.JRadioButton();
-        kuningTel = new javax.swing.JRadioButton();
-        biruTel = new javax.swing.JRadioButton();
+        deskBol = new javax.swing.JButton();
+        hijauBol = new javax.swing.JRadioButton();
+        merahBol = new javax.swing.JRadioButton();
+        kuningBol = new javax.swing.JRadioButton();
+        biruBol = new javax.swing.JRadioButton();
         jLabel31 = new javax.swing.JLabel();
-        jumlahTel = new javax.swing.JSpinner();
+        jumlahBol = new javax.swing.JSpinner();
         jLabel10 = new javax.swing.JLabel();
-        hargaTel = new javax.swing.JTextField();
+        hargaBol = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -84,14 +84,9 @@ public class lamanTigaMak extends javax.swing.JFrame {
             }
         });
 
-        totalGul.setText("Total harga");
-        totalGul.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                totalGulActionPerformed(evt);
-            }
-        });
+        totalSpo.setText("total harga");
 
-        tfTotalGul.setEditable(false);
+        tfTotalSpo.setEditable(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -103,9 +98,9 @@ public class lamanTigaMak extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(totalGul)
+                .addComponent(totalSpo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(tfTotalGul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tfTotalSpo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29))
         );
         jPanel1Layout.setVerticalGroup(
@@ -114,8 +109,8 @@ public class lamanTigaMak extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(totalGul)
-                        .addComponent(tfTotalGul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(totalSpo)
+                        .addComponent(tfTotalSpo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel1)))
@@ -125,37 +120,37 @@ public class lamanTigaMak extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setBackground(new java.awt.Color(0, 51, 51));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/workshoppemrogramanlanjutpc/projectolshop/Screenshot 2024-11-24 111820.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/Screenshot 2024-11-24 111820.png"))); // NOI18N
         jLabel2.setText("jLabel2");
         jLabel2.setMaximumSize(new java.awt.Dimension(128, 128));
         jLabel2.setMinimumSize(new java.awt.Dimension(128, 128));
 
-        jLabel6.setText("Sosis");
+        jLabel6.setText("Barbel");
 
-        deskSos.setText("Lihat deskripsi");
-        deskSos.addActionListener(new java.awt.event.ActionListener() {
+        deskBar.setText("Lihat deskripsi");
+        deskBar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deskSosActionPerformed(evt);
+                deskBarActionPerformed(evt);
             }
         });
 
-        hijauSos.setText("hijau");
+        hijauBar.setText("hijau");
 
-        merahSos.setText("merah");
+        merahBar.setText("merah");
 
-        kuningSos.setText("kuning");
+        kuningBar.setText("kuning");
 
-        biruSos.setText("biru");
+        biruBar.setText("biru");
 
         jLabel19.setText("varian");
 
         jLabel3.setText("Jumlah");
 
-        hargaSos.setEditable(false);
-        hargaSos.setText("Rp. 7.000");
-        hargaSos.addActionListener(new java.awt.event.ActionListener() {
+        hargaBar.setEditable(false);
+        hargaBar.setText("Rp. 200.000");
+        hargaBar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hargaSosActionPerformed(evt);
+                hargaBarActionPerformed(evt);
             }
         });
 
@@ -166,7 +161,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(deskSos, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
+                    .addComponent(deskBar, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -176,16 +171,16 @@ public class lamanTigaMak extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel3)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(merahSos, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(merahBar, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(hijauSos, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(hijauBar, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(kuningSos, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(kuningBar, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jumlahSos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(biruSos, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(hargaSos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jumlahBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(biruBar, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(hargaBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -197,19 +192,19 @@ public class lamanTigaMak extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(hargaSos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(hargaBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(21, 21, 21)
                         .addComponent(jLabel19)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(merahSos, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hijauSos, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(kuningSos, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(biruSos, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(merahBar, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hijauBar, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kuningBar, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(biruBar, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(deskSos, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jumlahSos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(deskBar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumlahBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
@@ -217,37 +212,37 @@ public class lamanTigaMak extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel4.setBackground(new java.awt.Color(0, 51, 51));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/workshoppemrogramanlanjutpc/projectolshop/Screenshot 2024-11-24 111820.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/Screenshot 2024-11-24 111820.png"))); // NOI18N
         jLabel4.setText("jLabel2");
         jLabel4.setMaximumSize(new java.awt.Dimension(128, 128));
         jLabel4.setMinimumSize(new java.awt.Dimension(128, 128));
 
-        jLabel7.setText("Gula");
+        jLabel7.setText("Sepatu Lari");
 
-        deskGul.setText("Lihat deskripsi");
-        deskGul.addActionListener(new java.awt.event.ActionListener() {
+        deskSep.setText("Lihat deskripsi");
+        deskSep.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deskGulActionPerformed(evt);
+                deskSepActionPerformed(evt);
             }
         });
 
-        hijauGul.setText("hijau");
+        hijauSep.setText("hijau");
 
-        merahGul.setText("merah");
+        merahSep.setText("merah");
 
-        kuningGul.setText("kuning");
+        kuningSep.setText("kuning");
 
-        biruGul.setText("biru");
+        biruSep.setText("biru");
 
         jLabel30.setText("varian");
 
         jLabel5.setText("Jumlah");
 
-        hargGul.setEditable(false);
-        hargGul.setText("Rp. 17.000");
-        hargGul.addActionListener(new java.awt.event.ActionListener() {
+        hargaSep.setEditable(false);
+        hargaSep.setText("Rp. 435.000");
+        hargaSep.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hargGulActionPerformed(evt);
+                hargaSepActionPerformed(evt);
             }
         });
 
@@ -258,7 +253,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(deskGul, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
+                    .addComponent(deskSep, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -268,16 +263,16 @@ public class lamanTigaMak extends javax.swing.JFrame {
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel5)
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(merahGul, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(merahSep, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(hijauGul, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(hijauSep, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(kuningGul, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(kuningSep, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jumlahGul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(biruGul, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(hargGul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jumlahSep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(biruSep, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(hargaSep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -289,19 +284,19 @@ public class lamanTigaMak extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(hargGul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(hargaSep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(21, 21, 21)
                         .addComponent(jLabel30)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(merahGul, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hijauGul, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(kuningGul, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(biruGul, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(merahSep, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hijauSep, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kuningSep, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(biruSep, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(deskGul, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jumlahGul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(deskSep, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumlahSep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
@@ -309,37 +304,37 @@ public class lamanTigaMak extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel8.setBackground(new java.awt.Color(0, 51, 51));
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/workshoppemrogramanlanjutpc/projectolshop/Screenshot 2024-11-24 111820.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/Screenshot 2024-11-24 111820.png"))); // NOI18N
         jLabel8.setText("jLabel2");
         jLabel8.setMaximumSize(new java.awt.Dimension(128, 128));
         jLabel8.setMinimumSize(new java.awt.Dimension(128, 128));
 
-        jLabel9.setText("Telur");
+        jLabel9.setText("Bola Basket");
 
-        deskTel.setText("Lihat deskripsi");
-        deskTel.addActionListener(new java.awt.event.ActionListener() {
+        deskBol.setText("Lihat deskripsi");
+        deskBol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deskTelActionPerformed(evt);
+                deskBolActionPerformed(evt);
             }
         });
 
-        hijauKTel.setText("hijau");
+        hijauBol.setText("hijau");
 
-        merahKTel.setText("merah");
+        merahBol.setText("merah");
 
-        kuningTel.setText("kuning");
+        kuningBol.setText("kuning");
 
-        biruTel.setText("biru");
+        biruBol.setText("biru");
 
         jLabel31.setText("varian");
 
         jLabel10.setText("Jumlah");
 
-        hargaTel.setEditable(false);
-        hargaTel.setText("Rp. 16.500");
-        hargaTel.addActionListener(new java.awt.event.ActionListener() {
+        hargaBol.setEditable(false);
+        hargaBol.setText("Rp. 250.000");
+        hargaBol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hargaTelActionPerformed(evt);
+                hargaBolActionPerformed(evt);
             }
         });
 
@@ -350,7 +345,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(deskTel, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
+                    .addComponent(deskBol, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -360,16 +355,16 @@ public class lamanTigaMak extends javax.swing.JFrame {
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel10)
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(merahKTel, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(merahBol, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(hijauKTel, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(hijauBol, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(kuningTel, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(kuningBol, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jumlahTel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(biruTel, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(hargaTel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jumlahBol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(biruBol, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(hargaBol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
@@ -381,19 +376,19 @@ public class lamanTigaMak extends javax.swing.JFrame {
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jLabel9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(hargaTel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(hargaBol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(21, 21, 21)
                         .addComponent(jLabel31)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(merahKTel, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(hijauKTel, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(kuningTel, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(biruTel, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(merahBol, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hijauBol, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kuningBol, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(biruBol, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(deskTel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jumlahTel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(deskBol, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumlahBol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
@@ -427,37 +422,33 @@ public class lamanTigaMak extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void deskSosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskSosActionPerformed
+    private void deskBarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskBarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_deskSosActionPerformed
+    }//GEN-LAST:event_deskBarActionPerformed
 
     private void textField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_textField1ActionPerformed
 
-    private void hargaSosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaSosActionPerformed
+    private void hargaBarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaBarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hargaSosActionPerformed
+    }//GEN-LAST:event_hargaBarActionPerformed
 
-    private void deskGulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskGulActionPerformed
+    private void deskSepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskSepActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_deskGulActionPerformed
+    }//GEN-LAST:event_deskSepActionPerformed
 
-    private void hargGulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargGulActionPerformed
+    private void hargaSepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaSepActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hargGulActionPerformed
+    }//GEN-LAST:event_hargaSepActionPerformed
 
-    private void deskTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskTelActionPerformed
+    private void deskBolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskBolActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_deskTelActionPerformed
+    }//GEN-LAST:event_deskBolActionPerformed
 
-    private void hargaTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaTelActionPerformed
+    private void hargaBolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaBolActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hargaTelActionPerformed
-
-    private void totalGulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalGulActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_totalGulActionPerformed
+    }//GEN-LAST:event_hargaBolActionPerformed
 
     /**
      * @param args the command line arguments
@@ -476,13 +467,13 @@ public class lamanTigaMak extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(lamanTigaMak.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lamanTigaSpo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(lamanTigaMak.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lamanTigaSpo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(lamanTigaMak.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lamanTigaSpo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(lamanTigaMak.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(lamanTigaSpo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -496,24 +487,24 @@ public class lamanTigaMak extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new lamanTigaMak().setVisible(true);
+                new lamanTigaSpo().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JRadioButton biruGul;
-    private javax.swing.JRadioButton biruSos;
-    private javax.swing.JRadioButton biruTel;
-    private javax.swing.JButton deskGul;
-    private javax.swing.JButton deskSos;
-    private javax.swing.JButton deskTel;
-    private javax.swing.JTextField hargGul;
-    private javax.swing.JTextField hargaSos;
-    private javax.swing.JTextField hargaTel;
-    private javax.swing.JRadioButton hijauGul;
-    private javax.swing.JRadioButton hijauKTel;
-    private javax.swing.JRadioButton hijauSos;
+    private javax.swing.JRadioButton biruBar;
+    private javax.swing.JRadioButton biruBol;
+    private javax.swing.JRadioButton biruSep;
+    private javax.swing.JButton deskBar;
+    private javax.swing.JButton deskBol;
+    private javax.swing.JButton deskSep;
+    private javax.swing.JTextField hargaBar;
+    private javax.swing.JTextField hargaBol;
+    private javax.swing.JTextField hargaSep;
+    private javax.swing.JRadioButton hijauBar;
+    private javax.swing.JRadioButton hijauBol;
+    private javax.swing.JRadioButton hijauSep;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel19;
@@ -531,17 +522,17 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JSpinner jumlahGul;
-    private javax.swing.JSpinner jumlahSos;
-    private javax.swing.JSpinner jumlahTel;
-    private javax.swing.JRadioButton kuningGul;
-    private javax.swing.JRadioButton kuningSos;
-    private javax.swing.JRadioButton kuningTel;
-    private javax.swing.JRadioButton merahGul;
-    private javax.swing.JRadioButton merahKTel;
-    private javax.swing.JRadioButton merahSos;
+    private javax.swing.JSpinner jumlahBar;
+    private javax.swing.JSpinner jumlahBol;
+    private javax.swing.JSpinner jumlahSep;
+    private javax.swing.JRadioButton kuningBar;
+    private javax.swing.JRadioButton kuningBol;
+    private javax.swing.JRadioButton kuningSep;
+    private javax.swing.JRadioButton merahBar;
+    private javax.swing.JRadioButton merahBol;
+    private javax.swing.JRadioButton merahSep;
     private java.awt.TextField textField1;
-    private javax.swing.JTextField tfTotalGul;
-    private javax.swing.JButton totalGul;
+    private javax.swing.JTextField tfTotalSpo;
+    private javax.swing.JButton totalSpo;
     // End of variables declaration//GEN-END:variables
 }
