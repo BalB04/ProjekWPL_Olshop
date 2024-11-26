@@ -112,23 +112,6 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="pakaian" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="otomotif" min="-2" max="-2" attributes="0"/>
-                      <Component id="teknologi" min="-2" max="-2" attributes="0"/>
-                      <Component id="bahanMakanan" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="tukang" min="-2" max="-2" attributes="0"/>
-                      <Component id="sport" min="-2" max="-2" attributes="0"/>
-                      <Component id="kosmetik" min="-2" max="-2" attributes="0"/>
-                      <Component id="furniture" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="274" max="32767" attributes="0"/>
                   <Component id="buttonlam2" min="-2" pref="222" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="272" max="-2" attributes="0"/>
@@ -137,6 +120,35 @@
                   <EmptySpace min="-2" pref="294" max="-2" attributes="0"/>
                   <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="pakaian" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="otomotif" min="-2" max="-2" attributes="0"/>
+                              <Component id="teknologi" min="-2" max="-2" attributes="0"/>
+                              <Component id="bahanMakanan" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="tukang" min="-2" max="-2" attributes="0"/>
+                              <Component id="sport" min="-2" max="-2" attributes="0"/>
+                              <Component id="kosmetik" min="-2" max="-2" attributes="0"/>
+                              <Component id="furniture" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="148" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
@@ -150,12 +162,16 @@
                       <Component id="kosmetik" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="pakaian" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="sport" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="teknologi" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="88" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="66" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="otomotif" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="furniture" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -252,6 +268,16 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonlam2ActionPerformed"/>
           </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jLabel2"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jLabel5"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
