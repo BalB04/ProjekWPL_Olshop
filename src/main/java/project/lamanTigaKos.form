@@ -71,9 +71,7 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="textField1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
-                  <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                  <Component id="nama" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="totalKos" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -90,11 +88,10 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="totalKos" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="tfTotalKos" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="textField1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nama" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="14" max="32767" attributes="0"/>
@@ -111,14 +108,6 @@
             <Property name="text" type="java.lang.String" value="Hai, Selamat Datang"/>
           </Properties>
         </Component>
-        <Component class="java.awt.TextField" name="textField1">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="textField1"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textField1ActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JButton" name="totalKos">
           <Properties>
             <Property name="text" type="java.lang.String" value="Total harga"/>
@@ -132,9 +121,9 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfTotalKosActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel11">
+        <Component class="javax.swing.JLabel" name="nama">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel11"/>
+            <Property name="text" type="java.lang.String" value="jLabel2"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -224,21 +213,33 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="hijau"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hijauLipActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="merahLip">
           <Properties>
             <Property name="text" type="java.lang.String" value="merah"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="merahLipActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="kuningLip">
           <Properties>
             <Property name="text" type="java.lang.String" value="kuning"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kuningLipActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="biruLip">
           <Properties>
             <Property name="text" type="java.lang.String" value="biru"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="biruLipActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel19">
           <Properties>

@@ -11,6 +11,7 @@ package project;
  */
 public class lamanAwal extends javax.swing.JFrame {
     private lamanDua a;
+    private lamanTigaKos b;
     /**
      * Creates new form lamanAwal
      */

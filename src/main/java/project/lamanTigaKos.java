@@ -4,6 +4,8 @@
  */
 package project;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author BalbalPC
@@ -28,10 +30,9 @@ public class lamanTigaKos extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        textField1 = new java.awt.TextField();
         totalKos = new javax.swing.JButton();
         tfTotalKos = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
+        nama = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         deskLip = new javax.swing.JButton();
@@ -75,13 +76,6 @@ public class lamanTigaKos extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setText("Hai, Selamat Datang");
 
-        textField1.setText("textField1");
-        textField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField1ActionPerformed(evt);
-            }
-        });
-
         totalKos.setText("Total harga");
 
         tfTotalKos.setEditable(false);
@@ -91,7 +85,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
             }
         });
 
-        jLabel11.setText("jLabel11");
+        nama.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -101,9 +95,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(76, 76, 76)
-                .addComponent(jLabel11)
+                .addComponent(nama)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(totalKos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -117,11 +109,10 @@ public class lamanTigaKos extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(totalKos)
-                        .addComponent(tfTotalKos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel11))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel1)))
+                        .addComponent(tfTotalKos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel1)
+                        .addComponent(nama)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -137,12 +128,32 @@ public class lamanTigaKos extends javax.swing.JFrame {
         });
 
         hijauLip.setText("hijau");
+        hijauLip.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hijauLipActionPerformed(evt);
+            }
+        });
 
         merahLip.setText("merah");
+        merahLip.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                merahLipActionPerformed(evt);
+            }
+        });
 
         kuningLip.setText("kuning");
+        kuningLip.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kuningLipActionPerformed(evt);
+            }
+        });
 
         biruLip.setText("biru");
+        biruLip.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                biruLipActionPerformed(evt);
+            }
+        });
 
         jLabel19.setText("varian");
 
@@ -399,11 +410,8 @@ public class lamanTigaKos extends javax.swing.JFrame {
 
     private void deskLipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskLipActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: lipstrik ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskLipActionPerformed
-
-    private void textField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_textField1ActionPerformed
 
     private void hargaLipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaLipActionPerformed
         // TODO add your handling code here:
@@ -428,6 +436,62 @@ public class lamanTigaKos extends javax.swing.JFrame {
     private void tfTotalKosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfTotalKosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfTotalKosActionPerformed
+
+    private void merahLipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahLipActionPerformed
+        // TODO add your handling code here:
+        if(merahLip.isSelected()){
+            hargaLip.setText("90.000");
+            hijauLip.setEnabled(false);
+            kuningLip.setEnabled(false);
+            biruLip.setEnabled(false);
+        }else{
+             hijauLip.setEnabled(true);
+            kuningLip.setEnabled(true);
+            biruLip.setEnabled(true);
+        }
+    }//GEN-LAST:event_merahLipActionPerformed
+
+    private void hijauLipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauLipActionPerformed
+        // TODO add your handling code here:
+        if(hijauLip.isSelected()){
+            hargaLip.setText("85.000");
+            merahLip.setEnabled(false);
+            kuningLip.setEnabled(false);
+            biruLip.setEnabled(false);
+        }else{
+            merahLip.setEnabled(true);
+            kuningLip.setEnabled(true);
+            biruLip.setEnabled(true);
+        }
+    }//GEN-LAST:event_hijauLipActionPerformed
+
+    private void kuningLipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningLipActionPerformed
+        // TODO add your handling code here:
+        if(kuningLip.isSelected()){
+            hargaLip.setText("75.000");
+            merahLip.setEnabled(false);
+            hijauLip.setEnabled(false);
+            biruLip.setEnabled(false);
+        }else{
+            merahLip.setEnabled(true);
+            hijauLip.setEnabled(true);
+            biruLip.setEnabled(true);
+        }
+    }//GEN-LAST:event_kuningLipActionPerformed
+
+    private void biruLipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruLipActionPerformed
+        // TODO add your handling code here:
+        if(biruLip.isSelected()){
+            hargaLip.setText("65.000");
+            merahLip.setEnabled(false);
+            hijauLip.setEnabled(false);
+            kuningLip.setEnabled(false);
+        }else{
+            merahLip.setEnabled(true);
+            hijauLip.setEnabled(true);
+            kuningLip.setEnabled(true);
+        }
+    }//GEN-LAST:event_biruLipActionPerformed
 
     /**
      * @param args the command line arguments
@@ -486,7 +550,6 @@ public class lamanTigaKos extends javax.swing.JFrame {
     private javax.swing.JRadioButton hijauPen;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
@@ -508,8 +571,11 @@ public class lamanTigaKos extends javax.swing.JFrame {
     private javax.swing.JRadioButton merahBed;
     private javax.swing.JRadioButton merahLip;
     private javax.swing.JRadioButton merahPen;
-    private java.awt.TextField textField1;
+    private javax.swing.JLabel nama;
     private javax.swing.JTextField tfTotalKos;
     private javax.swing.JButton totalKos;
     // End of variables declaration//GEN-END:variables
+    void nama(String nama1){
+        nama.setText(nama1);
+    }
 }
