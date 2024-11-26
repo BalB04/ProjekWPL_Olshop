@@ -10,13 +10,13 @@ package project;
  * @author BalbalPC
  */
 public class lamanAwal extends javax.swing.JFrame {
-    
+    private lamanDua a;
     /**
      * Creates new form lamanAwal
      */
     public lamanAwal() {
         initComponents();
-        
+        a = new lamanDua();
     }
     
     
@@ -151,6 +151,8 @@ public class lamanAwal extends javax.swing.JFrame {
     private void bt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt1ActionPerformed
         // TODO add your handling code here:
         this.dispose();
+        a.nama(tf1.getText());
+        a.setVisible(true);
     }//GEN-LAST:event_bt1ActionPerformed
 
     /**
