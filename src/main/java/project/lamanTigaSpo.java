@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package project;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author BalbalPC
@@ -94,6 +94,11 @@ public class lamanTigaSpo extends javax.swing.JFrame {
         nama.setText("jLabel2");
 
         bayar.setText("bayar");
+        bayar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bayarActionPerformed(evt);
+            }
+        });
 
         totalBayar.setEditable(false);
 
@@ -475,6 +480,7 @@ public class lamanTigaSpo extends javax.swing.JFrame {
 
     private void deskBarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskBarActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: barbel ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskBarActionPerformed
 
     private void hargaBarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaBarActionPerformed
@@ -483,6 +489,7 @@ public class lamanTigaSpo extends javax.swing.JFrame {
 
     private void deskSepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskSepActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: sepatu ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskSepActionPerformed
 
     private void hargaSepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaSepActionPerformed
@@ -491,6 +498,7 @@ public class lamanTigaSpo extends javax.swing.JFrame {
 
     private void deskBolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskBolActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: bola basket ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskBolActionPerformed
 
     private void hargaBolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaBolActionPerformed
@@ -688,6 +696,11 @@ public class lamanTigaSpo extends javax.swing.JFrame {
             kuningSep.setEnabled(true);
         }
     }//GEN-LAST:event_biruSepActionPerformed
+
+    private void bayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bayarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "total yang dibayar "+ Integer.toString(a.getInvoice()));
+    }//GEN-LAST:event_bayarActionPerformed
 
     /**
      * @param args the command line arguments

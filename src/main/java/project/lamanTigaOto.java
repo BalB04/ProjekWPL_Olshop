@@ -4,6 +4,8 @@
  */
 package project;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author BalbalPC
@@ -99,6 +101,11 @@ public class lamanTigaOto extends javax.swing.JFrame {
         nama.setText("jLabel2");
 
         bayar.setText("bayar");
+        bayar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bayarActionPerformed(evt);
+            }
+        });
 
         totalBayar.setEditable(false);
 
@@ -480,6 +487,7 @@ public class lamanTigaOto extends javax.swing.JFrame {
 
     private void deskMbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskMbActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk:  mobil ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskMbActionPerformed
 
     private void hargaMobActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaMobActionPerformed
@@ -488,6 +496,7 @@ public class lamanTigaOto extends javax.swing.JFrame {
 
     private void deskBecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskBecActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk:  becak ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskBecActionPerformed
 
     private void hargaBecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaBecActionPerformed
@@ -496,6 +505,7 @@ public class lamanTigaOto extends javax.swing.JFrame {
 
     private void deskMotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskMotActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk:  motor ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskMotActionPerformed
 
     private void hargaMotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaMotActionPerformed
@@ -697,6 +707,11 @@ public class lamanTigaOto extends javax.swing.JFrame {
     private void tfTotalOtoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfTotalOtoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfTotalOtoActionPerformed
+
+    private void bayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bayarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "total yang dibayar "+ Integer.toString(a.getInvoice()));
+    }//GEN-LAST:event_bayarActionPerformed
 
     /**
      * @param args the command line arguments

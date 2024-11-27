@@ -101,6 +101,11 @@ public class lamanTigaPak extends javax.swing.JFrame {
         nama.setText("jLabel2");
 
         bayar.setText("bayar");
+        bayar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bayarActionPerformed(evt);
+            }
+        });
 
         totalBayar.setEditable(false);
 
@@ -483,7 +488,7 @@ public class lamanTigaPak extends javax.swing.JFrame {
 
     private void deskLipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskLipActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "deskripsi produk: lipstrik ini sangat wadidau sekali, ada 4 varian");
+        JOptionPane.showMessageDialog(null, "deskripsi produk: baju ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskLipActionPerformed
 
     private void hargaLipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaLipActionPerformed
@@ -492,7 +497,7 @@ public class lamanTigaPak extends javax.swing.JFrame {
 
     private void deskPenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskPenActionPerformed
         // TODO add your handling code here:
-                 JOptionPane.showMessageDialog(null, "deskripsi produk: pensil alis ini sangat wadidau sekali, ada 4 varian");
+                 JOptionPane.showMessageDialog(null, "deskripsi produk: celana alis ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskPenActionPerformed
 
     private void hargaPenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaPenActionPerformed
@@ -501,7 +506,7 @@ public class lamanTigaPak extends javax.swing.JFrame {
 
     private void deskBedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskBedActionPerformed
         // TODO add your handling code here:
-         JOptionPane.showMessageDialog(null, "deskripsi produk: bedak ini sangat wadidau sekali, ada 4 varian");
+         JOptionPane.showMessageDialog(null, "deskripsi produk: kemeja ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskBedActionPerformed
 
     private void hargaBedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaBedActionPerformed
@@ -705,6 +710,12 @@ public class lamanTigaPak extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_totalKosActionPerformed
+
+    private void bayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bayarActionPerformed
+        // TODO add your handling code here:
+        
+JOptionPane.showMessageDialog(null, "total yang dibayar "+ Integer.toString(a.getInvoice()));
+    }//GEN-LAST:event_bayarActionPerformed
 
     /**
      * @param args the command line arguments

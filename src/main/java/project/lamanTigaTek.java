@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package project;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author BalbalPC
@@ -94,6 +94,11 @@ public class lamanTigaTek extends javax.swing.JFrame {
         nama.setText("jLabel2");
 
         bayar.setText("bayar");
+        bayar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bayarActionPerformed(evt);
+            }
+        });
 
         totalBayar.setEditable(false);
 
@@ -477,6 +482,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
 
     private void deskLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskLapActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: laptop ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskLapActionPerformed
 
     private void hargaLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaLapActionPerformed
@@ -485,6 +491,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
 
     private void deskHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskHanActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: hp ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskHanActionPerformed
 
     private void hargaHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaHanActionPerformed
@@ -493,6 +500,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
 
     private void deskKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskKompActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: komputer ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskKompActionPerformed
 
     private void hargaKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaKompActionPerformed
@@ -690,6 +698,11 @@ public class lamanTigaTek extends javax.swing.JFrame {
             kuningHan.setEnabled(true);
         }
     }//GEN-LAST:event_biruHanActionPerformed
+
+    private void bayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bayarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "total yang dibayar "+ Integer.toString(a.getInvoice()));
+    }//GEN-LAST:event_bayarActionPerformed
 
     /**
      * @param args the command line arguments

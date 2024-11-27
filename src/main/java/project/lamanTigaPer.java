@@ -4,6 +4,7 @@
  */
 package project;
 
+import javax.swing.JOptionPane;
 /**
  *
  * @author BalbalPC
@@ -94,6 +95,11 @@ public class lamanTigaPer extends javax.swing.JFrame {
         nama.setText("jLabel2");
 
         jButton1.setText("bayar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         totalBayar.setEditable(false);
 
@@ -475,6 +481,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
 
     private void deskDrilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskDrilActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk:  drill ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskDrilActionPerformed
 
     private void hargaDrilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaDrilActionPerformed
@@ -483,6 +490,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
 
     private void deskObeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskObeActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk:  obeng ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskObeActionPerformed
 
     private void hargaObeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaObeActionPerformed
@@ -491,6 +499,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
 
     private void deskToolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskToolActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk:  tool box ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskToolActionPerformed
 
     private void hargaToolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaToolActionPerformed
@@ -678,6 +687,11 @@ public class lamanTigaPer extends javax.swing.JFrame {
             biruObe.setEnabled(true);
         }
     }//GEN-LAST:event_kuningObeActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "total yang dibayar "+ Integer.toString(a.getInvoice()));
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

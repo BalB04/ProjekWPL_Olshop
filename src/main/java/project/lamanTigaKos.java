@@ -489,7 +489,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
 
     private void deskLipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskLipActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "deskripsi produk: lipstrik ini sangat wadidau sekali, ada 4 varian");
+        JOptionPane.showMessageDialog(null, "deskripsi produk: pensil alis ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskLipActionPerformed
 
     private void hargaLipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaLipActionPerformed
@@ -711,7 +711,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
+        JOptionPane.showMessageDialog(null, "total yang dibayar " + a.getInvoice());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

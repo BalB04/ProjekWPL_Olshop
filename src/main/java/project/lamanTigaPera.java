@@ -4,6 +4,7 @@
  */
 package project;
 
+import javax.swing.JOptionPane;
 /**
  *
  * @author BalbalPC
@@ -94,6 +95,11 @@ public class lamanTigaPera extends javax.swing.JFrame {
         nama.setText("jLabel2");
 
         bayar.setText("bayar");
+        bayar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bayarActionPerformed(evt);
+            }
+        });
 
         totalBayar.setEditable(false);
 
@@ -478,6 +484,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
 
     private void deskKurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskKurActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: kursi ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskKurActionPerformed
 
     private void hargaKurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaKurActionPerformed
@@ -486,6 +493,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
 
     private void deskLemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskLemActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: lemari ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskLemActionPerformed
 
     private void hargaLemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaLemActionPerformed
@@ -494,6 +502,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
 
     private void deskMejActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskMejActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: meja ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskMejActionPerformed
 
     private void hargaMejActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaMejActionPerformed
@@ -692,6 +701,11 @@ public class lamanTigaPera extends javax.swing.JFrame {
             kuningLem.setEnabled(true);
         }
     }//GEN-LAST:event_biruLemActionPerformed
+
+    private void bayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bayarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "total yang dibayar "+ Integer.toString(a.getInvoice()));
+    }//GEN-LAST:event_bayarActionPerformed
 
     /**
      * @param args the command line arguments

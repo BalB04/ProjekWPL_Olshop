@@ -4,6 +4,8 @@
  */
 package project;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author BalbalPC
@@ -486,6 +488,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
 
     private void deskSosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskSosActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: sosis ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskSosActionPerformed
 
     private void hargaSosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaSosActionPerformed
@@ -494,6 +497,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
 
     private void deskGulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskGulActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: gula ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskGulActionPerformed
 
     private void hargaGulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaGulActionPerformed
@@ -502,6 +506,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
 
     private void deskTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskTelActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: telur ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskTelActionPerformed
 
     private void hargaTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaTelActionPerformed
@@ -706,7 +711,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
 
     private void bayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bayarActionPerformed
         // TODO add your handling code here:
-        totalBayar.setText(Integer.toString(a.getInvoice()));
+                JOptionPane.showMessageDialog(null, "total yang dibayar "+ Integer.toString(a.getInvoice()));
     }//GEN-LAST:event_bayarActionPerformed
 
     /**
