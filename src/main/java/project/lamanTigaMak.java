@@ -516,7 +516,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private void merahGulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahGulActionPerformed
         // TODO add your handling code here:
         if(merahGul.isSelected()){
-            hargaGul.setText("17.000");
+            hargaGul.setText("Rp. 17.000");
             hijauGul.setEnabled(false);
             kuningGul.setEnabled(false);
             biruGul.setEnabled(false);
@@ -530,7 +530,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private void merahSosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahSosActionPerformed
         // TODO add your handling code here:
         if(merahSos.isSelected()){
-            hargaSos.setText("7.000");
+            hargaSos.setText("Rp. 7.000");
             hijauSos.setEnabled(false);
             kuningSos.setEnabled(false);
             biruSos.setEnabled(false);
@@ -548,7 +548,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private void kuningSosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningSosActionPerformed
         // TODO add your handling code here:if(kuningLip.isSelected()){
         if(kuningSos.isSelected()){
-            hargaSos.setText("7500");
+            hargaSos.setText("Rp. 7500");
             merahSos.setEnabled(false);
             hijauSos.setEnabled(false);
             biruSos.setEnabled(false);
@@ -562,7 +562,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private void hijauSosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauSosActionPerformed
         // TODO add your handling code here:
         if(hijauSos.isSelected()){
-            hargaSos.setText("10.000");
+            hargaSos.setText("Rp. 10.000");
             merahSos.setEnabled(false);
             kuningSos.setEnabled(false);
             biruSos.setEnabled(false);
@@ -576,7 +576,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private void biruSosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruSosActionPerformed
         // TODO add your handling code here:
         if(biruSos.isSelected()){
-            hargaSos.setText("6.000");
+            hargaSos.setText("Rp. 6.000");
             merahSos.setEnabled(false);
             hijauSos.setEnabled(false);
             kuningSos.setEnabled(false);
@@ -590,7 +590,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private void merahKTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahKTelActionPerformed
         // TODO add your handling code here:
         if(merahKTel.isSelected()){
-            hargaTel.setText("16.500");
+            hargaTel.setText("Rp. 16.500");
             hijauKTel.setEnabled(false);
             kuningTel.setEnabled(false);
             biruTel.setEnabled(false);
@@ -604,7 +604,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private void hijauKTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauKTelActionPerformed
         // TODO add your handling code here:
         if(hijauKTel.isSelected()){
-            hargaTel.setText("17.000");
+            hargaTel.setText("Rp. 17.000");
             merahKTel.setEnabled(false);
             kuningTel.setEnabled(false);
             biruTel.setEnabled(false);
@@ -618,7 +618,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private void kuningTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningTelActionPerformed
         // TODO add your handling code here:
         if(kuningTel.isSelected()){
-            hargaTel.setText("1700");
+            hargaTel.setText("Rp. 1700");
             merahKTel.setEnabled(false);
             hijauKTel.setEnabled(false);
             biruTel.setEnabled(false);
@@ -632,7 +632,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private void biruTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruTelActionPerformed
         // TODO add your handling code here:
          if(biruTel.isSelected()){
-            hargaTel.setText("6.000");
+            hargaTel.setText("Rp. 6.000");
             merahKTel.setEnabled(false);
             hijauKTel.setEnabled(false);
             kuningTel.setEnabled(false);
@@ -646,7 +646,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private void biruGulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruGulActionPerformed
         // TODO add your handling code here:
          if(biruGul.isSelected()){
-            hargaGul.setText("16.000");
+            hargaGul.setText("Rp. 16.000");
             merahGul.setEnabled(false);
             hijauGul.setEnabled(false);
             kuningGul.setEnabled(false);
@@ -660,7 +660,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private void kuningGulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningGulActionPerformed
         // TODO add your handling code here:
         if(kuningGul.isSelected()){
-            hargaGul.setText("19000");
+            hargaGul.setText("Rp. 19000");
             merahGul.setEnabled(false);
             hijauGul.setEnabled(false);
             biruGul.setEnabled(false);
@@ -674,7 +674,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private void hijauGulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauGulActionPerformed
         // TODO add your handling code here:
         if(hijauGul.isSelected()){
-            hargaGul.setText("10.000");
+            hargaGul.setText("Rp. 10.000");
             merahGul.setEnabled(false);
             kuningGul.setEnabled(false);
             biruGul.setEnabled(false);

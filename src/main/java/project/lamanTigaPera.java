@@ -491,7 +491,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void merahKurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahKurActionPerformed
         // TODO add your handling code here:
         if(merahKur.isSelected()){
-            hargaKur.setText("120.000");
+            hargaKur.setText("Rp. 120.000");
             hijauKur.setEnabled(false);
             kuningKur.setEnabled(false);
             biruKur.setEnabled(false);
@@ -527,7 +527,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void hijauKurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauKurActionPerformed
         // TODO add your handling code here:
          if(hijauKur.isSelected()){
-            hargaKur.setText("130.000");
+            hargaKur.setText("Rp. 130.000");
             merahKur.setEnabled(false);
             kuningKur.setEnabled(false);
             biruKur.setEnabled(false);
@@ -541,7 +541,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void kuningKurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningKurActionPerformed
         // TODO add your handling code here:
         if(kuningKur.isSelected()){
-            hargaKur.setText("140.000");
+            hargaKur.setText("Rp. 140.000");
             merahKur.setEnabled(false);
             hijauKur.setEnabled(false);
             biruKur.setEnabled(false);
@@ -555,7 +555,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void biruKurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruKurActionPerformed
         // TODO add your handling code here:
         if(biruKur.isSelected()){
-            hargaKur.setText("150.000");
+            hargaKur.setText("Rp. 150.000");
             merahKur.setEnabled(false);
             hijauKur.setEnabled(false);
             kuningKur.setEnabled(false);
@@ -569,7 +569,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void merahMejActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahMejActionPerformed
         // TODO add your handling code here:
         if(merahMej.isSelected()){
-            hargaMej.setText("300.000");
+            hargaMej.setText("Rp. 300.000");
             hijauMej.setEnabled(false);
             kuningMej.setEnabled(false);
             biruMej.setEnabled(false);
@@ -584,7 +584,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void hijauMejActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauMejActionPerformed
         // TODO add your handling code here:
          if(hijauMej.isSelected()){
-            hargaMej.setText("350.000");
+            hargaMej.setText("Rp. 350.000");
             merahMej.setEnabled(false);
             kuningMej.setEnabled(false);
             biruMej.setEnabled(false);
@@ -598,7 +598,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void kuningMejActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningMejActionPerformed
         // TODO add your handling code here:
          if(kuningMej.isSelected()){
-            hargaMej.setText("400.000");
+            hargaMej.setText("Rp. 400.000");
             merahMej.setEnabled(false);
             hijauMej.setEnabled(false);
             biruMej.setEnabled(false);
@@ -612,7 +612,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void biruMejActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruMejActionPerformed
         // TODO add your handling code here:
         if(biruMej.isSelected()){
-            hargaMej.setText("450.000");
+            hargaMej.setText("Rp. 450.000");
             merahMej.setEnabled(false);
             hijauMej.setEnabled(false);
             kuningMej.setEnabled(false);
@@ -626,7 +626,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void merahLemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahLemActionPerformed
         // TODO add your handling code here:
         if(merahLem.isSelected()){
-            hargaLem.setText("1.005.000");
+            hargaLem.setText("Rp. 1.005.000");
             hijauLem.setEnabled(false);
             kuningLem.setEnabled(false);
             biruLem.setEnabled(false);
@@ -641,7 +641,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void hijauLemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauLemActionPerformed
         // TODO add your handling code here:
          if(hijauLem.isSelected()){
-            hargaLem.setText("1.100.000");
+            hargaLem.setText("Rp. 1.100.000");
             merahLem.setEnabled(false);
             kuningLem.setEnabled(false);
             biruLem.setEnabled(false);
@@ -655,7 +655,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void kuningLemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningLemActionPerformed
         // TODO add your handling code here:
          if(kuningLem.isSelected()){
-            hargaLem.setText("1.150.000");
+            hargaLem.setText("Rp. 1.150.000");
             merahLem.setEnabled(false);
             hijauLem.setEnabled(false);
             biruLem.setEnabled(false);
@@ -669,7 +669,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void biruLemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruLemActionPerformed
         // TODO add your handling code here:
         if(biruLem.isSelected()){
-            hargaLem.setText("1.200.000");
+            hargaLem.setText("Rp. 1.200.000");
             merahLem.setEnabled(false);
             hijauLem.setEnabled(false);
             kuningLem.setEnabled(false);

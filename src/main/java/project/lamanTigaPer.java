@@ -524,7 +524,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private void hijauDrilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauDrilActionPerformed
         // TODO add your handling code here:
          if(hijauDril.isSelected()){
-            hargaDril.setText("840.000");
+            hargaDril.setText("Rp. 840.000");
             merahDril.setEnabled(false);
             kuningDril.setEnabled(false);
             biruDril.setEnabled(false);
@@ -538,7 +538,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private void hijauToolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauToolActionPerformed
         // TODO add your handling code here:
         if(hijauTool.isSelected()){
-            hargaTool.setText("180.000");
+            hargaTool.setText("Rp. 180.000");
             merahTool.setEnabled(false);
             kuningTool.setEnabled(false);
             biruTool.setEnabled(false);
@@ -552,7 +552,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private void kuningDrilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningDrilActionPerformed
         // TODO add your handling code here:
          if(kuningDril.isSelected()){
-            hargaDril.setText("90.000.000");
+            hargaDril.setText("Rp. 90.000.000");
             merahDril.setEnabled(false);
             hijauDril.setEnabled(false);
             biruDril.setEnabled(false);
@@ -566,7 +566,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private void biruDrilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruDrilActionPerformed
         // TODO add your handling code here:
         if(biruDril.isSelected()){
-            hargaDril.setText("104.000");
+            hargaDril.setText("Rp. 104.000");
             merahDril.setEnabled(false);
             hijauDril.setEnabled(false);
             kuningDril.setEnabled(false);
@@ -581,7 +581,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private void merahToolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahToolActionPerformed
         // TODO add your handling code here:
         if(merahTool.isSelected()){
-            hargaTool.setText("170.000");
+            hargaTool.setText("Rp. 170.000");
             hijauTool.setEnabled(false);
             kuningTool.setEnabled(false);
             biruTool.setEnabled(false);
@@ -595,7 +595,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private void kuningToolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningToolActionPerformed
         // TODO add your handling code here:
          if(kuningTool.isSelected()){
-            hargaTool.setText("190.000");
+            hargaTool.setText("Rp. 190.000");
             merahTool.setEnabled(false);
             hijauTool.setEnabled(false);
             biruTool.setEnabled(false);
@@ -609,7 +609,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private void biruToolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruToolActionPerformed
         // TODO add your handling code here:
          if(biruTool.isSelected()){
-            hargaTool.setText("200.000");
+            hargaTool.setText("Rp. 200.000");
             merahTool.setEnabled(false);
             hijauTool.setEnabled(false);
             kuningTool.setEnabled(false);
@@ -627,7 +627,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private void merahObeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahObeActionPerformed
         // TODO add your handling code here:
          if(merahObe.isSelected()){
-            hargaObe.setText("35.000");
+            hargaObe.setText("Rp. 35.000");
             hijauObe.setEnabled(false);
             kuningObe.setEnabled(false);
             biruObe.setEnabled(false);
@@ -641,7 +641,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private void hijauObeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauObeActionPerformed
         // TODO add your handling code here:
         if(hijauObe.isSelected()){
-            hargaObe.setText("40.000");
+            hargaObe.setText("Rp. 40.000");
             merahObe.setEnabled(false);
             kuningObe.setEnabled(false);
             biruObe.setEnabled(false);
@@ -655,7 +655,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private void kuningObeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningObeActionPerformed
         // TODO add your handling code here:
         if(kuningObe.isSelected()){
-            hargaObe.setText("200.000");
+            hargaObe.setText("Rp. 200.000");
             merahObe.setEnabled(false);
             hijauObe.setEnabled(false);
             biruObe.setEnabled(false);

@@ -30,7 +30,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         totalTek = new javax.swing.JButton();
         tfTotalTek = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        nama = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         deskLap = new javax.swing.JButton();
@@ -89,7 +89,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
 
         tfTotalTek.setEditable(false);
 
-        jLabel2.setText("jLabel2");
+        nama.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -99,7 +99,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
+                .addComponent(nama)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(totalTek)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -116,7 +116,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
                         .addComponent(tfTotalTek, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel1)
-                        .addComponent(jLabel2)))
+                        .addComponent(nama)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -512,7 +512,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private void merahLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahLapActionPerformed
         // TODO add your handling code here:
         if(merahLap.isSelected()){
-            hargaLap.setText("7.000.000");
+            hargaLap.setText("Rp. 7.000.000");
             hijauLap.setEnabled(false);
             kuningLap.setEnabled(false);
             biruLap.setEnabled(false);
@@ -526,7 +526,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private void hijauLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauLapActionPerformed
         // TODO add your handling code here:
         if(hijauLap.isSelected()){
-            hargaLap.setText("8.000.000");
+            hargaLap.setText("Rp. 8.000.000");
             merahLap.setEnabled(false);
             kuningLap.setEnabled(false);
             biruLap.setEnabled(false);
@@ -540,7 +540,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private void kuningLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningLapActionPerformed
         // TODO add your handling code here:
         if(kuningLap.isSelected()){
-            hargaLap.setText("9.000.000");
+            hargaLap.setText("Rp. 9.000.000");
             merahLap.setEnabled(false);
             hijauLap.setEnabled(false);
             biruLap.setEnabled(false);
@@ -554,7 +554,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private void biruLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruLapActionPerformed
         // TODO add your handling code here:
         if(biruLap.isSelected()){
-            hargaLap.setText("10.000.000");
+            hargaLap.setText("Rp. 10.000.000");
             merahLap.setEnabled(false);
             hijauLap.setEnabled(false);
             kuningLap.setEnabled(false);
@@ -568,7 +568,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private void merahKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahKompActionPerformed
         // TODO add your handling code here:
         if(merahKomp.isSelected()){
-            hargaKomp.setText("16.500.000");
+            hargaKomp.setText("Rp. 16.500.000");
             hijauKomp.setEnabled(false);
             kuningKomp.setEnabled(false);
             biruKomp.setEnabled(false);
@@ -582,7 +582,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private void hijauKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauKompActionPerformed
         // TODO add your handling code here:
         if(hijauKomp.isSelected()){
-            hargaKomp.setText("17.000.000");
+            hargaKomp.setText("Rp. 17.000.000");
             merahKomp.setEnabled(false);
             kuningKomp.setEnabled(false);
             biruKomp.setEnabled(false);
@@ -596,7 +596,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private void kuningKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningKompActionPerformed
         // TODO add your handling code here:
         if(kuningKomp.isSelected()){
-            hargaKomp.setText("17.500.000");
+            hargaKomp.setText("Rp. 17.500.000");
             merahKomp.setEnabled(false);
             hijauKomp.setEnabled(false);
             biruKomp.setEnabled(false);
@@ -610,7 +610,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private void biruKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruKompActionPerformed
         // TODO add your handling code here:
         if(biruKomp.isSelected()){
-            hargaKomp.setText("18.000.000");
+            hargaKomp.setText("Rp. 18.000.000");
             merahKomp.setEnabled(false);
             hijauKomp.setEnabled(false);
             kuningKomp.setEnabled(false);
@@ -624,7 +624,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private void merahHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahHanActionPerformed
         // TODO add your handling code here:
         if(merahHan.isSelected()){
-            hargaHan.setText("1.005.000");
+            hargaHan.setText("Rp. 1.005.000");
             hijauHan.setEnabled(false);
             kuningHan.setEnabled(false);
             biruHan.setEnabled(false);
@@ -638,7 +638,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private void hijauHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauHanActionPerformed
         // TODO add your handling code here:
         if(hijauHan.isSelected()){
-            hargaHan.setText("2.005.000");
+            hargaHan.setText("Rp. 2.005.000");
             merahHan.setEnabled(false);
             kuningHan.setEnabled(false);
             biruHan.setEnabled(false);
@@ -652,7 +652,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private void kuningHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningHanActionPerformed
         // TODO add your handling code here:
         if(kuningHan.isSelected()){
-            hargaHan.setText("3.005.000");
+            hargaHan.setText("Rp. 3.005.000");
             merahHan.setEnabled(false);
             hijauHan.setEnabled(false);
             biruHan.setEnabled(false);
@@ -666,7 +666,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private void biruHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruHanActionPerformed
         // TODO add your handling code here:
         if(biruHan.isSelected()){
-            hargaHan.setText("4.005.000");
+            hargaHan.setText("Rp. 4.005.000");
             merahHan.setEnabled(false);
             hijauHan.setEnabled(false);
             kuningHan.setEnabled(false);
@@ -730,7 +730,6 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private javax.swing.JRadioButton hijauLap;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel6;
@@ -758,7 +757,12 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private javax.swing.JRadioButton merahHan;
     private javax.swing.JRadioButton merahKomp;
     private javax.swing.JRadioButton merahLap;
+    private javax.swing.JLabel nama;
     private javax.swing.JTextField tfTotalTek;
     private javax.swing.JButton totalTek;
     // End of variables declaration//GEN-END:variables
+    void nama(String nama1){
+        nama.setText(nama1);
+    }
+
 }

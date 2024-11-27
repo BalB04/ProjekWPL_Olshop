@@ -443,8 +443,10 @@ public class lamanDua extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(pakaian.isSelected()){
             a.setVisible(true);
+            a.nama(nama.getText());
         }else if(teknologi.isSelected()){
             b.setVisible(true);
+            b.nama(nama.getText());
         }else if(otomotif.isSelected()){
             c.setVisible(true);
             c.nama(nama.getText());
