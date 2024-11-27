@@ -526,19 +526,39 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void totalPeraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalPeraActionPerformed
         // TODO add your handling code here:
         int totMerahKur = 120000 * (int)jumKurMer.getValue();
+        String totMerahKurS = 120000 * (int)jumKurMer.getValue()+"  =  " + "Kursi Merah  x   " + jumKurMer.getValue()+"\n";
         int totHijauKur = 130000 * (int)jumKurHij.getValue();
+        String totHijauKurS = 130000 * (int)jumKurHij.getValue()+"  =  " + "Kursi Hijau  x   " + jumKurHij.getValue()+"\n";
         int totKuningKur = 140000 * (int)jumKurKun.getValue();
+        String totKuningKurS = 140000 * (int)jumKurKun.getValue()+"  =  " + "Kursi Kuning  x   " + jumKurKun.getValue()+"\n";
         int totBiruKur = 150000 * (int)jumKurBir.getValue();
+        String totBiruKurS = 150000 * (int)jumKurBir.getValue()+"  =  " + "Kursi Biru  x   " + jumKurBir.getValue()+"\n";
         
         int totMerahMej = 300000 * (int)jumMejMer.getValue();
+        String totMerahMejS = 300000 * (int)jumMejMer.getValue()+"  =  " + "Meja Merah  x   " + jumMejMer.getValue()+"\n";
         int totHijauMej = 350000 * (int)jumMejHij.getValue();
+        String totHijauMejS = 350000 * (int)jumMejHij.getValue()+"  =  " + "Meja Hijau  x   " + jumMejHij.getValue()+"\n";
         int totKuningMej = 400000 * (int)jumMejKun.getValue();
+        String totKuningMejS = 400000 * (int)jumMejKun.getValue()+"  =  " + "Meja Kuning  x   " + jumMejKun.getValue()+"\n";
         int totBiruMej = 450000 * (int)jumMejBir.getValue();
+        String totBiruMejS = 450000 * (int)jumMejBir.getValue()+"  =  " + "Meja Biru  x   " + jumMejBir.getValue()+"\n";
         
         int totMerahLem = 1005000 * (int)jumLemMer.getValue();
+        String totMerahLemS = 1005000 * (int)jumLemMer.getValue()+"  =  " + "Lemari Merah  x   " + jumLemMer.getValue()+"\n";
         int totHijauLem = 1100000 * (int)jumLemHij.getValue();
+        String totHijauLemS = 1100000 * (int)jumLemHij.getValue()+"  =  " + "Lemari Hijau  x   " + jumLemHij.getValue()+"\n";
         int totKuningLem = 1150000 * (int)jumLemKun.getValue();
+        String totKuningLemS = 1150000 * (int)jumLemKun.getValue()+"  =  " + "Lemari Kuning  x   " + jumLemKun.getValue()+"\n";
         int totBiruLem = 1200000 * (int)jumLemBir.getValue();
+        String totBiruLemS = 1200000 * (int)jumLemBir.getValue()+"  =  " + "Lemari Biru  x   " + jumLemBir.getValue()+"\n";
+        
+        String array[] = {totMerahKurS , totHijauKurS, totKuningKurS, totBiruKurS, totMerahMejS, totHijauMejS, totKuningMejS, totBiruMejS, totMerahLemS, totHijauLemS, totKuningLemS, totBiruLemS};
+
+        for(int i =0; i< array.length; i++){
+            if(array[i].charAt(0) != '0'){
+                SharedInvoice.sb.append(array[i]);
+            }
+        }
         
         int total = totMerahKur + totHijauKur + totKuningKur + totBiruKur + totMerahMej + totHijauMej + totKuningMej + totBiruMej + totMerahLem + totHijauLem + totKuningLem + totBiruLem;
                 a.setInvoice(total);

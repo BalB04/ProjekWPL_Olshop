@@ -523,19 +523,39 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private void totalPerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalPerActionPerformed
         // TODO add your handling code here:
         int totMerahDrill = 740000 * (int)jumDrillMer.getValue();
+        String totMerahDrillS = 740000 * (int)jumDrillMer.getValue()+"  =  " + "Drill Merah  x   " + jumDrillMer.getValue()+"\n";
         int totHijauDrill = 840000 * (int)jumDrillHij.getValue();
+        String totHijauDrillS = 840000 * (int)jumDrillHij.getValue()+"  =  " + "Drill Hijau  x   " + jumDrillHij.getValue()+"\n";
         int totKuningDrill = 940000 * (int)jumDrillKun.getValue();
+        String totKuningDrillS = 940000 * (int)jumDrillKun.getValue()+"  =  " + "Drill Kuning  x   " + jumDrillKun.getValue()+"\n";
         int totBiruDrill = 1040000 * (int)jumDrillBir.getValue();
+        String totBiruDrillS = 104000 * (int)jumDrillBir.getValue()+"  =  " + "Drill Biru  x   " + jumDrillBir.getValue()+"\n";
         
         int totMerahTool = 170000 * (int)jumToolMer.getValue();
+        String totMerahToolS = 170000 * (int)jumToolMer.getValue()+"  =  " + "Tool Merah  x   " + jumToolMer.getValue()+"\n";
         int totHijauTool = 180000 * (int)jumToolHij.getValue();
+        String totHijauToolS = 180000 * (int)jumToolHij.getValue()+"  =  " + "Tool Hijau  x   " + jumToolHij.getValue()+"\n";
         int totKuningTool = 190000 * (int)jumToolKun.getValue();
+        String totKuningToolS = 190000 * (int)jumToolKun.getValue()+"  =  " + "Tool Kuning  x   " + jumToolKun.getValue()+"\n";
         int totBiruTool = 200000 * (int)jumToolBir.getValue();
+        String totBiruToolS = 200000 * (int)jumToolBir.getValue()+"  =  " + "Tool Biru  x   " + jumToolBir.getValue()+"\n";
         
         int totMerahObe = 35000 * (int)jumObeMer.getValue();
+        String totMerahObeS = 35000 * (int)jumObeMer.getValue()+"  =  " + "Obeng Merah  x   " + jumObeMer.getValue()+"\n";
         int totHijauObe = 40000 * (int)jumObeHij.getValue();
+        String totHijauObeS = 40000 * (int)jumObeHij.getValue()+"  =  " + "Obeng Hijau  x   " + jumObeHij.getValue()+"\n";
         int totKuningObe = 45000 * (int)jumObeKun.getValue();
+        String totKuningObeS = 45000 * (int)jumObeKun.getValue()+"  =  " + "Obeng Kuning  x   " + jumObeKun.getValue()+"\n";
         int totBiruObe = 50000 * (int)jumObeBir.getValue();
+        String totBiruObeS = 50000 * (int)jumObeBir.getValue()+"  =  " + "Obeng Biru  x   " + jumObeBir.getValue()+"\n";
+        
+        String array[] = {totMerahDrillS , totHijauDrillS, totKuningDrillS, totBiruDrillS, totMerahToolS, totHijauToolS, totKuningToolS, totBiruToolS, totMerahObeS, totHijauObeS, totKuningObeS, totBiruObeS};
+
+        for(int i =0; i< array.length; i++){
+            if(array[i].charAt(0) != '0'){
+                SharedInvoice.sb.append(array[i]);
+        }
+    }
         
         int total = totMerahDrill + totHijauDrill + totKuningDrill + totBiruDrill + totMerahTool + totHijauTool + totKuningTool + totBiruTool + totMerahObe + totHijauObe + totKuningObe + totBiruObe;
         a.setInvoice(total);

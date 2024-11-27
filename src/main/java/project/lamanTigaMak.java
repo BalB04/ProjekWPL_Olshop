@@ -516,19 +516,39 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private void totalGulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalGulActionPerformed
         // TODO add your handling code here:
         int totMerahSos = 7000 * (int)jumSosMer.getValue();
+        String totMerahSosS = 7000 * (int)jumSosMer.getValue()+"  =  " + "Sosis Merah  x   " + jumSosMer.getValue()+"\n";
         int totHijauSos = 7500 * (int)jumSosHij.getValue();
+        String totHijauSosS = 7500 * (int)jumSosHij.getValue()+"  =  " + "Sosis Hijau  x   " + jumSosHij.getValue()+"\n";
         int totKuningSos = 10000 * (int)jumSosKun.getValue();
+        String totKuningSosS = 10000 * (int)jumSosKun.getValue()+"  =  " + "Sosis Kuning  x   " + jumSosKun.getValue()+"\n";
         int totBiruSos = 6000 * (int)jumSosBir.getValue();
+        String totBiruSosS = 6000 * (int)jumSosBir.getValue()+"  =  " + "Sosis Biru  x   " + jumSosBir.getValue()+"\n";
         
         int totMerahTel = 16000 * (int)jumlahTelMer.getValue();
+        String totMerahTelS = 16000 * (int)jumlahTelMer.getValue()+"  =  " + "Telur Merah  x   " + jumlahTelMer.getValue()+"\n";
         int totHijauTel = 17000 * (int)jumlahTelHij.getValue();
+        String totHijauTelS = 17000 * (int)jumlahTelHij.getValue()+"  =  " + "Telur Hijau  x   " + jumlahTelHij.getValue()+"\n";
         int totKuningTel = 1700 * (int)jumlahTelKun.getValue();
+        String totKuningTelS = 17000 * (int)jumlahTelKun.getValue()+"  =  " + "Telur Kuning  x   " + jumlahTelKun.getValue()+"\n";
         int totBiruTel = 6000 * (int)jumlahTelBir.getValue();
+        String totBiruTelS = 6000 * (int)jumlahTelBir.getValue()+"  =  " + "Telur Biru  x   " + jumlahTelBir.getValue()+"\n";
         
         int totMerahGul = 17000 * (int)jumlahGulMer.getValue();
+        String totMerahGulS = 17000 * (int)jumlahGulMer.getValue()+"  =  " + "Gula Merah  x   " + jumlahGulMer.getValue()+"\n";
         int totHijauGul = 10000 * (int)jumlahGulHij.getValue();
+        String totHijauGulS = 10000 * (int)jumlahGulHij.getValue()+"  =  " + "Gula Hijau  x   " + jumlahGulHij.getValue()+"\n";
         int totKuningGul = 19000 * (int)jumlahGulKun.getValue();
+        String totKuningGulS = 19000 * (int)jumlahGulKun.getValue()+"  =  " + "Gula Kuning  x   " + jumlahGulKun.getValue()+"\n";
         int totBiruGul = 16000 * (int)jumlahGulBir.getValue();
+        String totBiruGulS = 16000 * (int)jumlahGulBir.getValue()+"  =  " + "Gula Biru  x   " + jumlahGulBir.getValue()+"\n";
+        
+        String array[] = {totMerahSosS , totHijauSosS, totKuningSosS, totBiruSosS, totMerahTelS, totHijauTelS, totKuningTelS, totBiruTelS, totMerahGulS, totHijauGulS, totKuningGulS, totBiruGulS};
+
+        for(int i =0; i< array.length; i++){
+            if(array[i].charAt(0) != '0'){
+                SharedInvoice.sb.append(array[i]);
+            }
+        }
         
         int total = totMerahSos + totHijauSos + totKuningSos + totBiruSos + totMerahTel + totHijauTel + totKuningTel + totBiruTel + totMerahGul + totHijauGul + totKuningGul + totBiruGul;
         a.setInvoice(total);
