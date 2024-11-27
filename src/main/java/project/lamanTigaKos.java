@@ -12,11 +12,13 @@ import javax.swing.JOptionPane;
  */
 public class lamanTigaKos extends javax.swing.JFrame {
     total a = new total();
+    private lamanInvoice b;
     /**
      * Creates new form lamanTiga
      */
     public lamanTigaKos() {
         initComponents();
+        b = new lamanInvoice();
         totalBayar.setText(Integer.toString(a.getInvoice()));
     }
 
@@ -78,6 +80,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+        setPreferredSize(new java.awt.Dimension(1280, 720));
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 51));
         jPanel1.setForeground(new java.awt.Color(102, 255, 102));
@@ -119,11 +122,11 @@ public class lamanTigaKos extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(nama)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(104, 104, 104)
                 .addComponent(totalKos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfTotalKos, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -136,12 +139,12 @@ public class lamanTigaKos extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(totalKos)
-                        .addComponent(tfTotalKos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(tfTotalKos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton1))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel1)
-                        .addComponent(nama)
-                        .addComponent(jButton1)
-                        .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(nama)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -469,7 +472,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addContainerGap(2180, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -698,7 +701,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
         String totBiruLipS = 65000 * (int)jumLipBir.getValue()+"  =  " + "Lipstrik Biru  x   " + jumLipBir.getValue()+"\n";
         
         int totMerahBed = 1000000 * (int)jumBedMer.getValue();
-        String totMerahBedS = 100000 * (int)jumBedMer.getValue()+"  =  " + "Bedak Merah  x   " + jumLipHij.getValue()+"\n";
+        String totMerahBedS = 100000 * (int)jumBedMer.getValue()+"  =  " + "Bedak Merah  x   " + jumBedMer.getValue()+"\n";
         int totHijauBed = 120000 * (int)jumBedHij.getValue();
         String totHijauBedS = 120000 * (int)jumBedHij.getValue()+"  =  " + "Bedak Hijau  x   " + jumBedHij.getValue()+"\n";
         int totKuningBed = 125000 * (int)jumBedKun.getValue();
@@ -731,7 +734,8 @@ public class lamanTigaKos extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
+        b.ta("raffi mahya", "0896666823165", "jl. kutisari utara");
+        b.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

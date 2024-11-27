@@ -11,11 +11,13 @@ import javax.swing.JOptionPane;
  */
 public class lamanTigaPer extends javax.swing.JFrame {
     total a = new total();
+        private lamanInvoice b;
     /**
      * Creates new form lamanTiga
      */
     public lamanTigaPer() {
         initComponents();
+                b = new lamanInvoice();
     }
 
     /**
@@ -710,7 +712,8 @@ public class lamanTigaPer extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "total yang dibayar "+ Integer.toString(a.getInvoice()));
+         b.ta("raffi mahya", "0896666823165", "jl. kutisari utara");
+        b.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
