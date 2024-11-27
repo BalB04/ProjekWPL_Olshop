@@ -244,10 +244,13 @@ public class lamanAwal extends javax.swing.JFrame {
 
     private void bt2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt2ActionPerformed
         // TODO add your handling code here:
-        a.data(nama1.getText(), pswd1.getPassword(), uname1.getText(), noTel1.getText(), email1.getText(), alamat1.getText());
+        String uname=uname1.getText();
+        String pswd=new String(pswd1.getPassword());
+        
+        a.simpanData(uname, pswd);
+        
+        a.data(nama1.getText(), noTel1.getText(), email1.getText(), alamat1.getText());
         b.setVisible(true);
-        b.pack();
-        b.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_bt2ActionPerformed
 

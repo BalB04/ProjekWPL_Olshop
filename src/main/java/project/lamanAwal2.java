@@ -19,7 +19,7 @@ public class lamanAwal2 extends javax.swing.JFrame {
     public lamanAwal2() {
         initComponents();
         a=new lamanAwal();
-        this.b=new profile();
+        b=new profile();
     }
 
     /**
@@ -174,18 +174,16 @@ public class lamanAwal2 extends javax.swing.JFrame {
 
     private void bt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt1ActionPerformed
         // TODO add your handling code here:
-        String inputUname = uname2.getText();
-        String inputPswd = pswd2.getText();
+        String uname = uname2.getText();
+        String pswd = new String (pswd2.getPassword());
         
-        if (inputUname.equals(b.getUname()) && inputPswd.equals(b.getPswd())){
+        if (b.cekData(uname, pswd)){
             JOptionPane.showMessageDialog(this, "Login berhasil");
         }else{
             JOptionPane.showMessageDialog(this, "Login gagal, periksa kembali Username/Password");
         }
         
         a.setVisible(true);
-        a.pack();
-        a.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_bt1ActionPerformed
 

@@ -11,8 +11,9 @@ package project;
 public class profile extends javax.swing.JFrame {
     private lamanTigaKos b;
     private lamanDua a;
-    private String uname;
-    private char[] pswd;
+    private static String ambilUname;
+    private static String ambilPswd;
+    
     /**
      * Creates new form profile
      */
@@ -21,24 +22,20 @@ public class profile extends javax.swing.JFrame {
         a=new lamanDua();
     }
     
-    public void data(String nama, char[] pswd, String uname, String noTel, String email, String alamat){
+    public static void simpanData(String uname, String pswd){
+        ambilUname = uname;
+        ambilPswd = pswd;
+    }
+    
+    public static boolean cekData(String uname, String pswd){
+        return uname.equals(ambilUname) && pswd.equals(ambilPswd);
+    }
+    
+    public void data(String nama, String noTel, String email, String alamat){
         nama2.setText(""+nama);
-        pswd3.setText(""+pswd);
-        uname3.setText(""+uname);
         noTel2.setText(""+noTel);
         email2.setText(""+email);
         alamat2.setText(""+alamat);
-        
-        this.uname = uname;
-        this.pswd = pswd;
-    }
-    
-    public String getUname(){
-        return uname;
-    }
-    
-    public char[] getPswd(){
-        return pswd;
     }
     
     /**
