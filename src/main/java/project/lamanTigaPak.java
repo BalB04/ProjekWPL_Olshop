@@ -688,19 +688,38 @@ public class lamanTigaPak extends javax.swing.JFrame {
     private void totalKosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalKosActionPerformed
         // TODO add your handling code here:
         int totMerahLip = 90000 * (int)jumLipMer.getValue();
+        String totMerahLipS = 90000 * (int)jumLipMer.getValue()+"  =  " + "Lipstrik Merah  x   " + jumLipMer.getValue()+"\n";
         int totHijauLip = 85000 * (int)jumLipHij.getValue();
+        String totHijauLipS = 85000 * (int)jumLipHij.getValue()+"  =  " + "Lipstrik Hijau  x   " + jumLipHij.getValue()+"\n";
         int totKuningLip = 75000 * (int)jumLipKun.getValue();
+        String totKuningLipS = 75000 * (int)jumLipKun.getValue()+"  =  " + "Lipstrik Kuning  x   " + jumLipKun.getValue()+"\n";
         int totBiruLip = 65000 * (int)jumLipBir.getValue();
+        String totBiruLipS = 65000 * (int)jumLipBir.getValue()+"  =  " + "Lipstrik Biru  x   " + jumLipBir.getValue()+"\n";
         
         int totMerahBed = 1000000 * (int)jumBedMer.getValue();
+        String totMerahBedS = 100000 * (int)jumBedMer.getValue()+"  =  " + "Bedak Merah  x   " + jumLipHij.getValue()+"\n";
         int totHijauBed = 120000 * (int)jumBedHij.getValue();
+        String totHijauBedS = 120000 * (int)jumBedHij.getValue()+"  =  " + "Bedak Hijau  x   " + jumBedHij.getValue()+"\n";
         int totKuningBed = 125000 * (int)jumBedKun.getValue();
+        String totKuningBedS = 125000 * (int)jumBedKun.getValue()+"  =  " + "Bedak Kuning  x   " + jumBedKun.getValue()+"\n";
         int totBiruBed = 110000 * (int)jumBedBir.getValue();
+        String totBiruBedS = 85000 * (int)jumBedBir.getValue()+"  =  " + "Bedak Biru  x   " + jumBedBir.getValue()+"\n";
         
         int totMerahPen = 90000 * (int)jumPenMer.getValue();
+        String totMerahPenS = 90000 * (int)jumPenMer.getValue()+"  =  " + "Pensil Alis Hijau  x   " + jumPenMer.getValue()+"\n";
         int totHijauPen = 80000 * (int)jumPenHij.getValue();
+        String totHijauPenS = 80000 * (int)jumPenHij.getValue()+"  =  " + "Pensil Alis Hijau  x   " + jumPenHij.getValue()+"\n";
         int totKuningPen = 115000 * (int)jumPenKun.getValue();
+        String totLuningPenS = 115000 * (int)jumPenKun.getValue()+"  =  " + "Pensil Alis Kuning  x   " + jumPenKun.getValue()+"\n";
         int totBiruPen = 150000 * (int)jumPenBir.getValue();
+        String totBiruPenS = 150000 * (int)jumPenBir.getValue()+"  =  " + "Pensil Alis Hijau  x   " + jumPenBir.getValue()+"\n";
+        
+        String array[] = {totMerahLipS , totHijauLipS, totKuningLipS, totBiruLipS, totMerahBedS, totHijauBedS, totKuningBedS, totBiruBedS, totMerahPenS, totHijauPenS, totLuningPenS, totBiruPenS};
+        for(int i =0; i< array.length; i++){
+            if(array[i].charAt(0) != '0'){
+                SharedInvoice.sb.append(array[i]);
+            }
+        }
         
         int total = totMerahLip + totHijauLip + totKuningLip + totBiruLip + totMerahBed + totHijauBed + totKuningBed + totBiruBed + totMerahPen + totHijauPen + totKuningPen + totBiruPen;
         
