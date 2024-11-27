@@ -540,7 +540,7 @@ public class lamanTigaPera extends javax.swing.JFrame {
 
     private void kuningKurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningKurActionPerformed
         // TODO add your handling code here:
-         if(kuningKur.isSelected()){
+        if(kuningKur.isSelected()){
             hargaKur.setText("140.000");
             merahKur.setEnabled(false);
             hijauKur.setEnabled(false);
