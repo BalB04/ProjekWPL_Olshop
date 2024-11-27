@@ -11,8 +11,7 @@ package project;
 public class profile extends javax.swing.JFrame {
     private lamanAwal a;
     private lamanAwal2 b;
-    private static String ambilUname;
-    private static String ambilPswd;
+    private static String ambilUname, ambilPswd , ambilNama, ambilNoTel, ambilEmail, ambilAlamat;
     
     /**
      * Creates new form profile
@@ -21,7 +20,30 @@ public class profile extends javax.swing.JFrame {
         initComponents();
     }
     
-    public void simpanData(String uname, String pswd){
+    public void SaveData(String nama, String noTel, String email, String alamat){
+        ambilNama = nama;
+        ambilNoTel = noTel;
+        ambilEmail = email;
+        ambilAlamat = alamat;
+    }
+    
+    public String getNama(){
+        return ambilNama;
+    }
+    
+    public String getNoTel(){
+        return ambilNoTel;
+    }
+    
+    public String getEmail(){
+        return ambilEmail;
+    }
+    
+    public String getAlamat(){
+        return ambilAlamat;
+    }
+    
+    public void loginData(String uname, String pswd){
         ambilUname = uname;
         ambilPswd = pswd;
         uname3.setText(uname);
@@ -100,7 +122,7 @@ public class profile extends javax.swing.JFrame {
             }
         });
 
-        bt3.setText("Kembali");
+        bt3.setText("Login");
         bt3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt3ActionPerformed(evt);

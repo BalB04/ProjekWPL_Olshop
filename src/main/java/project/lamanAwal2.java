@@ -200,6 +200,7 @@ public class lamanAwal2 extends javax.swing.JFrame {
         if (b.cekData(uname, pswd)){
             JOptionPane.showMessageDialog(this, "Login berhasil");
             a.setVisible(true);
+            a.nama(b.getNama());
             this.dispose();
         }else{
             JOptionPane.showMessageDialog(this, "Login gagal, periksa kembali Username/Password");

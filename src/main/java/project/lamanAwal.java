@@ -254,14 +254,15 @@ public class lamanAwal extends javax.swing.JFrame {
 
     private void bt2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt2ActionPerformed
         // TODO add your handling code here:
+        
         String uname=uname1.getText();
         String pswd=new String(pswd1.getPassword());
         a = new profile();
         b = new lamanAwal2();
         
-        a.simpanData(uname, pswd);
-        
-        a.data(nama1.getText(), noTel1.getText(), email1.getText(), alamat1.getText());
+        a.loginData(uname, pswd);
+        a.SaveData(nama1.getText(), noTel1.getText(), email1.getText(), alamat1.getText());
+        a.data(a.getNama(), a.getNoTel(), a.getEmail(), a.getAlamat());
         a.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_bt2ActionPerformed
