@@ -12,6 +12,7 @@ package project;
 public class lamanAwal extends javax.swing.JFrame {
     private profile a;
     private lamanAwal2 b;
+    
     /**
      * Creates new form lamanAwal
      */
@@ -21,8 +22,6 @@ public class lamanAwal extends javax.swing.JFrame {
         b = new lamanAwal2();
     }
     
-    
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -245,7 +244,7 @@ public class lamanAwal extends javax.swing.JFrame {
 
     private void bt2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt2ActionPerformed
         // TODO add your handling code here:
-        a.data(nama1.getText(), pswd1.getText(), uname1.getText(), noTel1.getText(), email1.getText(), alamat1.getText());
+        a.data(nama1.getText(), pswd1.getPassword(), uname1.getText(), noTel1.getText(), email1.getText(), alamat1.getText());
         b.setVisible(true);
         b.pack();
         b.setLocationRelativeTo(null);

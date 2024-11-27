@@ -4,18 +4,22 @@
  */
 package project;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author makhis
  */
 public class lamanAwal2 extends javax.swing.JFrame {
     private lamanAwal a;
+    private profile b;
     /**
      * Creates new form lamanAwal2
      */
     public lamanAwal2() {
         initComponents();
-        a =new lamanAwal();
+        a=new lamanAwal();
+        this.b=new profile();
     }
 
     /**
@@ -170,6 +174,15 @@ public class lamanAwal2 extends javax.swing.JFrame {
 
     private void bt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt1ActionPerformed
         // TODO add your handling code here:
+        String inputUname = uname2.getText();
+        String inputPswd = pswd2.getText();
+        
+        if (inputUname.equals(b.getUname()) && inputPswd.equals(b.getPswd())){
+            JOptionPane.showMessageDialog(this, "Login berhasil");
+        }else{
+            JOptionPane.showMessageDialog(this, "Login gagal, periksa kembali Username/Password");
+        }
+        
         a.setVisible(true);
         a.pack();
         a.setLocationRelativeTo(null);
