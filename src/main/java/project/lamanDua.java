@@ -14,6 +14,8 @@ public class lamanDua extends javax.swing.JFrame {
     private lamanTigaSpo f;
     private lamanTigaPer g;
     private lamanTigaPera h;
+    
+    total i = new total();
     /**
      * Creates new form lamanDua
      */
@@ -444,27 +446,35 @@ public class lamanDua extends javax.swing.JFrame {
         if(pakaian.isSelected()){
             a.setVisible(true);
             a.nama(nama.getText());
+            a.totalHar(i.getInvoice());
         }else if(teknologi.isSelected()){
             b.setVisible(true);
             b.nama(nama.getText());
+            b.totalHar(i.getInvoice());
         }else if(otomotif.isSelected()){
             c.setVisible(true);
             c.nama(nama.getText());
+            c.totalHar(i.getInvoice());
         }else if (bahanMakanan.isSelected()){
             d.setVisible(true);
             d.nama(nama.getText());
+            d.totalHar(i.getInvoice());
         }else if (kosmetik.isSelected()){
             e.setVisible(true);
             e.nama(nama.getText());
+            e.totalHar(i.getInvoice());
         }else if(sport.isSelected()){
             f.setVisible(true);
             f.nama(nama.getText());
+            f.totalHar(i.getInvoice());
         }else if(furniture.isSelected()){
             g.setVisible(true);
             g.nama(nama.getText());
+            g.totalHar(i.getInvoice());
         }else if(tukang.isSelected()){
             h.setVisible(true);
             h.nama(nama.getText());
+            h.totalHar(i.getInvoice());
         }
     }//GEN-LAST:event_buttonlam2ActionPerformed
 

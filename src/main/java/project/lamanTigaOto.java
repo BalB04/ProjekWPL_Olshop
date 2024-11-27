@@ -9,7 +9,7 @@ package project;
  * @author BalbalPC
  */
 public class lamanTigaOto extends javax.swing.JFrame {
-
+    total a = new total();
     /**
      * Creates new form lamanTiga
      */
@@ -31,6 +31,8 @@ public class lamanTigaOto extends javax.swing.JFrame {
         totalOto = new javax.swing.JButton();
         tfTotalOto = new javax.swing.JTextField();
         nama = new javax.swing.JLabel();
+        bayar = new javax.swing.JButton();
+        totalBayar = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         deskMb = new javax.swing.JButton();
@@ -96,6 +98,10 @@ public class lamanTigaOto extends javax.swing.JFrame {
 
         nama.setText("jLabel2");
 
+        bayar.setText("bayar");
+
+        totalBayar.setEditable(false);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -105,6 +111,10 @@ public class lamanTigaOto extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(nama)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bayar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(totalOto)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -121,7 +131,9 @@ public class lamanTigaOto extends javax.swing.JFrame {
                         .addComponent(tfTotalOto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel1)
-                        .addComponent(nama)))
+                        .addComponent(nama)
+                        .addComponent(bayar)
+                        .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -522,7 +534,8 @@ public class lamanTigaOto extends javax.swing.JFrame {
         int totBiruBec = 4005000 * (int)jumBecBir.getValue();
         
         int total = totMerahMob + totHijauMob + totKuningMob + totBiruMob + totMerahMot + totHijauMot + totKuningMot + totBiruMot + totMerahBec + totHijauBec + totKuningBec + totBiruBec;
-        
+        a.setInvoice(total);
+        totalBayar.setText(Integer.toString(a.getInvoice()));
         tfTotalOto.setText(Integer.toString(total));
     }//GEN-LAST:event_totalOtoActionPerformed
 
@@ -728,6 +741,7 @@ public class lamanTigaOto extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bayar;
     private javax.swing.JRadioButton biruBec;
     private javax.swing.JRadioButton biruMob;
     private javax.swing.JRadioButton biruMot;
@@ -771,9 +785,13 @@ public class lamanTigaOto extends javax.swing.JFrame {
     private javax.swing.JRadioButton merahMot;
     private javax.swing.JLabel nama;
     private javax.swing.JTextField tfTotalOto;
+    private javax.swing.JTextField totalBayar;
     private javax.swing.JButton totalOto;
     // End of variables declaration//GEN-END:variables
     void nama(String nama1){
         nama.setText(nama1);
+    }
+    void totalHar(int harga1){
+        totalBayar.setText(Integer.toString(harga1));
     }
 }
