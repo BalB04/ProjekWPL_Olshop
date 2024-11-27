@@ -28,9 +28,9 @@ public class lamanTigaTek extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        textField1 = new java.awt.TextField();
         totalTek = new javax.swing.JButton();
         tfTotalTek = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         deskLap = new javax.swing.JButton();
@@ -39,9 +39,11 @@ public class lamanTigaTek extends javax.swing.JFrame {
         kuningLap = new javax.swing.JRadioButton();
         biruLap = new javax.swing.JRadioButton();
         jLabel19 = new javax.swing.JLabel();
-        jumlahLap = new javax.swing.JSpinner();
-        jLabel3 = new javax.swing.JLabel();
+        jumLapBir = new javax.swing.JSpinner();
         hargaLap = new javax.swing.JTextField();
+        jumLapKun = new javax.swing.JSpinner();
+        jumLapHij = new javax.swing.JSpinner();
+        jumLapMer = new javax.swing.JSpinner();
         jPanel4 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         deskHan = new javax.swing.JButton();
@@ -50,9 +52,11 @@ public class lamanTigaTek extends javax.swing.JFrame {
         kuningHan = new javax.swing.JRadioButton();
         biruHan = new javax.swing.JRadioButton();
         jLabel30 = new javax.swing.JLabel();
-        jumlahHan = new javax.swing.JSpinner();
-        jLabel5 = new javax.swing.JLabel();
-        hargHan = new javax.swing.JTextField();
+        jumHanBir = new javax.swing.JSpinner();
+        hargaHan = new javax.swing.JTextField();
+        jumHanKun = new javax.swing.JSpinner();
+        jumHanHij = new javax.swing.JSpinner();
+        jumHanMer = new javax.swing.JSpinner();
         jPanel5 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         deskKomp = new javax.swing.JButton();
@@ -61,9 +65,11 @@ public class lamanTigaTek extends javax.swing.JFrame {
         kuningKomp = new javax.swing.JRadioButton();
         biruKomp = new javax.swing.JRadioButton();
         jLabel31 = new javax.swing.JLabel();
-        jumlahKomp = new javax.swing.JSpinner();
-        jLabel10 = new javax.swing.JLabel();
+        jumKompBir = new javax.swing.JSpinner();
         hargaKomp = new javax.swing.JTextField();
+        jumKompKun = new javax.swing.JSpinner();
+        jumKompHij = new javax.swing.JSpinner();
+        jumKompMer = new javax.swing.JSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -74,16 +80,16 @@ public class lamanTigaTek extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setText("Hai, Selamat Datang");
 
-        textField1.setText("textField1");
-        textField1.addActionListener(new java.awt.event.ActionListener() {
+        totalTek.setText("total harga");
+        totalTek.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField1ActionPerformed(evt);
+                totalTekActionPerformed(evt);
             }
         });
 
-        totalTek.setText("total harga");
-
         tfTotalTek.setEditable(false);
+
+        jLabel2.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -93,11 +99,11 @@ public class lamanTigaTek extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(totalTek)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(tfTotalTek, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tfTotalTek, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29))
         );
         jPanel1Layout.setVerticalGroup(
@@ -108,9 +114,9 @@ public class lamanTigaTek extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(totalTek)
                         .addComponent(tfTotalTek, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel1)))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel1)
+                        .addComponent(jLabel2)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -126,16 +132,34 @@ public class lamanTigaTek extends javax.swing.JFrame {
         });
 
         hijauLap.setText("hijau");
+        hijauLap.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hijauLapActionPerformed(evt);
+            }
+        });
 
         merahLap.setText("merah");
+        merahLap.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                merahLapActionPerformed(evt);
+            }
+        });
 
         kuningLap.setText("kuning");
+        kuningLap.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kuningLapActionPerformed(evt);
+            }
+        });
 
         biruLap.setText("biru");
+        biruLap.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                biruLapActionPerformed(evt);
+            }
+        });
 
         jLabel19.setText("varian");
-
-        jLabel3.setText("Jumlah");
 
         hargaLap.setEditable(false);
         hargaLap.setText("Rp. 7.000.000");
@@ -157,17 +181,20 @@ public class lamanTigaTek extends javax.swing.JFrame {
                     .addComponent(jLabel6)
                     .addComponent(jLabel19)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(merahLap, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(hijauLap, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(kuningLap, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(merahLap, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumLapMer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jumlahLap, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hijauLap, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumLapHij, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(kuningLap, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumLapKun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jumLapBir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(biruLap, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(hargaLap, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
@@ -190,8 +217,10 @@ public class lamanTigaTek extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(deskLap, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jumlahLap, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
+                    .addComponent(jumLapBir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumLapKun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumLapHij, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumLapMer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
@@ -207,22 +236,40 @@ public class lamanTigaTek extends javax.swing.JFrame {
         });
 
         hijauHan.setText("hijau");
+        hijauHan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hijauHanActionPerformed(evt);
+            }
+        });
 
         merahHan.setText("merah");
+        merahHan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                merahHanActionPerformed(evt);
+            }
+        });
 
         kuningHan.setText("kuning");
+        kuningHan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kuningHanActionPerformed(evt);
+            }
+        });
 
         biruHan.setText("biru");
+        biruHan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                biruHanActionPerformed(evt);
+            }
+        });
 
         jLabel30.setText("varian");
 
-        jLabel5.setText("Jumlah");
-
-        hargHan.setEditable(false);
-        hargHan.setText("Rp. 1.005.000");
-        hargHan.addActionListener(new java.awt.event.ActionListener() {
+        hargaHan.setEditable(false);
+        hargaHan.setText("Rp. 1.005.000");
+        hargaHan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hargHanActionPerformed(evt);
+                hargaHanActionPerformed(evt);
             }
         });
 
@@ -238,19 +285,22 @@ public class lamanTigaTek extends javax.swing.JFrame {
                     .addComponent(jLabel7)
                     .addComponent(jLabel30)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel5)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(merahHan, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(hijauHan, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(kuningHan, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(merahHan, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumHanMer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jumlahHan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hijauHan, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumHanHij, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(kuningHan, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumHanKun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jumHanBir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(biruHan, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(hargHan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(hargaHan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -259,7 +309,7 @@ public class lamanTigaTek extends javax.swing.JFrame {
                 .addGap(42, 42, 42)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(hargHan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(hargaHan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21)
                 .addComponent(jLabel30)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -271,8 +321,10 @@ public class lamanTigaTek extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(deskHan, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jumlahHan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
+                    .addComponent(jumHanBir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumHanKun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumHanHij, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumHanMer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
@@ -288,16 +340,34 @@ public class lamanTigaTek extends javax.swing.JFrame {
         });
 
         hijauKomp.setText("hijau");
+        hijauKomp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hijauKompActionPerformed(evt);
+            }
+        });
 
         merahKomp.setText("merah");
+        merahKomp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                merahKompActionPerformed(evt);
+            }
+        });
 
         kuningKomp.setText("kuning");
+        kuningKomp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kuningKompActionPerformed(evt);
+            }
+        });
 
         biruKomp.setText("biru");
+        biruKomp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                biruKompActionPerformed(evt);
+            }
+        });
 
         jLabel31.setText("varian");
-
-        jLabel10.setText("Jumlah");
 
         hargaKomp.setEditable(false);
         hargaKomp.setText("Rp. 16.500.000");
@@ -316,22 +386,27 @@ public class lamanTigaTek extends javax.swing.JFrame {
                 .addComponent(deskKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9)
                     .addComponent(jLabel31)
+                    .addComponent(hargaKomp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel10)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(merahKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(merahKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jumKompMer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
-                                .addComponent(hijauKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(hijauKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jumKompHij, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
-                                .addComponent(kuningKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(kuningKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jumKompKun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel9))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jumlahKomp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(biruKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(hargaKomp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jumKompBir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(biruKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
@@ -352,8 +427,10 @@ public class lamanTigaTek extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(deskKomp, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jumlahKomp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10))
+                    .addComponent(jumKompBir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumKompKun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumKompHij, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumKompMer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
@@ -390,10 +467,6 @@ public class lamanTigaTek extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_deskLapActionPerformed
 
-    private void textField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_textField1ActionPerformed
-
     private void hargaLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaLapActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hargaLapActionPerformed
@@ -402,9 +475,9 @@ public class lamanTigaTek extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_deskHanActionPerformed
 
-    private void hargHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargHanActionPerformed
+    private void hargaHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaHanActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_hargHanActionPerformed
+    }//GEN-LAST:event_hargaHanActionPerformed
 
     private void deskKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskKompActionPerformed
         // TODO add your handling code here:
@@ -413,6 +486,196 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private void hargaKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaKompActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hargaKompActionPerformed
+
+    private void totalTekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalTekActionPerformed
+        // TODO add your handling code here:
+        int totMerahLap = 7000000 * (int)jumLapMer.getValue();
+        int totHijauLap = 8000000 * (int)jumLapHij.getValue();
+        int totKuningLap = 9000000 * (int)jumLapKun.getValue();
+        int totBiruLap = 10000000 * (int)jumLapBir.getValue();
+        
+        int totMerahKomp = 16500000 * (int)jumKompMer.getValue();
+        int totHijauKomp = 17000000 * (int)jumKompHij.getValue();
+        int totKuningKomp = 17500000 * (int)jumKompKun.getValue();
+        int totBiruKomp = 18000000 * (int)jumKompBir.getValue();
+        
+        int totMerahHan = 1005000 * (int)jumHanMer.getValue();
+        int totHijauHan = 2005000 * (int)jumHanHij.getValue();
+        int totKuningHan = 3005000 * (int)jumHanKun.getValue();
+        int totBiruHan = 4005000 * (int)jumHanBir.getValue();
+        
+        int total = totMerahLap + totHijauLap + totKuningLap + totBiruLap + totMerahKomp + totHijauKomp + totKuningKomp + totBiruKomp + totMerahHan + totHijauHan + totKuningHan + totBiruHan;
+        
+        tfTotalTek.setText(Integer.toString(total));
+    }//GEN-LAST:event_totalTekActionPerformed
+
+    private void merahLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahLapActionPerformed
+        // TODO add your handling code here:
+        if(merahLap.isSelected()){
+            hargaLap.setText("7.000.000");
+            hijauLap.setEnabled(false);
+            kuningLap.setEnabled(false);
+            biruLap.setEnabled(false);
+        }else{
+            hijauLap.setEnabled(true);
+            kuningLap.setEnabled(true);
+            biruLap.setEnabled(true);
+        }
+    }//GEN-LAST:event_merahLapActionPerformed
+
+    private void hijauLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauLapActionPerformed
+        // TODO add your handling code here:
+        if(hijauLap.isSelected()){
+            hargaLap.setText("8.000.000");
+            merahLap.setEnabled(false);
+            kuningLap.setEnabled(false);
+            biruLap.setEnabled(false);
+        }else{
+            merahLap.setEnabled(true);
+            kuningLap.setEnabled(true);
+            biruLap.setEnabled(true);
+        }
+    }//GEN-LAST:event_hijauLapActionPerformed
+
+    private void kuningLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningLapActionPerformed
+        // TODO add your handling code here:
+        if(kuningLap.isSelected()){
+            hargaLap.setText("9.000.000");
+            merahLap.setEnabled(false);
+            hijauLap.setEnabled(false);
+            biruLap.setEnabled(false);
+        }else{
+            merahLap.setEnabled(true);
+            hijauLap.setEnabled(true);
+            biruLap.setEnabled(true);
+        }
+    }//GEN-LAST:event_kuningLapActionPerformed
+
+    private void biruLapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruLapActionPerformed
+        // TODO add your handling code here:
+        if(biruLap.isSelected()){
+            hargaLap.setText("10.000.000");
+            merahLap.setEnabled(false);
+            hijauLap.setEnabled(false);
+            kuningLap.setEnabled(false);
+        }else{
+            merahLap.setEnabled(true);
+            hijauLap.setEnabled(true);
+            kuningLap.setEnabled(true);
+        }
+    }//GEN-LAST:event_biruLapActionPerformed
+
+    private void merahKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahKompActionPerformed
+        // TODO add your handling code here:
+        if(merahKomp.isSelected()){
+            hargaKomp.setText("16.500.000");
+            hijauKomp.setEnabled(false);
+            kuningKomp.setEnabled(false);
+            biruKomp.setEnabled(false);
+        }else{
+            hijauKomp.setEnabled(true);
+            kuningKomp.setEnabled(true);
+            biruKomp.setEnabled(true);
+        }
+    }//GEN-LAST:event_merahKompActionPerformed
+
+    private void hijauKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauKompActionPerformed
+        // TODO add your handling code here:
+        if(hijauKomp.isSelected()){
+            hargaKomp.setText("17.000.000");
+            merahKomp.setEnabled(false);
+            kuningKomp.setEnabled(false);
+            biruKomp.setEnabled(false);
+        }else{
+            merahKomp.setEnabled(true);
+            kuningKomp.setEnabled(true);
+            biruKomp.setEnabled(true);
+        }
+    }//GEN-LAST:event_hijauKompActionPerformed
+
+    private void kuningKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningKompActionPerformed
+        // TODO add your handling code here:
+        if(kuningKomp.isSelected()){
+            hargaKomp.setText("17.500.000");
+            merahKomp.setEnabled(false);
+            hijauKomp.setEnabled(false);
+            biruKomp.setEnabled(false);
+        }else{
+            merahKomp.setEnabled(true);
+            hijauKomp.setEnabled(true);
+            biruKomp.setEnabled(true);
+        }
+    }//GEN-LAST:event_kuningKompActionPerformed
+
+    private void biruKompActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruKompActionPerformed
+        // TODO add your handling code here:
+        if(biruKomp.isSelected()){
+            hargaKomp.setText("18.000.000");
+            merahKomp.setEnabled(false);
+            hijauKomp.setEnabled(false);
+            kuningKomp.setEnabled(false);
+        }else{
+            merahKomp.setEnabled(true);
+            hijauKomp.setEnabled(true);
+            kuningKomp.setEnabled(true);
+        }
+    }//GEN-LAST:event_biruKompActionPerformed
+
+    private void merahHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahHanActionPerformed
+        // TODO add your handling code here:
+        if(merahHan.isSelected()){
+            hargaHan.setText("1.005.000");
+            hijauHan.setEnabled(false);
+            kuningHan.setEnabled(false);
+            biruHan.setEnabled(false);
+        }else{
+            hijauHan.setEnabled(true);
+            kuningHan.setEnabled(true);
+            biruHan.setEnabled(true);
+        }
+    }//GEN-LAST:event_merahHanActionPerformed
+
+    private void hijauHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauHanActionPerformed
+        // TODO add your handling code here:
+        if(hijauHan.isSelected()){
+            hargaHan.setText("2.005.000");
+            merahHan.setEnabled(false);
+            kuningHan.setEnabled(false);
+            biruHan.setEnabled(false);
+        }else{
+            merahHan.setEnabled(true);
+            kuningHan.setEnabled(true);
+            biruHan.setEnabled(true);
+        }
+    }//GEN-LAST:event_hijauHanActionPerformed
+
+    private void kuningHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningHanActionPerformed
+        // TODO add your handling code here:
+        if(kuningHan.isSelected()){
+            hargaHan.setText("3.005.000");
+            merahHan.setEnabled(false);
+            hijauHan.setEnabled(false);
+            biruHan.setEnabled(false);
+        }else{
+            merahHan.setEnabled(true);
+            hijauHan.setEnabled(true);
+            biruHan.setEnabled(true);
+        }
+    }//GEN-LAST:event_kuningHanActionPerformed
+
+    private void biruHanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruHanActionPerformed
+        // TODO add your handling code here:
+        if(biruHan.isSelected()){
+            hargaHan.setText("4.005.000");
+            merahHan.setEnabled(false);
+            hijauHan.setEnabled(false);
+            kuningHan.setEnabled(false);
+        }else{
+            merahHan.setEnabled(true);
+            hijauHan.setEnabled(true);
+            kuningHan.setEnabled(true);
+        }
+    }//GEN-LAST:event_biruHanActionPerformed
 
     /**
      * @param args the command line arguments
@@ -459,19 +722,17 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private javax.swing.JButton deskHan;
     private javax.swing.JButton deskKomp;
     private javax.swing.JButton deskLap;
-    private javax.swing.JTextField hargHan;
+    private javax.swing.JTextField hargaHan;
     private javax.swing.JTextField hargaKomp;
     private javax.swing.JTextField hargaLap;
     private javax.swing.JRadioButton hijauHan;
     private javax.swing.JRadioButton hijauKomp;
     private javax.swing.JRadioButton hijauLap;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
@@ -479,16 +740,24 @@ public class lamanTigaTek extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JSpinner jumlahHan;
-    private javax.swing.JSpinner jumlahKomp;
-    private javax.swing.JSpinner jumlahLap;
+    private javax.swing.JSpinner jumHanBir;
+    private javax.swing.JSpinner jumHanHij;
+    private javax.swing.JSpinner jumHanKun;
+    private javax.swing.JSpinner jumHanMer;
+    private javax.swing.JSpinner jumKompBir;
+    private javax.swing.JSpinner jumKompHij;
+    private javax.swing.JSpinner jumKompKun;
+    private javax.swing.JSpinner jumKompMer;
+    private javax.swing.JSpinner jumLapBir;
+    private javax.swing.JSpinner jumLapHij;
+    private javax.swing.JSpinner jumLapKun;
+    private javax.swing.JSpinner jumLapMer;
     private javax.swing.JRadioButton kuningHan;
     private javax.swing.JRadioButton kuningKomp;
     private javax.swing.JRadioButton kuningLap;
     private javax.swing.JRadioButton merahHan;
     private javax.swing.JRadioButton merahKomp;
     private javax.swing.JRadioButton merahLap;
-    private java.awt.TextField textField1;
     private javax.swing.JTextField tfTotalTek;
     private javax.swing.JButton totalTek;
     // End of variables declaration//GEN-END:variables
