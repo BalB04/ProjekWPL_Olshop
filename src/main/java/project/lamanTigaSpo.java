@@ -3,13 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package project;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author BalbalPC
  */
 public class lamanTigaSpo extends javax.swing.JFrame {
-
+    total a = new total();
     /**
      * Creates new form lamanTiga
      */
@@ -31,6 +31,8 @@ public class lamanTigaSpo extends javax.swing.JFrame {
         totalSpo = new javax.swing.JButton();
         tfTotalSpo = new javax.swing.JTextField();
         nama = new javax.swing.JLabel();
+        bayar = new javax.swing.JButton();
+        totalBayar = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         deskBar = new javax.swing.JButton();
@@ -91,6 +93,15 @@ public class lamanTigaSpo extends javax.swing.JFrame {
 
         nama.setText("jLabel2");
 
+        bayar.setText("bayar");
+        bayar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bayarActionPerformed(evt);
+            }
+        });
+
+        totalBayar.setEditable(false);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -100,6 +111,10 @@ public class lamanTigaSpo extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(nama)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(bayar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(totalSpo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -116,7 +131,9 @@ public class lamanTigaSpo extends javax.swing.JFrame {
                         .addComponent(tfTotalSpo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel1)
-                        .addComponent(nama)))
+                        .addComponent(nama)
+                        .addComponent(bayar)
+                        .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -463,6 +480,7 @@ public class lamanTigaSpo extends javax.swing.JFrame {
 
     private void deskBarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskBarActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: barbel ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskBarActionPerformed
 
     private void hargaBarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaBarActionPerformed
@@ -471,6 +489,7 @@ public class lamanTigaSpo extends javax.swing.JFrame {
 
     private void deskSepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskSepActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: sepatu ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskSepActionPerformed
 
     private void hargaSepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaSepActionPerformed
@@ -479,6 +498,7 @@ public class lamanTigaSpo extends javax.swing.JFrame {
 
     private void deskBolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskBolActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: bola basket ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskBolActionPerformed
 
     private void hargaBolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaBolActionPerformed
@@ -517,7 +537,9 @@ public class lamanTigaSpo extends javax.swing.JFrame {
         int totBiruSep = 540000 * (int)jumSepBir.getValue();
         
         int total = totMerahBar + totHijauBar + totKuningBar + totBiruBar + totMerahBol + totHijauBol + totKuningBol + totBiruBol + totMerahSep + totHijauSep + totKuningSep + totBiruSep;
-        
+        a.setInvoice(total);
+        totalBayar.setText(Integer.toString(a.getInvoice()));
+
         tfTotalSpo.setText(Integer.toString(total));
     }//GEN-LAST:event_totalSpoActionPerformed
 
@@ -675,6 +697,11 @@ public class lamanTigaSpo extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_biruSepActionPerformed
 
+    private void bayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bayarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "total yang dibayar "+ Integer.toString(a.getInvoice()));
+    }//GEN-LAST:event_bayarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -718,6 +745,7 @@ public class lamanTigaSpo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bayar;
     private javax.swing.JRadioButton biruBar;
     private javax.swing.JRadioButton biruBol;
     private javax.swing.JRadioButton biruSep;
@@ -761,9 +789,13 @@ public class lamanTigaSpo extends javax.swing.JFrame {
     private javax.swing.JRadioButton merahSep;
     private javax.swing.JLabel nama;
     private javax.swing.JTextField tfTotalSpo;
+    private javax.swing.JTextField totalBayar;
     private javax.swing.JButton totalSpo;
     // End of variables declaration//GEN-END:variables
     void nama(String nama1){
         nama.setText(nama1);
+    }
+    void totalHar(int harga1){
+        totalBayar.setText(Integer.toString(harga1));
     }
 }

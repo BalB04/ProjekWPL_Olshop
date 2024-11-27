@@ -4,12 +4,13 @@
  */
 package project;
 
+import javax.swing.JOptionPane;
 /**
  *
  * @author BalbalPC
  */
 public class lamanTigaPer extends javax.swing.JFrame {
-
+    total a = new total();
     /**
      * Creates new form lamanTiga
      */
@@ -31,6 +32,8 @@ public class lamanTigaPer extends javax.swing.JFrame {
         totalPer = new javax.swing.JButton();
         tfTotalPer = new javax.swing.JTextField();
         nama = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        totalBayar = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         deskDril = new javax.swing.JButton();
@@ -91,6 +94,15 @@ public class lamanTigaPer extends javax.swing.JFrame {
 
         nama.setText("jLabel2");
 
+        jButton1.setText("bayar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        totalBayar.setEditable(false);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -100,6 +112,10 @@ public class lamanTigaPer extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(nama)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(totalPer)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -116,7 +132,9 @@ public class lamanTigaPer extends javax.swing.JFrame {
                         .addComponent(tfTotalPer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel1)
-                        .addComponent(nama)))
+                        .addComponent(nama)
+                        .addComponent(jButton1)
+                        .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -463,6 +481,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
 
     private void deskDrilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskDrilActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk:  drill ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskDrilActionPerformed
 
     private void hargaDrilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaDrilActionPerformed
@@ -471,6 +490,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
 
     private void deskObeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskObeActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk:  obeng ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskObeActionPerformed
 
     private void hargaObeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaObeActionPerformed
@@ -479,6 +499,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
 
     private void deskToolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskToolActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk:  tool box ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskToolActionPerformed
 
     private void hargaToolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaToolActionPerformed
@@ -517,7 +538,8 @@ public class lamanTigaPer extends javax.swing.JFrame {
         int totBiruObe = 50000 * (int)jumObeBir.getValue();
         
         int total = totMerahDrill + totHijauDrill + totKuningDrill + totBiruDrill + totMerahTool + totHijauTool + totKuningTool + totBiruTool + totMerahObe + totHijauObe + totKuningObe + totBiruObe;
-        
+        a.setInvoice(total);
+        totalBayar.setText(Integer.toString(a.getInvoice()));
         tfTotalPer.setText(Integer.toString(total));
     }//GEN-LAST:event_totalPerActionPerformed
 
@@ -666,6 +688,11 @@ public class lamanTigaPer extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_kuningObeActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "total yang dibayar "+ Integer.toString(a.getInvoice()));
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -721,6 +748,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private javax.swing.JRadioButton hijauDril;
     private javax.swing.JRadioButton hijauObe;
     private javax.swing.JRadioButton hijauTool;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel30;
@@ -752,9 +780,13 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private javax.swing.JRadioButton merahTool;
     private javax.swing.JLabel nama;
     private javax.swing.JTextField tfTotalPer;
+    private javax.swing.JTextField totalBayar;
     private javax.swing.JButton totalPer;
     // End of variables declaration//GEN-END:variables
     void nama(String nama1){
         nama.setText(nama1);
+    }
+    void totalHar(int harga1){
+        totalBayar.setText(Integer.toString(harga1));
     }
 }

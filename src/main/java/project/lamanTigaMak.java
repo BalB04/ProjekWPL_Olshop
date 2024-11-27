@@ -4,17 +4,20 @@
  */
 package project;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author BalbalPC
  */
 public class lamanTigaMak extends javax.swing.JFrame {
-
+    total a = new total();
     /**
      * Creates new form lamanTiga
      */
     public lamanTigaMak() {
         initComponents();
+        totalBayar.setText(Integer.toString(a.getInvoice()));
     }
 
     /**
@@ -31,6 +34,8 @@ public class lamanTigaMak extends javax.swing.JFrame {
         totalGul = new javax.swing.JButton();
         tfTotalMak = new javax.swing.JTextField();
         nama = new javax.swing.JLabel();
+        bayar = new javax.swing.JButton();
+        totalBayar = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         deskSos = new javax.swing.JButton();
@@ -96,6 +101,15 @@ public class lamanTigaMak extends javax.swing.JFrame {
 
         nama.setText("jLabel2");
 
+        bayar.setText("bayar");
+        bayar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bayarActionPerformed(evt);
+            }
+        });
+
+        totalBayar.setEditable(false);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -105,6 +119,10 @@ public class lamanTigaMak extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(nama)
+                .addGap(18, 18, 18)
+                .addComponent(bayar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(totalGul)
                 .addGap(18, 18, 18)
@@ -121,7 +139,9 @@ public class lamanTigaMak extends javax.swing.JFrame {
                         .addComponent(tfTotalMak, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel1)
-                        .addComponent(nama)))
+                        .addComponent(nama)
+                        .addComponent(bayar)
+                        .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -448,7 +468,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -468,6 +488,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
 
     private void deskSosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskSosActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: sosis ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskSosActionPerformed
 
     private void hargaSosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaSosActionPerformed
@@ -476,6 +497,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
 
     private void deskGulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskGulActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: gula ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskGulActionPerformed
 
     private void hargaGulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaGulActionPerformed
@@ -484,6 +506,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
 
     private void deskTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deskTelActionPerformed
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "deskripsi produk: telur ini sangat wadidau sekali, ada 4 varian");
     }//GEN-LAST:event_deskTelActionPerformed
 
     private void hargaTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaTelActionPerformed
@@ -508,7 +531,8 @@ public class lamanTigaMak extends javax.swing.JFrame {
         int totBiruGul = 16000 * (int)jumlahGulBir.getValue();
         
         int total = totMerahSos + totHijauSos + totKuningSos + totBiruSos + totMerahTel + totHijauTel + totKuningTel + totBiruTel + totMerahGul + totHijauGul + totKuningGul + totBiruGul;
-        
+        a.setInvoice(total);
+        totalBayar.setText(Integer.toString(a.getInvoice()));
         tfTotalMak.setText(Integer.toString(total));
         
     }//GEN-LAST:event_totalGulActionPerformed
@@ -685,6 +709,11 @@ public class lamanTigaMak extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_hijauGulActionPerformed
 
+    private void bayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bayarActionPerformed
+        // TODO add your handling code here:
+                JOptionPane.showMessageDialog(null, "total yang dibayar "+ Integer.toString(a.getInvoice()));
+    }//GEN-LAST:event_bayarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -728,6 +757,7 @@ public class lamanTigaMak extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bayar;
     private javax.swing.JRadioButton biruGul;
     private javax.swing.JRadioButton biruSos;
     private javax.swing.JRadioButton biruTel;
@@ -771,10 +801,13 @@ public class lamanTigaMak extends javax.swing.JFrame {
     private javax.swing.JRadioButton merahSos;
     private javax.swing.JLabel nama;
     private javax.swing.JTextField tfTotalMak;
+    private javax.swing.JTextField totalBayar;
     private javax.swing.JButton totalGul;
     // End of variables declaration//GEN-END:variables
     void nama(String nama1){
         nama.setText(nama1);
     }
-
+    void totalHar(int harga1){
+        totalBayar.setText(Integer.toString(harga1));
+    }
 }
