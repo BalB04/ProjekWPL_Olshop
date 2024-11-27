@@ -245,6 +245,7 @@ public class lamanAwal extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     
     private void uname1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uname1ActionPerformed
@@ -261,7 +262,7 @@ public class lamanAwal extends javax.swing.JFrame {
         a.simpanData(uname, pswd);
         
         a.data(nama1.getText(), noTel1.getText(), email1.getText(), alamat1.getText());
-        b.setVisible(true);
+        a.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_bt2ActionPerformed
 

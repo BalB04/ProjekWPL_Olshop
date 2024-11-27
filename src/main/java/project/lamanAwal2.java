@@ -199,12 +199,11 @@ public class lamanAwal2 extends javax.swing.JFrame {
         
         if (b.cekData(uname, pswd)){
             JOptionPane.showMessageDialog(this, "Login berhasil");
+            a.setVisible(true);
+            this.dispose();
         }else{
             JOptionPane.showMessageDialog(this, "Login gagal, periksa kembali Username/Password");
         }
-        
-        a.setVisible(true);
-        this.dispose();
     }//GEN-LAST:event_bt1ActionPerformed
 
     private void uname2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uname2ActionPerformed

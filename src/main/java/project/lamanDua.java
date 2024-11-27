@@ -63,7 +63,7 @@ public class lamanDua extends javax.swing.JFrame {
         imgPer = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        nama = new javax.swing.JLabel();
+        name = new javax.swing.JLabel();
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setText("Hai, Selamat Datang");
@@ -253,7 +253,7 @@ public class lamanDua extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setText("Hai, Selamat Datang");
 
-        nama.setText("jLabel2");
+        name.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -263,7 +263,7 @@ public class lamanDua extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(nama)
+                .addComponent(name)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -272,7 +272,7 @@ public class lamanDua extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(nama))
+                    .addComponent(name))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -445,35 +445,35 @@ public class lamanDua extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(pakaian.isSelected()){
             a.setVisible(true);
-            a.nama(nama.getText());
+            a.nama(name.getText());
             a.totalHar(i.getInvoice());
         }else if(teknologi.isSelected()){
             b.setVisible(true);
-            b.nama(nama.getText());
+            b.nama(name.getText());
             b.totalHar(i.getInvoice());
         }else if(otomotif.isSelected()){
             c.setVisible(true);
-            c.nama(nama.getText());
+            c.nama(name.getText());
             c.totalHar(i.getInvoice());
         }else if (bahanMakanan.isSelected()){
             d.setVisible(true);
-            d.nama(nama.getText());
+            d.nama(name.getText());
             d.totalHar(i.getInvoice());
         }else if (kosmetik.isSelected()){
             e.setVisible(true);
-            e.nama(nama.getText());
+            e.nama(name.getText());
             e.totalHar(i.getInvoice());
         }else if(sport.isSelected()){
             f.setVisible(true);
-            f.nama(nama.getText());
+            f.nama(name.getText());
             f.totalHar(i.getInvoice());
         }else if(furniture.isSelected()){
             g.setVisible(true);
-            g.nama(nama.getText());
+            g.nama(name.getText());
             g.totalHar(i.getInvoice());
         }else if(tukang.isSelected()){
             h.setVisible(true);
-            h.nama(nama.getText());
+            h.nama(name.getText());
             h.totalHar(i.getInvoice());
         }
     }//GEN-LAST:event_buttonlam2ActionPerformed
@@ -672,7 +672,7 @@ public class lamanDua extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JRadioButton kosmetik;
-    private javax.swing.JLabel nama;
+    private javax.swing.JLabel name;
     private javax.swing.JRadioButton otomotif;
     private javax.swing.JRadioButton pakaian;
     private javax.swing.JRadioButton sport;
@@ -681,6 +681,6 @@ public class lamanDua extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     void nama(String nama1){
-        nama.setText(nama1);
+        name.setText(nama1);
     }
 }

@@ -9,8 +9,8 @@ package project;
  * @author makhis
  */
 public class profile extends javax.swing.JFrame {
-    private lamanTigaKos b;
-    private lamanDua a;
+    private lamanAwal a;
+    private lamanAwal2 b;
     private static String ambilUname;
     private static String ambilPswd;
     
@@ -19,28 +19,24 @@ public class profile extends javax.swing.JFrame {
      */
     public profile() {
         initComponents();
-        a=new lamanDua();
     }
     
     public void simpanData(String uname, String pswd){
         ambilUname = uname;
         ambilPswd = pswd;
+        uname3.setText(uname);
+        pswd3.setText(pswd);
     }
     
     public boolean cekData(String uname, String pswd){
         return uname.equals(ambilUname) && pswd.equals(ambilPswd);
     }
     
-    public void tampilData(String uname, String pswd){
-        uname3.setText(""+ ambilUname);
-        pswd3.setText(""+ ambilPswd);
-    }
-    
     public void data(String nama, String noTel, String email, String alamat){
-        nama2.setText(""+nama);
-        noTel2.setText(""+noTel);
-        email2.setText(""+email);
-        alamat2.setText(""+alamat);
+        nama2.setText(nama);
+        noTel2.setText(noTel);
+        email2.setText(email);
+        alamat2.setText(alamat);
     }
     
     /**
@@ -153,6 +149,12 @@ public class profile extends javax.swing.JFrame {
 
         jLabel8.setText("Alamat");
 
+        pswd3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pswd3ActionPerformed(evt);
+            }
+        });
+
         bt4.setText("Show");
         bt4.setPreferredSize(new java.awt.Dimension(60, 28));
         bt4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -257,9 +259,10 @@ public class profile extends javax.swing.JFrame {
 
     private void bt3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt3ActionPerformed
         // TODO add your handling code here:
+        b=new lamanAwal2();
+        
+        b.setVisible(true);
         this.dispose();
-        a.nama(noTel2.getText());
-        a.setVisible(true);
     }//GEN-LAST:event_bt3ActionPerformed
 
     private void noTel2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noTel2ActionPerformed
@@ -287,6 +290,10 @@ public class profile extends javax.swing.JFrame {
         // TODO add your handling code here:
         pswd3.setEchoChar('*');
     }//GEN-LAST:event_bt4MouseReleased
+
+    private void pswd3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pswd3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pswd3ActionPerformed
 
     /**
      * @param args the command line arguments
