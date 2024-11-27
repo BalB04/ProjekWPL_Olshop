@@ -22,13 +22,18 @@ public class profile extends javax.swing.JFrame {
         a=new lamanDua();
     }
     
-    public static void simpanData(String uname, String pswd){
+    public void simpanData(String uname, String pswd){
         ambilUname = uname;
         ambilPswd = pswd;
     }
     
-    public static boolean cekData(String uname, String pswd){
+    public boolean cekData(String uname, String pswd){
         return uname.equals(ambilUname) && pswd.equals(ambilPswd);
+    }
+    
+    public void tampilData(String uname, String pswd){
+        uname3.setText(""+ ambilUname);
+        pswd3.setText(""+ ambilPswd);
     }
     
     public void data(String nama, String noTel, String email, String alamat){
@@ -64,7 +69,7 @@ public class profile extends javax.swing.JFrame {
         alamat2 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         pswd3 = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
+        bt4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(450, 600));
@@ -148,14 +153,14 @@ public class profile extends javax.swing.JFrame {
 
         jLabel8.setText("Alamat");
 
-        jButton1.setText("Show");
-        jButton1.setPreferredSize(new java.awt.Dimension(60, 28));
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt4.setText("Show");
+        bt4.setPreferredSize(new java.awt.Dimension(60, 28));
+        bt4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jButton1MousePressed(evt);
+                bt4MousePressed(evt);
             }
             public void mouseReleased(java.awt.event.MouseEvent evt) {
-                jButton1MouseReleased(evt);
+                bt4MouseReleased(evt);
             }
         });
 
@@ -183,7 +188,7 @@ public class profile extends javax.swing.JFrame {
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addComponent(pswd3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(10, 10, 10)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(bt4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(106, 106, 106)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -203,7 +208,7 @@ public class profile extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pswd3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(bt4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -273,15 +278,15 @@ public class profile extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_alamat2ActionPerformed
 
-    private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
+    private void bt4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt4MousePressed
         // TODO add your handling code here:
         pswd3.setEchoChar((char)0);
-    }//GEN-LAST:event_jButton1MousePressed
+    }//GEN-LAST:event_bt4MousePressed
 
-    private void jButton1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseReleased
+    private void bt4MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt4MouseReleased
         // TODO add your handling code here:
         pswd3.setEchoChar('*');
-    }//GEN-LAST:event_jButton1MouseReleased
+    }//GEN-LAST:event_bt4MouseReleased
 
     /**
      * @param args the command line arguments
@@ -321,8 +326,8 @@ public class profile extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField alamat2;
     private javax.swing.JButton bt3;
+    private javax.swing.JButton bt4;
     private javax.swing.JTextField email2;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

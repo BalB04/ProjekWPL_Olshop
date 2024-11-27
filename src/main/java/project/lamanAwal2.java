@@ -11,15 +11,14 @@ import javax.swing.JOptionPane;
  * @author makhis
  */
 public class lamanAwal2 extends javax.swing.JFrame {
-    private lamanAwal a;
+    private lamanDua a;
     private profile b;
+    private lamanAwal c;
     /**
      * Creates new form lamanAwal2
      */
     public lamanAwal2() {
         initComponents();
-        a=new lamanAwal();
-        b=new profile();
     }
 
     /**
@@ -41,7 +40,9 @@ public class lamanAwal2 extends javax.swing.JFrame {
         uname2 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         pswd2 = new javax.swing.JPasswordField();
-        cb1 = new javax.swing.JCheckBox();
+        cb2 = new javax.swing.JCheckBox();
+        jLabel3 = new javax.swing.JLabel();
+        bt5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login");
@@ -99,10 +100,19 @@ public class lamanAwal2 extends javax.swing.JFrame {
         jLabel6.setText("LOGIN");
         jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        cb1.setText("Show Password");
-        cb1.addActionListener(new java.awt.event.ActionListener() {
+        cb2.setText("Show Password");
+        cb2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cb1ActionPerformed(evt);
+                cb2ActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setText("Belum daftar? Silahkan daftar segera");
+
+        bt5.setText("Daftar");
+        bt5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt5ActionPerformed(evt);
             }
         });
 
@@ -118,9 +128,14 @@ public class lamanAwal2 extends javax.swing.JFrame {
                             .addComponent(jLabel2)
                             .addComponent(uname2, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1)
-                            .addComponent(bt1)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(bt1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(bt5))
                             .addComponent(pswd2, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cb1)))
+                            .addComponent(cb2)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(125, 125, 125)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -145,9 +160,12 @@ public class lamanAwal2 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pswd2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cb1)
+                .addComponent(cb2)
                 .addGap(24, 24, 24)
-                .addComponent(bt1)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bt1)
+                    .addComponent(jLabel3)
+                    .addComponent(bt5))
                 .addContainerGap(60, Short.MAX_VALUE))
         );
 
@@ -176,6 +194,8 @@ public class lamanAwal2 extends javax.swing.JFrame {
         // TODO add your handling code here:
         String uname = uname2.getText();
         String pswd = new String (pswd2.getPassword());
+        a=new lamanDua();
+        b=new profile();
         
         if (b.cekData(uname, pswd)){
             JOptionPane.showMessageDialog(this, "Login berhasil");
@@ -191,14 +211,22 @@ public class lamanAwal2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_uname2ActionPerformed
 
-    private void cb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb1ActionPerformed
+    private void cb2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb2ActionPerformed
         // TODO add your handling code here:
-        if (cb1.isSelected()){
+        if (cb2.isSelected()){
             pswd2.setEchoChar((char)0);
         }else{
             pswd2.setEchoChar('*');
         }
-    }//GEN-LAST:event_cb1ActionPerformed
+    }//GEN-LAST:event_cb2ActionPerformed
+
+    private void bt5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt5ActionPerformed
+        // TODO add your handling code here:
+        c=new lamanAwal();
+        
+        c.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_bt5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -237,9 +265,11 @@ public class lamanAwal2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bt1;
-    private javax.swing.JCheckBox cb1;
+    private javax.swing.JButton bt5;
+    private javax.swing.JCheckBox cb2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel4;

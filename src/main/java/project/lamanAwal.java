@@ -18,8 +18,6 @@ public class lamanAwal extends javax.swing.JFrame {
      */
     public lamanAwal() {
         initComponents();
-        a = new profile();
-        b = new lamanAwal2();
     }
     
     /**
@@ -50,6 +48,7 @@ public class lamanAwal extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         uname1 = new javax.swing.JTextField();
+        cb1 = new javax.swing.JCheckBox();
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
@@ -73,7 +72,7 @@ public class lamanAwal extends javax.swing.JFrame {
         jPanel3.setLayout(null);
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 51));
-        jPanel2.setPreferredSize(new java.awt.Dimension(300, 600));
+        jPanel2.setPreferredSize(new java.awt.Dimension(300, 610));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -87,10 +86,10 @@ public class lamanAwal extends javax.swing.JFrame {
         );
 
         jPanel3.add(jPanel2);
-        jPanel2.setBounds(450, 0, 300, 600);
+        jPanel2.setBounds(450, 0, 300, 610);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setPreferredSize(new java.awt.Dimension(450, 600));
+        jPanel1.setPreferredSize(new java.awt.Dimension(450, 610));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -151,6 +150,13 @@ public class lamanAwal extends javax.swing.JFrame {
             }
         });
 
+        cb1.setText("Show Password");
+        cb1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -172,7 +178,8 @@ public class lamanAwal extends javax.swing.JFrame {
                             .addComponent(alamat1, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel8)
                             .addComponent(jLabel3)
-                            .addComponent(uname1, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(uname1, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cb1)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(125, 125, 125)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -200,7 +207,9 @@ public class lamanAwal extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pswd1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(cb1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(noTel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -214,11 +223,11 @@ public class lamanAwal extends javax.swing.JFrame {
                 .addComponent(alamat1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(bt2)
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addGap(51, 51, 51))
         );
 
         jPanel3.add(jPanel1);
-        jPanel1.setBounds(0, 0, 450, 600);
+        jPanel1.setBounds(0, 0, 450, 610);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -226,13 +235,13 @@ public class lamanAwal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(152, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         pack();
@@ -246,6 +255,8 @@ public class lamanAwal extends javax.swing.JFrame {
         // TODO add your handling code here:
         String uname=uname1.getText();
         String pswd=new String(pswd1.getPassword());
+        a = new profile();
+        b = new lamanAwal2();
         
         a.simpanData(uname, pswd);
         
@@ -269,6 +280,15 @@ public class lamanAwal extends javax.swing.JFrame {
     private void alamat1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alamat1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_alamat1ActionPerformed
+
+    private void cb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb1ActionPerformed
+        // TODO add your handling code here:
+        if (cb1.isSelected()){
+            pswd1.setEchoChar((char)0);
+        }else{
+            pswd1.setEchoChar('*');
+        }
+    }//GEN-LAST:event_cb1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -308,6 +328,7 @@ public class lamanAwal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField alamat1;
     private javax.swing.JButton bt2;
+    private javax.swing.JCheckBox cb1;
     private javax.swing.JTextField email1;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
