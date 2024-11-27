@@ -28,9 +28,9 @@ public class lamanTigaPera extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        textField1 = new java.awt.TextField();
         totalPera = new javax.swing.JButton();
         tfTotalPera = new javax.swing.JTextField();
+        nama = new javax.swing.JLabel();
         desk = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         deskKur = new javax.swing.JButton();
@@ -39,9 +39,11 @@ public class lamanTigaPera extends javax.swing.JFrame {
         kuningKur = new javax.swing.JRadioButton();
         biruKur = new javax.swing.JRadioButton();
         jLabel19 = new javax.swing.JLabel();
-        jumlahKur = new javax.swing.JSpinner();
-        jLabel3 = new javax.swing.JLabel();
+        jumKurBir = new javax.swing.JSpinner();
         hargaKur = new javax.swing.JTextField();
+        jumKurMer = new javax.swing.JSpinner();
+        jumKurHij = new javax.swing.JSpinner();
+        jumKurKun = new javax.swing.JSpinner();
         jPanel4 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         deskLem = new javax.swing.JButton();
@@ -50,9 +52,11 @@ public class lamanTigaPera extends javax.swing.JFrame {
         kuningLem = new javax.swing.JRadioButton();
         biruLem = new javax.swing.JRadioButton();
         jLabel30 = new javax.swing.JLabel();
-        jumlahLem = new javax.swing.JSpinner();
-        jLabel5 = new javax.swing.JLabel();
+        jumLemBir = new javax.swing.JSpinner();
         hargaLem = new javax.swing.JTextField();
+        jumLemKun = new javax.swing.JSpinner();
+        jumLemHij = new javax.swing.JSpinner();
+        jumLemMer = new javax.swing.JSpinner();
         jPanel5 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         deskMej = new javax.swing.JButton();
@@ -61,9 +65,11 @@ public class lamanTigaPera extends javax.swing.JFrame {
         kuningMej = new javax.swing.JRadioButton();
         biruMej = new javax.swing.JRadioButton();
         jLabel31 = new javax.swing.JLabel();
-        jumlahMej = new javax.swing.JSpinner();
-        jLabel10 = new javax.swing.JLabel();
+        jumMejBir = new javax.swing.JSpinner();
         hargaMej = new javax.swing.JTextField();
+        jumMejKun = new javax.swing.JSpinner();
+        jumMejHij = new javax.swing.JSpinner();
+        jumMejMer = new javax.swing.JSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -74,16 +80,16 @@ public class lamanTigaPera extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setText("Hai, Selamat Datang");
 
-        textField1.setText("textField1");
-        textField1.addActionListener(new java.awt.event.ActionListener() {
+        totalPera.setText("total harga");
+        totalPera.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField1ActionPerformed(evt);
+                totalPeraActionPerformed(evt);
             }
         });
 
-        totalPera.setText("total harga");
-
         tfTotalPera.setEditable(false);
+
+        nama.setText("jLabel2");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -93,11 +99,11 @@ public class lamanTigaPera extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(nama)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(totalPera)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(tfTotalPera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tfTotalPera, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29))
         );
         jPanel1Layout.setVerticalGroup(
@@ -108,9 +114,9 @@ public class lamanTigaPera extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(totalPera)
                         .addComponent(tfTotalPera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(textField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel1)))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel1)
+                        .addComponent(nama)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -126,16 +132,34 @@ public class lamanTigaPera extends javax.swing.JFrame {
         });
 
         hijauKur.setText("hijau");
+        hijauKur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hijauKurActionPerformed(evt);
+            }
+        });
 
         merahKur.setText("merah");
+        merahKur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                merahKurActionPerformed(evt);
+            }
+        });
 
         kuningKur.setText("kuning");
+        kuningKur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kuningKurActionPerformed(evt);
+            }
+        });
 
         biruKur.setText("biru");
+        biruKur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                biruKurActionPerformed(evt);
+            }
+        });
 
         jLabel19.setText("varian");
-
-        jLabel3.setText("Jumlah");
 
         hargaKur.setEditable(false);
         hargaKur.setText("Rp. 120.000");
@@ -157,17 +181,23 @@ public class lamanTigaPera extends javax.swing.JFrame {
                     .addComponent(jLabel6)
                     .addComponent(jLabel19)
                     .addGroup(deskLayout.createSequentialGroup()
-                        .addGroup(deskLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3)
-                            .addGroup(deskLayout.createSequentialGroup()
+                        .addGroup(deskLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, deskLayout.createSequentialGroup()
                                 .addComponent(merahKur, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(hijauKur, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(kuningKur, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(18, 18, 18))
+                            .addGroup(deskLayout.createSequentialGroup()
+                                .addComponent(jumKurMer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(41, 41, 41)))
+                        .addGroup(deskLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(hijauKur, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumKurHij, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(deskLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jumlahKur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumKurKun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kuningKur, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(deskLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jumKurBir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(biruKur, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(hargaKur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
@@ -190,8 +220,10 @@ public class lamanTigaPera extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(deskLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(deskKur, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jumlahKur, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
+                    .addComponent(jumKurBir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumKurMer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumKurHij, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumKurKun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
@@ -207,16 +239,34 @@ public class lamanTigaPera extends javax.swing.JFrame {
         });
 
         hijauLem.setText("hijau");
+        hijauLem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hijauLemActionPerformed(evt);
+            }
+        });
 
         merahLem.setText("merah");
+        merahLem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                merahLemActionPerformed(evt);
+            }
+        });
 
         kuningLem.setText("kuning");
+        kuningLem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kuningLemActionPerformed(evt);
+            }
+        });
 
         biruLem.setText("biru");
+        biruLem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                biruLemActionPerformed(evt);
+            }
+        });
 
         jLabel30.setText("varian");
-
-        jLabel5.setText("Jumlah");
 
         hargaLem.setEditable(false);
         hargaLem.setText("Rp. 1.005.000");
@@ -238,17 +288,20 @@ public class lamanTigaPera extends javax.swing.JFrame {
                     .addComponent(jLabel7)
                     .addComponent(jLabel30)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel5)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(merahLem, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(hijauLem, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(kuningLem, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(merahLem, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumLemMer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jumlahLem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hijauLem, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumLemHij, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(kuningLem, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumLemKun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jumLemBir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(biruLem, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(hargaLem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
@@ -271,8 +324,10 @@ public class lamanTigaPera extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(deskLem, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jumlahLem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
+                    .addComponent(jumLemBir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumLemKun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumLemHij, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumLemMer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
@@ -288,16 +343,34 @@ public class lamanTigaPera extends javax.swing.JFrame {
         });
 
         hijauMej.setText("hijau");
+        hijauMej.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hijauMejActionPerformed(evt);
+            }
+        });
 
         merahMej.setText("merah");
+        merahMej.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                merahMejActionPerformed(evt);
+            }
+        });
 
         kuningMej.setText("kuning");
+        kuningMej.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kuningMejActionPerformed(evt);
+            }
+        });
 
         biruMej.setText("biru");
+        biruMej.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                biruMejActionPerformed(evt);
+            }
+        });
 
         jLabel31.setText("varian");
-
-        jLabel10.setText("Jumlah");
 
         hargaMej.setEditable(false);
         hargaMej.setText("Rp. 300.000");
@@ -319,17 +392,20 @@ public class lamanTigaPera extends javax.swing.JFrame {
                     .addComponent(jLabel9)
                     .addComponent(jLabel31)
                     .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel10)
-                            .addGroup(jPanel5Layout.createSequentialGroup()
-                                .addComponent(merahMej, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(hijauMej, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(kuningMej, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(merahMej, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumMejMer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jumlahMej, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hijauMej, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumMejHij, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(kuningMej, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jumMejKun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jumMejBir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(biruMej, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(hargaMej, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(23, Short.MAX_VALUE))
@@ -352,8 +428,10 @@ public class lamanTigaPera extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(deskMej, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jumlahMej, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10))
+                    .addComponent(jumMejBir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumMejKun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumMejHij, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jumMejMer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(13, Short.MAX_VALUE))
         );
 
@@ -390,10 +468,6 @@ public class lamanTigaPera extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_deskKurActionPerformed
 
-    private void textField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_textField1ActionPerformed
-
     private void hargaKurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaKurActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hargaKurActionPerformed
@@ -413,6 +487,198 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private void hargaMejActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hargaMejActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hargaMejActionPerformed
+
+    private void merahKurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahKurActionPerformed
+        // TODO add your handling code here:
+        if(merahKur.isSelected()){
+            hargaKur.setText("120.000");
+            hijauKur.setEnabled(false);
+            kuningKur.setEnabled(false);
+            biruKur.setEnabled(false);
+        }else{
+            hijauKur.setEnabled(true);
+            kuningKur.setEnabled(true);
+            biruKur.setEnabled(true);
+        }
+    }//GEN-LAST:event_merahKurActionPerformed
+
+    private void totalPeraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_totalPeraActionPerformed
+        // TODO add your handling code here:
+        int totMerahKur = 120000 * (int)jumKurMer.getValue();
+        int totHijauKur = 130000 * (int)jumKurHij.getValue();
+        int totKuningKur = 140000 * (int)jumKurKun.getValue();
+        int totBiruKur = 150000 * (int)jumKurBir.getValue();
+        
+        int totMerahMej = 300000 * (int)jumMejMer.getValue();
+        int totHijauMej = 350000 * (int)jumMejHij.getValue();
+        int totKuningMej = 400000 * (int)jumMejKun.getValue();
+        int totBiruMej = 450000 * (int)jumMejBir.getValue();
+        
+        int totMerahLem = 1005000 * (int)jumLemMer.getValue();
+        int totHijauLem = 1100000 * (int)jumLemHij.getValue();
+        int totKuningLem = 1150000 * (int)jumLemKun.getValue();
+        int totBiruLem = 1200000 * (int)jumLemBir.getValue();
+        
+        int total = totMerahKur + totHijauKur + totKuningKur + totBiruKur + totMerahMej + totHijauMej + totKuningMej + totBiruMej + totMerahLem + totHijauLem + totKuningLem + totBiruLem;
+        
+        tfTotalPera.setText(Integer.toString(total));
+    }//GEN-LAST:event_totalPeraActionPerformed
+
+    private void hijauKurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauKurActionPerformed
+        // TODO add your handling code here:
+         if(hijauKur.isSelected()){
+            hargaKur.setText("130.000");
+            merahKur.setEnabled(false);
+            kuningKur.setEnabled(false);
+            biruKur.setEnabled(false);
+        }else{
+            merahKur.setEnabled(true);
+            kuningKur.setEnabled(true);
+            biruKur.setEnabled(true);
+        }
+    }//GEN-LAST:event_hijauKurActionPerformed
+
+    private void kuningKurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningKurActionPerformed
+        // TODO add your handling code here:
+         if(kuningKur.isSelected()){
+            hargaKur.setText("140.000");
+            merahKur.setEnabled(false);
+            hijauKur.setEnabled(false);
+            biruKur.setEnabled(false);
+        }else{
+            merahKur.setEnabled(true);
+            hijauKur.setEnabled(true);
+            biruKur.setEnabled(true);
+        }
+    }//GEN-LAST:event_kuningKurActionPerformed
+
+    private void biruKurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruKurActionPerformed
+        // TODO add your handling code here:
+        if(biruKur.isSelected()){
+            hargaKur.setText("150.000");
+            merahKur.setEnabled(false);
+            hijauKur.setEnabled(false);
+            kuningKur.setEnabled(false);
+        }else{
+            merahKur.setEnabled(true);
+            hijauKur.setEnabled(true);
+            kuningKur.setEnabled(true);
+        }
+    }//GEN-LAST:event_biruKurActionPerformed
+
+    private void merahMejActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahMejActionPerformed
+        // TODO add your handling code here:
+        if(merahMej.isSelected()){
+            hargaMej.setText("300.000");
+            hijauMej.setEnabled(false);
+            kuningMej.setEnabled(false);
+            biruMej.setEnabled(false);
+        }else{
+            hijauMej.setEnabled(true);
+            kuningMej.setEnabled(true);
+            biruMej.setEnabled(true);
+        }
+
+    }//GEN-LAST:event_merahMejActionPerformed
+
+    private void hijauMejActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauMejActionPerformed
+        // TODO add your handling code here:
+         if(hijauMej.isSelected()){
+            hargaMej.setText("350.000");
+            merahMej.setEnabled(false);
+            kuningMej.setEnabled(false);
+            biruMej.setEnabled(false);
+        }else{
+            merahMej.setEnabled(true);
+            kuningMej.setEnabled(true);
+            biruMej.setEnabled(true);
+        }
+    }//GEN-LAST:event_hijauMejActionPerformed
+
+    private void kuningMejActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningMejActionPerformed
+        // TODO add your handling code here:
+         if(kuningMej.isSelected()){
+            hargaMej.setText("400.000");
+            merahMej.setEnabled(false);
+            hijauMej.setEnabled(false);
+            biruMej.setEnabled(false);
+        }else{
+            merahMej.setEnabled(true);
+            hijauMej.setEnabled(true);
+            biruMej.setEnabled(true);
+        }
+    }//GEN-LAST:event_kuningMejActionPerformed
+
+    private void biruMejActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruMejActionPerformed
+        // TODO add your handling code here:
+        if(biruMej.isSelected()){
+            hargaMej.setText("450.000");
+            merahMej.setEnabled(false);
+            hijauMej.setEnabled(false);
+            kuningMej.setEnabled(false);
+        }else{
+            merahMej.setEnabled(true);
+            hijauMej.setEnabled(true);
+            kuningMej.setEnabled(true);
+        }
+    }//GEN-LAST:event_biruMejActionPerformed
+
+    private void merahLemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_merahLemActionPerformed
+        // TODO add your handling code here:
+        if(merahLem.isSelected()){
+            hargaLem.setText("1.005.000");
+            hijauLem.setEnabled(false);
+            kuningLem.setEnabled(false);
+            biruLem.setEnabled(false);
+        }else{
+            hijauLem.setEnabled(true);
+            kuningLem.setEnabled(true);
+            biruLem.setEnabled(true);
+        }
+
+    }//GEN-LAST:event_merahLemActionPerformed
+
+    private void hijauLemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hijauLemActionPerformed
+        // TODO add your handling code here:
+         if(hijauLem.isSelected()){
+            hargaLem.setText("1.100.000");
+            merahLem.setEnabled(false);
+            kuningLem.setEnabled(false);
+            biruLem.setEnabled(false);
+        }else{
+            merahLem.setEnabled(true);
+            kuningLem.setEnabled(true);
+            biruLem.setEnabled(true);
+        }
+    }//GEN-LAST:event_hijauLemActionPerformed
+
+    private void kuningLemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kuningLemActionPerformed
+        // TODO add your handling code here:
+         if(kuningLem.isSelected()){
+            hargaLem.setText("1.150.000");
+            merahLem.setEnabled(false);
+            hijauLem.setEnabled(false);
+            biruLem.setEnabled(false);
+        }else{
+            merahLem.setEnabled(true);
+            hijauLem.setEnabled(true);
+            biruLem.setEnabled(true);
+        }
+    }//GEN-LAST:event_kuningLemActionPerformed
+
+    private void biruLemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biruLemActionPerformed
+        // TODO add your handling code here:
+        if(biruLem.isSelected()){
+            hargaLem.setText("1.200.000");
+            merahLem.setEnabled(false);
+            hijauLem.setEnabled(false);
+            kuningLem.setEnabled(false);
+        }else{
+            merahLem.setEnabled(true);
+            hijauLem.setEnabled(true);
+            kuningLem.setEnabled(true);
+        }
+    }//GEN-LAST:event_biruLemActionPerformed
 
     /**
      * @param args the command line arguments
@@ -471,29 +737,39 @@ public class lamanTigaPera extends javax.swing.JFrame {
     private javax.swing.JRadioButton hijauLem;
     private javax.swing.JRadioButton hijauMej;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JSpinner jumlahKur;
-    private javax.swing.JSpinner jumlahLem;
-    private javax.swing.JSpinner jumlahMej;
+    private javax.swing.JSpinner jumKurBir;
+    private javax.swing.JSpinner jumKurHij;
+    private javax.swing.JSpinner jumKurKun;
+    private javax.swing.JSpinner jumKurMer;
+    private javax.swing.JSpinner jumLemBir;
+    private javax.swing.JSpinner jumLemHij;
+    private javax.swing.JSpinner jumLemKun;
+    private javax.swing.JSpinner jumLemMer;
+    private javax.swing.JSpinner jumMejBir;
+    private javax.swing.JSpinner jumMejHij;
+    private javax.swing.JSpinner jumMejKun;
+    private javax.swing.JSpinner jumMejMer;
     private javax.swing.JRadioButton kuningKur;
     private javax.swing.JRadioButton kuningLem;
     private javax.swing.JRadioButton kuningMej;
     private javax.swing.JRadioButton merahKur;
     private javax.swing.JRadioButton merahLem;
     private javax.swing.JRadioButton merahMej;
-    private java.awt.TextField textField1;
+    private javax.swing.JLabel nama;
     private javax.swing.JTextField tfTotalPera;
     private javax.swing.JButton totalPera;
     // End of variables declaration//GEN-END:variables
+      void nama(String nama1){
+        nama.setText(nama1);
+    }
+
 }

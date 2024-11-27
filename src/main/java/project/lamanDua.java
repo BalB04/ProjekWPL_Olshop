@@ -461,6 +461,7 @@ public class lamanDua extends javax.swing.JFrame {
             g.nama(nama.getText());
         }else if(tukang.isSelected()){
             h.setVisible(true);
+            h.nama(nama.getText());
         }
     }//GEN-LAST:event_buttonlam2ActionPerformed
 
