@@ -10,14 +10,15 @@ package project;
  * @author BalbalPC
  */
 public class lamanAwal extends javax.swing.JFrame {
-    private lamanDua a;
-    private lamanTigaKos b;
+    private profile a;
+    private lamanAwal2 b;
     /**
      * Creates new form lamanAwal
      */
     public lamanAwal() {
         initComponents();
-        a = new lamanDua();
+        a = new profile();
+        b = new lamanAwal2();
     }
     
     
@@ -40,12 +41,12 @@ public class lamanAwal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        noTel = new javax.swing.JTextField();
+        noTel1 = new javax.swing.JTextField();
         nama1 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         email1 = new javax.swing.JTextField();
-        pwsd1 = new javax.swing.JPasswordField();
+        pswd1 = new javax.swing.JPasswordField();
         alamat1 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -110,9 +111,9 @@ public class lamanAwal extends javax.swing.JFrame {
 
         jLabel4.setText("No. Telepon");
 
-        noTel.addActionListener(new java.awt.event.ActionListener() {
+        noTel1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                noTelActionPerformed(evt);
+                noTel1ActionPerformed(evt);
             }
         });
 
@@ -134,8 +135,6 @@ public class lamanAwal extends javax.swing.JFrame {
                 email1ActionPerformed(evt);
             }
         });
-
-        pwsd1.setText("jPasswordField1");
 
         alamat1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,7 +161,7 @@ public class lamanAwal extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(noTel, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(noTel1, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2)
                             .addComponent(nama1, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1)
@@ -170,7 +169,7 @@ public class lamanAwal extends javax.swing.JFrame {
                             .addComponent(jLabel4)
                             .addComponent(jLabel7)
                             .addComponent(email1, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(pwsd1, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pswd1, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(alamat1, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel8)
                             .addComponent(jLabel3)
@@ -201,11 +200,11 @@ public class lamanAwal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pwsd1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pswd1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(noTel, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(noTel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -246,9 +245,11 @@ public class lamanAwal extends javax.swing.JFrame {
 
     private void bt2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt2ActionPerformed
         // TODO add your handling code here:
+        a.data(nama1.getText(), pswd1.getText(), uname1.getText(), noTel1.getText(), email1.getText(), alamat1.getText());
+        b.setVisible(true);
+        b.pack();
+        b.setLocationRelativeTo(null);
         this.dispose();
-        a.nama(noTel.getText());
-        a.setVisible(true);
     }//GEN-LAST:event_bt2ActionPerformed
 
     private void nama1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nama1ActionPerformed
@@ -259,9 +260,9 @@ public class lamanAwal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_email1ActionPerformed
 
-    private void noTelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noTelActionPerformed
+    private void noTel1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noTel1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_noTelActionPerformed
+    }//GEN-LAST:event_noTel1ActionPerformed
 
     private void alamat1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alamat1ActionPerformed
         // TODO add your handling code here:
@@ -319,8 +320,8 @@ public class lamanAwal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField nama1;
-    private javax.swing.JTextField noTel;
-    private javax.swing.JPasswordField pwsd1;
+    private javax.swing.JTextField noTel1;
+    private javax.swing.JPasswordField pswd1;
     private javax.swing.JTextField uname1;
     // End of variables declaration//GEN-END:variables
 }

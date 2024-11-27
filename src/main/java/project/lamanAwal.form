@@ -127,7 +127,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="noTel" min="-2" pref="370" max="-2" attributes="0"/>
+                                  <Component id="noTel1" min="-2" pref="370" max="-2" attributes="0"/>
                                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                                   <Component id="nama1" min="-2" pref="370" max="-2" attributes="0"/>
                                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
@@ -135,7 +135,7 @@
                                   <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="email1" min="-2" pref="370" max="-2" attributes="0"/>
-                                  <Component id="pwsd1" alignment="0" min="-2" pref="370" max="-2" attributes="0"/>
+                                  <Component id="pswd1" alignment="0" min="-2" pref="370" max="-2" attributes="0"/>
                                   <Component id="alamat1" min="-2" pref="370" max="-2" attributes="0"/>
                                   <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -173,11 +173,11 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="pwsd1" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="pswd1" min="-2" pref="28" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="noTel" min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="noTel1" min="-2" pref="28" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -227,9 +227,9 @@
                 <Property name="text" type="java.lang.String" value="No. Telepon"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="noTel">
+            <Component class="javax.swing.JTextField" name="noTel1">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="noTelActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="noTel1ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="nama1">
@@ -257,10 +257,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="email1ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JPasswordField" name="pwsd1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jPasswordField1"/>
-              </Properties>
+            <Component class="javax.swing.JPasswordField" name="pswd1">
             </Component>
             <Component class="javax.swing.JTextField" name="alamat1">
               <Events>
