@@ -20,4 +20,7 @@ public class total {
         System.out.println(totalHarga);
         return totalHarga;
     }
+    public void resetInvoice(){
+        totalHarga = totalHarga*0;
+    }
 }
