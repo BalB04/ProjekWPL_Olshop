@@ -50,7 +50,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
-              <Component id="jPanel1" min="-2" pref="40" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -96,63 +96,61 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="pakaian" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
                           <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
-                      <Component id="imgPak" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
-                      <Component id="teknologi" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="imgTek" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
-                      <Component id="otomotif" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="imgOto" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="pakaian" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="imgPak" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                              <Component id="teknologi" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="imgTek" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                              <Component id="otomotif" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="imgOto" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="imgKos" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                              <Component id="kosmetik" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="imgMak" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                              <Component id="bahanMakanan" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="sport" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="imgSpo" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="103" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="furniture" min="-2" max="-2" attributes="0"/>
+                              <Component id="tukang" min="-2" max="-2" attributes="0"/>
+                              <Component id="imgPera" min="-2" pref="300" max="-2" attributes="0"/>
+                              <Component id="imgPer" min="-2" pref="300" max="-2" attributes="0"/>
+                              <Component id="buttonlam2" min="-2" pref="222" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="imgKos" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
-                      <Component id="kosmetik" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="imgMak" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
-                      <Component id="bahanMakanan" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="sport" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="imgSpo" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace pref="103" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="furniture" min="-2" max="-2" attributes="0"/>
-                      <Component id="tukang" min="-2" max="-2" attributes="0"/>
-                      <Component id="imgPera" min="-2" pref="300" max="-2" attributes="0"/>
-                      <Component id="imgPer" min="-2" pref="300" max="-2" attributes="0"/>
-                      <Component id="buttonlam2" min="-2" pref="222" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" attributes="0">
+                          <Component id="jLabel4" min="-2" pref="35" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="pakaian" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="kosmetik" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                                  <Component id="jLabel4" min="-2" pref="35" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="pakaian" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="kosmetik" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="imgPak" min="-2" pref="210" max="-2" attributes="0"/>
-                                      <Component id="imgKos" min="-2" pref="210" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
+                              <Component id="imgPak" min="-2" pref="210" max="-2" attributes="0"/>
+                              <Component id="imgKos" min="-2" pref="210" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -367,13 +365,13 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="name" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="14" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
