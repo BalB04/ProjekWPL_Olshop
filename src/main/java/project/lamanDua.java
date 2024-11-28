@@ -154,16 +154,25 @@ public class lamanDua extends javax.swing.JFrame {
             }
         });
 
-        imgPak.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/pakaian.jpeg"))); // NOI18N
+        imgPak.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir")+"\\src\\main\\java\\image\\pakaian.jpeg"));
         imgPak.setText("imgPak");
 
-        imgTek.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/tekno.jpeg"))); // NOI18N
+        imgTek.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir")+"\\src\\main\\java\\image\\tekno.jpeg"));
         imgTek.setText("imgTek");
 
+        imgOto.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir")+"\\src\\main\\java\\image\\pakaian.jpeg"));
         imgOto.setText("imgOto");
 
-        imgKos.setIcon(new javax.swing.ImageIcon("C:\\Users\\dalil\\OneDrive\\Documents\\NetBeansProjects\\ProjekWPL_Olshop\\Image\\Kosmetik.jpeg")); // NOI18N
+        imgKos.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir")+"\\src\\main\\java\\image\\Kosmetik.jpeg"));
         imgKos.setPreferredSize(new java.awt.Dimension(300, 210));
+
+        imgMak.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir")+"\\src\\main\\java\\image\\makanan.jpeg"));
+
+        imgSpo.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir")+"\\src\\main\\java\\image\\olahraga.jpeg"));
+
+        imgPera.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir")+"\\src\\main\\java\\image\\perabotan.jpeg"));
+
+        imgPer.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir")+"\\src\\main\\java\\image\\peralatan.jpeg"));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -247,8 +256,6 @@ public class lamanDua extends javax.swing.JFrame {
                         .addComponent(buttonlam2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(97, Short.MAX_VALUE))
         );
-
-        imgMak.getAccessibleContext().setAccessibleName("imgMak");
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 51));
         jPanel1.setForeground(new java.awt.Color(102, 255, 102));
