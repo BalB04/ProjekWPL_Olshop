@@ -11,13 +11,14 @@ import javax.swing.JOptionPane;
  */
 public class lamanTigaPer extends javax.swing.JFrame {
     total a = new total();
-        private lamanInvoice b;
+    private lamanInvoice b;
+    private profile p;
     /**
      * Creates new form lamanTiga
      */
     public lamanTigaPer() {
         initComponents();
-                b = new lamanInvoice();
+        b = new lamanInvoice();
     }
 
     /**
@@ -34,7 +35,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
         totalPer = new javax.swing.JButton();
         tfTotalPer = new javax.swing.JTextField();
         nama = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        bayar = new javax.swing.JButton();
         totalBayar = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
@@ -96,10 +97,10 @@ public class lamanTigaPer extends javax.swing.JFrame {
 
         nama.setText("jLabel2");
 
-        jButton1.setText("bayar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        bayar.setText("bayar");
+        bayar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                bayarActionPerformed(evt);
             }
         });
 
@@ -115,7 +116,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(nama)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addComponent(bayar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -135,7 +136,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel1)
                         .addComponent(nama)
-                        .addComponent(jButton1)
+                        .addComponent(bayar)
                         .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
@@ -710,11 +711,13 @@ public class lamanTigaPer extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_kuningObeActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void bayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bayarActionPerformed
         // TODO add your handling code here:
-         b.ta("raffi mahya", "0896666823165", "jl. kutisari utara");
+        p = new profile();
+        
+        b.ta(p.getNama(), p.getNoTel(), p.getAlamat());
         b.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_bayarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -759,6 +762,7 @@ public class lamanTigaPer extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bayar;
     private javax.swing.JRadioButton biruDril;
     private javax.swing.JRadioButton biruObe;
     private javax.swing.JRadioButton biruTool;
@@ -771,7 +775,6 @@ public class lamanTigaPer extends javax.swing.JFrame {
     private javax.swing.JRadioButton hijauDril;
     private javax.swing.JRadioButton hijauObe;
     private javax.swing.JRadioButton hijauTool;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel30;

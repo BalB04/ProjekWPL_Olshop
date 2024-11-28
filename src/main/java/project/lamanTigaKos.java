@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
 public class lamanTigaKos extends javax.swing.JFrame {
     total a = new total();
     private lamanInvoice b;
+    private profile p;
     /**
      * Creates new form lamanTiga
      */
@@ -36,7 +37,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
         totalKos = new javax.swing.JButton();
         tfTotalKos = new javax.swing.JTextField();
         nama = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jbayar = new javax.swing.JButton();
         totalBayar = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
@@ -84,6 +85,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 51));
         jPanel1.setForeground(new java.awt.Color(102, 255, 102));
+        jPanel1.setPreferredSize(new java.awt.Dimension(630, 55));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setText("Hai, Selamat Datang");
@@ -104,10 +106,10 @@ public class lamanTigaKos extends javax.swing.JFrame {
 
         nama.setText("jLabel2");
 
-        jButton1.setText("bayar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jbayar.setText("bayar");
+        jbayar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jbayarActionPerformed(evt);
             }
         });
 
@@ -122,29 +124,29 @@ public class lamanTigaKos extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(nama)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
+                .addComponent(jbayar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(104, 104, 104)
+                .addGap(24, 24, 24)
                 .addComponent(totalKos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfTotalKos, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(nama)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(totalKos)
-                        .addComponent(tfTotalKos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(totalBayar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton1))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel1)
-                        .addComponent(nama)))
+                        .addComponent(jbayar)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(totalKos)
+                            .addComponent(tfTotalKos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -472,7 +474,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(2180, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -732,11 +734,13 @@ public class lamanTigaKos extends javax.swing.JFrame {
         tfTotalKos.setText(Integer.toString(total));
     }//GEN-LAST:event_totalKosActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jbayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbayarActionPerformed
         // TODO add your handling code here:
-        b.ta("raffi mahya", "0896666823165", "jl. kutisari utara");
+        p = new profile();
+        
+        b.ta(p.getNama(), p.getNoTel(), p.getAlamat());
         b.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jbayarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -793,7 +797,6 @@ public class lamanTigaKos extends javax.swing.JFrame {
     private javax.swing.JRadioButton hijauBed;
     private javax.swing.JRadioButton hijauLip;
     private javax.swing.JRadioButton hijauPen;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel30;
@@ -805,6 +808,7 @@ public class lamanTigaKos extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JButton jbayar;
     private javax.swing.JSpinner jumBedBir;
     private javax.swing.JSpinner jumBedHij;
     private javax.swing.JSpinner jumBedKun;

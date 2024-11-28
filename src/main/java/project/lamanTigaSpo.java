@@ -11,12 +11,13 @@ import javax.swing.JOptionPane;
 public class lamanTigaSpo extends javax.swing.JFrame {
     total a = new total();
     private lamanInvoice b;
+    private profile p;
     /**
      * Creates new form lamanTiga
      */
     public lamanTigaSpo() {
         initComponents();
-                b = new lamanInvoice();
+        b = new lamanInvoice();
     }
 
     /**
@@ -721,7 +722,9 @@ public class lamanTigaSpo extends javax.swing.JFrame {
 
     private void bayarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bayarActionPerformed
         // TODO add your handling code here:
-         b.ta("raffi mahya", "0896666823165", "jl. kutisari utara");
+        p = new profile();
+        
+        b.ta(p.getNama(), p.getNoTel(), p.getAlamat());
         b.setVisible(true);
     }//GEN-LAST:event_bayarActionPerformed
 
