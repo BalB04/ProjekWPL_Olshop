@@ -154,12 +154,15 @@ public class lamanDua extends javax.swing.JFrame {
             }
         });
 
+        imgPak.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/pakaian.jpeg"))); // NOI18N
         imgPak.setText("imgPak");
 
+        imgTek.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/tekno.jpeg"))); // NOI18N
         imgTek.setText("imgTek");
 
         imgOto.setText("imgOto");
 
+        imgKos.setIcon(new javax.swing.ImageIcon("C:\\Users\\dalil\\OneDrive\\Documents\\NetBeansProjects\\ProjekWPL_Olshop\\Image\\Kosmetik.jpeg")); // NOI18N
         imgKos.setPreferredSize(new java.awt.Dimension(300, 210));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
